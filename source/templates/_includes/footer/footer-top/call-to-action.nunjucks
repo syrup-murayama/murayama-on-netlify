@@ -1,0 +1,18 @@
+<section class="section site-footer-top welcome-section welcome-section-fullwidth  is-clearfix">
+	<div class="section-body">
+		<div class="container">
+
+			<div class="level">
+              <div>
+                <p class="heading-title-top has-text-left">lets go</p>
+		    	<h1 class="heading-title style-1 has-text-left">Let's Make Something Great Together.</h1>
+              </div>
+              <div class="level-right">
+                <a href="/pages/contact.html" class="button is-white is-rounded">Start a Project</a>
+              </div>
+              <!-- .level-right -->
+            </div>
+
+		</div>
+	</div>
+</section>

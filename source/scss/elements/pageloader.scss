@@ -1,0 +1,29 @@
+/*
+ * ::::::::::: Pageloader Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.show-pageloader {
+	display: inline-block;
+	margin: 30px 0 40px;
+
+	.button {
+		margin: 0 5px;
+	}
+
+}
+
+.pageloader {
+	.title {
+		@include font-roboto;
+		@extend %is-uppercase;
+		letter-spacing: 2px;
+		@include fontsize(12);
+		margin-top: 3em;
+	}
+
+}

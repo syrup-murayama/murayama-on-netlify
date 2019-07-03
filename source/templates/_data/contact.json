@@ -1,0 +1,196 @@
+{
+	"contact": {
+
+		"page_title": {
+			"title": "Contact Us",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"contact_boxes": {
+			"section_class": "get-in-touch contact-page",
+			"heading_title": "Motivation how to build <br> trust at work",
+			"link": "/pages/contact.html",
+			"show_icon": true,
+			"show_title": true,
+			"show_text": true,
+			"more_text": false,
+			"boxes": [
+				{
+					"icon": "ion-ios-pin-outline",
+					"title": "Address",
+					"text": "295 Witting Streets Suite 666, <br> Melbourne, Australia"
+				},
+				{
+					"icon": "ion-ios-call-outline",
+					"title": "Phone",
+					"text": "+ 123 5456 789 01 <br> + 123 5456 789 01"
+				},
+				{
+					"icon": "ion-ios-mail-outline",
+					"title": "Email",
+					"text": "welcome@website.com <br> hello@site.co"
+				}
+			]
+		},
+		"contact_form": {
+			"section_class": "contact-form",
+			"heading_title": "Get in touch",
+			"form_fields": [
+				{
+					"field_class": "is-horizontal",
+					"control_class": "",
+					"label": "",
+					"label_class": "is-normal",
+					"horizontal_fields": [
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "text",
+							"name": "name",
+							"placeholder": "Your Name",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						},
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "text",
+							"name": "subject",
+							"placeholder": "Your Subject",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						}
+					]
+				},
+				{
+					"field_class": "is-horizontal",
+					"control_class": "",
+					"label": "",
+					"label_class": "is-normal",
+					"horizontal_fields": [
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "tel",
+							"name": "phone",
+							"placeholder": "Your Phone",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						},
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "email",
+							"name": "email",
+							"placeholder": "Your Email",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						}
+					]
+				},
+				{
+					"field_class": "",
+					"control_class": "is-expanded",
+					"horizontal_fields": [],
+					"class": "textarea",
+					"type": "",
+					"name": "textarea",
+					"placeholder": "Your Message",
+					"label": "",
+					"label_class": "",
+					"help_text": "",
+					"help_class": "",
+					"disabled": false,
+					"readonly": false,
+					"icon_left": {
+						"icon": "",
+						"class": ""
+					},
+					"icon_right": {
+						"icon": "",
+						"class": ""
+					},
+					"textarea_rows": "",
+					"select_options": [],
+					"radio_options": []
+				},
+				{
+					"field_class": "",
+					"control_class": "has-text-centered",
+					"class": "button",
+					"type": "button",
+					"button_text": "Send message"
+				}
+			]
+		},
+		"google_maps": {
+			"section_class": "google-maps",
+			"heading_title": "",
+			"image_placeholder": "global/google-maps.png"
+		}
+
+	}
+}

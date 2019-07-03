@@ -1,0 +1,3 @@
+{% macro widget_title(style_class, text) %}
+<h3 class="widget-title {{style_class}}">{{text | safe}}</h3>
+{% endmacro %}

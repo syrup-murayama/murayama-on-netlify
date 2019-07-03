@@ -1,0 +1,17 @@
+{% macro clients_list(style_class, data, global_data, clients_folder = 'clients/', carousel = false, carousel_class='no-dots', carousel_items = '4') %}
+
+<nav class="clients-list level {{style_class}} {% if carousel %}owl-carousel {{carousel_class}} carousel-items-{{carousel_items}}{% endif %}">
+
+  {% for client in data %}
+  <div class="client-item has-text-centered level-item">
+    
+      <a href="{{client.link}}" target="_blank">
+      	<img src="{{global_data.images_root}}{{clients_folder}}{{client.image_src}}">
+      </a>
+    
+  </div>
+  {% endfor %}
+
+</nav>
+
+{% endmacro %}

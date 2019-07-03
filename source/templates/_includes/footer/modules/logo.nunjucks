@@ -1,0 +1,15 @@
+{% macro footer_logo(style_class, data, global_data) %}
+    <div id="footer-logo" class="site-logo {{style_class}}">
+        <a href="/">
+            {% if data.text.left %}
+            <span class="logo-text">{{data.text.left}}</span>
+            {% endif %}
+            {% if data.image_src %}
+            <img src="{{global_data.images_root}}{{data.image_src}}">
+            {% endif %}
+            {% if data.text.right %}
+            <span class="logo-text">{{data.text.right}}</span>
+            {% endif %}
+        </a>
+    </div><!-- #footer-logo -->
+{% endmacro %}

@@ -1,0 +1,96 @@
+{% macro testimonials(style_class, carousel = true, carousel_class='dots', carousel_items, data, global_data, columns = false, columns_style = 'columns-style-1') %}
+
+<div class="testimonials {{style_class}} {% if carousel %}owl-carousel {{carousel_class}} carousel-items-{{carousel_items}}{% endif %} {% if columns %}{{columns_style}}{% endif %} {% if columns and carousel == false %}columns is-variable is-4 is-multiline{% endif %}">
+
+    {% for item in data.list %}
+    {% if columns and carousel == false %}<div class="column is-4">{% endif %}
+	<div class="testimonials-item">
+
+        {% if columns %}
+
+	        {% if columns_style == 'columns-style-1' %}
+		        {% if data.show_title %}<h2>{{item.title | safe}}</h2>{% endif %}
+		        {% if data.show_stars %}
+				<div class="testimonials-stars">
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+				</div>
+				{% endif %}
+		        {% if data.show_text %}<p>{{item.text | safe}}</p>{% endif %}
+		        {% if data.show_image %}
+				<img src="{{global_data.images_root}}{{data.images_folder}}{{item.image_src}}">
+				{% endif %}
+				{% if data.show_author %}<h3>{{item.author | safe}}</h3>{% endif %}
+
+	        {% endif %}
+
+	        {% if columns_style == 'columns-style-2' %}
+	            {% if data.show_image %}
+				<img src="{{global_data.images_root}}{{data.images_folder}}{{item.image_src}}">
+				{% endif %}
+		        {% if data.show_title %}<h2>{{item.title | safe}}</h2>{% endif %}
+		        {% if data.show_stars %}
+				<div class="testimonials-stars">
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+				</div>
+				{% endif %}
+		        {% if data.show_text %}<p>{{item.text | safe}}</p>{% endif %}
+				{% if data.show_author %}<h3>{{item.author | safe}}</h3>{% endif %}
+
+	        {% endif %}
+
+        {% else %}
+
+            {% if style_class == 'style-4' %}
+
+				{% if data.show_stars %}
+				<div class="testimonials-stars">
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+				</div>
+				{% endif %}
+				{% if data.show_text %}<p>{{item.text | safe}}</p>{% endif %}
+				{% if data.show_image %}
+				<div><img src="{{global_data.images_root}}{{data.images_folder}}{{item.image_src}}"></div>
+				{% endif %}
+				{% if data.show_author %}<h3>{{item.author | safe}}</h3>{% endif %}
+
+			{% else %}
+
+				{% if data.show_image %}
+				<img src="{{global_data.images_root}}{{data.images_folder}}{{item.image_src}}">
+				{% endif %}
+				{% if data.show_stars %}
+				<div class="testimonials-stars">
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+					<span class="icon"><i class="ion-md-star"></i></span>
+				</div>
+				{% endif %}
+				{% if data.show_text %}<p>{{item.text | safe}}</p>{% endif %}
+				{% if data.show_author %}<h3>{{item.author | safe}}</h3>{% endif %}
+
+			{% endif %}
+
+		{% endif %}
+
+
+	</div>
+	{% if columns and carousel == false %}</div>{% endif %}
+	{% endfor %}
+
+</div>
+
+{% endmacro %}

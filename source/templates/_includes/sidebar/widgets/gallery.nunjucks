@@ -1,0 +1,13 @@
+{% macro widget_content(data, content) %}
+
+<ul class="gallery">
+	{% for work in content.works %}
+    <li>
+        <a href="/portfolio/single.html">
+            <img src="/assets/images/portfolio/{{work.image_src}}">
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endmacro %}

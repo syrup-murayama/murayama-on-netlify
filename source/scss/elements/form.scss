@@ -1,0 +1,92 @@
+/*
+ * ::::::::::: Form Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select,
+.checkbox,
+.radio {
+	@include font-roboto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select,
+.input.is-medium,
+.textarea.is-medium,
+.select.is-medium,
+.input,
+.textarea {
+	@include fontsize(15);
+	padding-left: $form-field-control-padding-horizontal;
+	padding-right: $form-field-control-padding-horizontal;
+	height: 3.06em;
+}
+
+.select {
+	select {
+		padding-left: $form-field-control-padding-horizontal;
+		padding-right: $form-field-control-padding-horizontal;
+		height: 2.9em;
+		min-width: 250px;
+	}
+
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+	top: 65%;
+}
+
+.field {
+	&:not(:last-child) {
+		margin-bottom: 1.8rem;
+	}
+
+}
+
+.field-body {
+	.field {
+		margin-bottom: 0;
+	}
+
+	> .field {
+		&:not(:last-child) {
+			margin-right: 1.6rem;
+		}
+
+	}
+
+}
+
+textarea,
+.textarea {
+	padding: $form-field-control-padding-horizontal;
+
+	&:not([rows]) {
+		min-height: 245px;
+	}
+
+}
+
+.control {
+	&.has-icons-left,
+	&.has-icons-right {
+		.icon {
+			height: 2.9em;
+		}
+
+	}
+
+}

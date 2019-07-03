@@ -1,0 +1,37 @@
+{% macro menuItem(item, active_pages, show_icons=false) %}
+
+{% if item.class %}
+<li class="{{item.class}}{% for page in active_pages %}{% if page == item.title %} active{% endif %}{% endfor %}">
+{% else %}
+<li{% for page in active_pages %}{% if page == item.title %} class="active"{% endif %}{% endfor %}>
+{% endif %}
+    {% if item.url %}
+        {% if item.image %}
+        <div class="image-hover effect-5{% if item.active %} is-active{% endif %}">
+            <figure>
+               <img src="/assets/images/portfolio/{{ item.image }}">
+               {% if item.active %}<span class="tag menu-mark is-primary">active</span>{% endif %}
+               <figcaption>
+                    <h5>{{ item.title }}</h5>
+                    {% if item.active %}{% else %}
+                    <a href="{{ item.url }}" target="_blank">View more</a>
+                    {% endif %}
+                </figcaption>   
+            </figure>
+        </div>
+        {% else %}
+        <a href="{{ item.url }}">{% if show_icons and item.icon %}<span class="icon"><i class="{{item.icon}}"></i></span> {% endif %}{{ item.title }}{% if item.mark.text %} <span class="tag menu-mark {{item.mark.class}}">{{item.mark.text}}</span>{% endif %}</a>
+        {% endif %}
+    {% else %}
+        {{ item.title }}
+    {% endif %}
+    {% if item.items %}
+    <ul>
+        {% for item in item.items %}
+        {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
+
+{% endmacro %}

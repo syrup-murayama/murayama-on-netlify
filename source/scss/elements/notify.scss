@@ -1,0 +1,143 @@
+/*
+ * ::::::::::: Notify bars and alerts Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+
+// overhang.js notification bars
+.overhang {
+	position: fixed;
+	display: none;
+	width: 100%;
+	z-index: 9999;
+	padding: 10px 25px;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 0 !important;
+	@include font-roboto;
+	background-color: $primary !important;
+
+	.button {
+		height: 2.2em;
+		padding-left: calc(1.2em - 1px);
+		padding-right: calc(1.2em - 1px);
+		letter-spacing: 0;
+		font-size: 13px;
+		margin: 0 10px;
+		vertical-align: baseline;
+	}
+
+	.icon {
+		font-size: 20px;
+		vertical-align: middle;
+	}
+
+	.overhang-message {
+		color: $white;
+		font-size: 15px;
+	}
+
+	.overhang-close {
+		vertical-align: middle;
+		cursor: pointer;
+		padding: 0 10px;
+		display: inline-block;
+		line-height: 1px;
+		float: right;
+
+		&:after {
+			@include font-ionicons;
+			@include fontsize(30);
+			content: "\f406";
+			color: $white;
+			line-height: 1;
+		}
+
+	}
+
+}
+
+.show-overhang,
+.notify-alert {
+	.button {
+		margin: 0 4px;
+	}
+
+}
+
+body {
+	&.overhang-in-bottom {
+		.overhang {
+			top: inherit;
+			bottom: 0;
+			padding-top: 12px;
+		}
+
+	}
+
+	&.overhang-push {
+		@include transition(all 0.4s ease-in-out);
+		padding-top: 50px;
+	}
+
+	&.overhang-info {
+		.overhang {
+			background-color: $info !important;
+		}
+
+	}
+
+	&.overhang-success {
+		.overhang {
+			background-color: $success !important;
+		}
+
+	}
+
+	&.overhang-warning {
+		.overhang {
+			background-color: $warning !important;
+		}
+
+	}
+
+	&.overhang-danger {
+		.overhang {
+			background-color: $danger !important;
+		}
+
+	}
+
+}
+
+// noty.js notification alerts
+.noty_layout {
+	.noty_body {
+		@include font-roboto;
+		letter-spacing: 1px;
+		-webkit-font-smoothing: antialiased;
+		line-height: 24px;
+		padding: 10px 15px !important;
+
+		.icon {
+			height: auto;
+			width: auto;
+			font-size: 20px;
+			vertical-align: middle;
+
+			i[class^='icon-'] {
+				font-size: 15px;
+			}
+
+		}
+
+	}
+
+}

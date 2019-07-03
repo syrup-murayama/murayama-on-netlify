@@ -1,0 +1,169 @@
+{% macro form_fields(data, global_data) %}
+
+{% for field in data.form_fields %}
+<div class="field {{field.field_class}}">
+
+	{% if field.field_class == 'is-horizontal' and field.label %}
+		<div class="field-label {{field.label_class}}">
+		    <label class="label">{{field.label}}</label>
+		</div>
+	{% endif %}
+
+	{% if field.field_class == 'is-horizontal' %}
+    <div class="field-body">
+	{% endif %}
+
+	    {% if field.horizontal_fields.length %}
+
+		    {% for field_horizontal in field.horizontal_fields %}
+
+		    <div class="field">
+
+		    	{% if field_horizontal.label %}
+				<label class="label {{field_horizontal.label_class}}">{{field_horizontal.label}}</label>
+				{% endif %}
+
+			    <div class="control {{field_horizontal.control_class}}">
+
+			    	{% if field_horizontal.class == 'textarea' %}
+					<textarea class="{{field_horizontal.class}}" name="{{field_horizontal.name}}" placeholder="{{field_horizontal.placeholder}}" required></textarea>
+
+					{% elif field_horizontal.class == 'select' %}
+					<div class="{{field_horizontal.class}}">
+					  <select name="{{field_horizontal.name}}">
+					  {% for option in field_horizontal.select_options %}
+						    <option value="{{option.value}}" {% if option.selected %}selected{% endif %}>{{option.text}}</option>
+					  {% endfor %}
+					  </select>
+					</div>
+
+					{% elif field_horizontal.class == 'checkbox' %}
+					<label class="{{field_horizontal.class}}">
+					  <input type="{{field_horizontal.type}}" name="{{field_horizontal.name}}" value="{{field_horizontal.checkbox_options.value}}" {% if field_horizontal.checkbox_options.checked %}checked{% endif %}>
+					  {{field_horizontal.checkbox_options.label | safe}}
+					</label>
+
+					{% elif field_horizontal.class == 'radio' %}
+					{% for option in field_horizontal.radio_options %}
+					<label class="{{field_horizontal.class}}">
+					    <input type="{{field_horizontal.type}}" name="{{field_horizontal.name}}" value="{{option.value}}" {% if option.checked %}checked{% endif %}>
+					    {{option.label}}
+					 </label>
+					{% endfor %}
+					  
+					{% elif field_horizontal.class == 'button' %}
+
+						{% if field_horizontal.type == 'href' %}
+							<a class="{{field_horizontal.class}}">{{field_horizontal.button_text}}</a>
+						{% else %}
+							<button class="{{field_horizontal.class}}" type="submit">{{field_horizontal.button_text}}</button>
+						{% endif %}
+
+					{% else %}
+
+					{% if field_horizontal.class%}
+			        <input class="{{field_horizontal.class}}" type="{{field_horizontal.type}}" name="{{field_horizontal.name}}" placeholder="{{field_horizontal.placeholder}}" required>
+			        {% endif %}
+
+			        {% endif %}
+
+			        {% if field_horizontal.icon_left.icon and field_horizontal.class %}
+			        <span class="icon is-small is-left {{field_horizontal.icon_left.class}}">
+				      <i class="{{field_horizontal.icon_left.icon}}"></i>
+				    </span>
+				    {% endif %}
+
+				    {% if field_horizontal.icon_right.icon and field_horizontal.class %}
+				    <span class="icon is-small is-right {{field_horizontal.icon_right.class}}">
+				      <i class="{{field_horizontal.icon_right.icon}}"></i>
+				    </span>
+				    {% endif %}
+
+				</div>
+
+				{% if field_horizontal.help_text and field_horizontal.class %}
+				<p class="help {{field_horizontal.help_class}}">{{field_horizontal.help_text}}</p>
+				{% endif %}
+
+		    </div><!-- .field -->
+
+		    {% endfor %}
+
+		{% else %}
+
+		{% if field.label %}
+		<label class="label {{field.label_class}}">{{field.label}}</label>
+		{% endif %}
+
+		<div class="control {{field.control_class}}">
+
+			{% if field.class == 'textarea' %}
+			<textarea class="{{field.class}}" name="{{field.name}}" placeholder="{{field.placeholder}}" required></textarea>
+
+			{% elif field.class == 'select' %}
+			<div class="{{field.class}}">
+			  <select name="{{field.name}}">
+			  {% for option in field.select_options %}
+				    <option value="{{option.value}}" {% if option.selected %}selected{% endif %}>{{option.text}}</option>
+			  {% endfor %}
+			  </select>
+			</div>
+
+			{% elif field.class == 'checkbox' %}
+			<label class="{{field.class}}">
+			  <input type="{{field.type}}" name="{{field.name}}" value="{{field.checkbox_options.value}}" {% if field.checkbox_options.checked %}checked{% endif %}>
+			  {{field.checkbox_options.label | safe}}
+			</label>
+
+			{% elif field.class == 'radio' %}
+			{% for option in field.radio_options %}
+			<label class="{{field.class}}">
+			    <input type="{{field.type}}" name="{{field.name}}" value="{{option.value}}" {% if option.checked %}checked{% endif %}>
+			    {{option.label}}
+			 </label>
+			{% endfor %}
+
+			{% elif field.class == 'button' %}
+
+				{% if field.type == 'href' %}
+					<a class="{{field.class}}">{{field.button_text}}</a>
+				{% else %}
+					<button class="{{field.class}}" type="submit">{{field.button_text}}</button>
+				{% endif %}
+
+			{% else %}
+
+			{% if field.class%}
+	        <input class="{{field.class}}" type="{{field.type}}" name="{{field.name}}" placeholder="{{field.placeholder}}" required>
+	        {% endif %}
+
+	        {% endif %}
+
+            {% if field.icon_left.icon and field.class  %}
+	        <span class="icon is-small is-left {{field.icon_left.class}}">
+		      <i class="{{field.icon_left.icon}}"></i>
+		    </span>
+		    {% endif %}
+
+		    {% if field.icon_right.icon and field.class  %}
+		    <span class="icon is-small is-right {{field.icon_right.class}}">
+		      <i class="{{field.icon_right.icon}}"></i>
+		    </span>
+		    {% endif %}
+
+		</div>
+
+        {% if field.help_text and field.class %}
+		<p class="help {{field.help_class}}">{{field.help_text}}</p>
+		{% endif %}
+
+	    {% endif %}
+
+	{% if field.field_class == 'is-horizontal' %}
+    </div><!-- .field-body -->
+	{% endif %}
+
+</div><!-- .field -->
+{% endfor %}
+
+{% endmacro %}

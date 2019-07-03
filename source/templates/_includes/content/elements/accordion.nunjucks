@@ -1,0 +1,16 @@
+{% macro accordion(style_class, options, data, global_data) %}
+
+<div class="accordions {{style_class}}">
+	{% for item in data %}
+
+		<div class="beefup {{item.class}}"{% if options %} data-beefup-options="{{options}}"{% endif %}>
+		    <h3 class="beefup__head">{{item.heading | safe}}</h3>
+		    <div class="beefup__body content">
+		    	{{item.content | safe}}
+		    </div>
+		</div>
+	
+	{% endfor %}
+</div>
+
+{% endmacro %}

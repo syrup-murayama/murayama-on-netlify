@@ -1,0 +1,15 @@
+{% macro tag(style_class, data, global_data, size = 'is-medium') %}
+
+<div class="tags {{style_class}}">
+	{% for item in data %}
+
+        {% if item.type == 'link' %}
+		<a class="tag {{item.class}} {{size}}">{{item.text | safe}}</a>
+		{% else %}
+		<span class="tag {{item.class}} {{size}}">{{item.text | safe}}</span>
+		{% endif %}
+	
+	{% endfor %}
+</div>
+
+{% endmacro %}

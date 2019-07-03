@@ -1,0 +1,32 @@
+{% macro boxes(style_class, columns_class='is-4 is-multiline', column_class='is-4', data, global_data, icon_left = false) %}
+
+<div class="columns is-variable {{columns_class}} {{style_class}}">
+
+    {% for box in data.boxes %}
+    <div class="column {{column_class}}" data-aos="fade">
+        <div class="box-item {% if icon_left %}media{% endif %}">
+            {% if icon_left %}<div class="media-left">{% endif %}
+            {% if data.show_icon %}
+            <a href="{{data.link}}">
+                <span class="icon">
+                    <i class="{{box.icon}}"></i>
+                </span>
+            </a>
+            {% endif %}
+            {% if icon_left %}</div>{% endif %}
+            {% if icon_left %}<div class="media-content">{% endif %}
+            {% if data.show_title %}
+            <h3><a href="{{data.link}}">{{box.title}}</a></h3>
+            {% endif %}
+            {% if data.show_text %}<p>{{box.text | safe}}</p>{% endif %}
+            {% if data.more_text %}
+            <a href="{{data.link}}" class="button">{{global_data.more_text.more}}</a>
+            {% endif %}
+            {% if icon_left %}</div>{% endif %}
+        </div><!-- .box-item -->
+    </div>
+    {% endfor %}
+    
+</div><!-- .columns -->
+
+{% endmacro %}

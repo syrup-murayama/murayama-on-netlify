@@ -1,0 +1,35 @@
+<section class="section footer-bottom-content">
+	<div {% if footer_bottom_use_container %}class="container"{% endif %}>
+
+		{% if show_footer_bottom_center and show_footer_bottom_left == false and show_footer_bottom_right == false %}
+
+			{% block footer_bottom_just_center %}{% endblock %}
+
+		{% else %}
+
+			<div class="level">
+
+			    {% if show_footer_bottom_left %}
+			    <div class="level-left">
+			    	{% block footer_bottom_left %}{% endblock %}
+				</div><!-- .level-left -->
+				{% endif %}
+
+			    {% if show_footer_bottom_center %}
+			    <div class="level-left">
+			    	{% block footer_bottom_center %}{% endblock %}
+				</div><!-- .level-left -->
+				{% endif %}
+
+			    {% if show_footer_bottom_right %}
+				<div class="level-right">
+					{% block footer_bottom_right %}{% endblock %}
+				</div><!-- .level-right -->
+				{% endif %}
+
+			</div><!-- .level -->
+
+		{% endif %}
+
+	</div>
+</section><!-- .footer-bottom-content -->

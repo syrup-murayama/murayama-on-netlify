@@ -1,0 +1,7 @@
+{% from "_includes/content/elements/client.nunjucks" import clients_list %}
+
+<section id="" class="hero clients-section is-clearfix">
+    <div>
+		{{ clients_list( carousel = true, data = clients.carousel_list, global_data = global, carousel_items = '5' ) }}
+	</div>
+</section>

@@ -1,0 +1,38 @@
+<!-- menu.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/header/_layout.nunjucks" %}
+
+<!-- set header layout options -->
+{% set show_header_left = true %}
+{% set show_header_center = false %}
+{% set show_header_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/header/modules/icons.nunjucks" import menu_icons %}
+{% from "_includes/header/modules/topbar-info.nunjucks" import topbar_info %}
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+
+{% block header_navigation_left %}
+    {{ topbar_info() }}
+{% endblock %}
+
+{% block header_navigation_right %}
+    {{ menu_start( style_class = 'right' ) }}
+        {% for item in top_bar.navigation.menu %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+    <ul class="nav-menu-dropdown style-2 on-click">
+        <li>
+            <a href="javascript:void(0);"><span class="flag-icon flag-icon-gb"></span>En</a>
+            <ul>
+                <li><a href="javascript:void(0);"><span class="flag-icon flag-icon-es"></span>Es</a></li>
+                <li><a href="javascript:void(0);"><span class="flag-icon flag-icon-tr"></span>tr</a></li>
+                <li><a href="javascript:void(0);"><span class="flag-icon flag-icon-eg"></span>ع</a></li>
+            </ul>
+        </li>
+    </ul><!-- .header-menu-icons -->
+{% endblock %}

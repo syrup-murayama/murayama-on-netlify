@@ -1,0 +1,393 @@
+/*
+ * ::::::::::: Page Title Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.parallax-background,
+.ken-burns {
+	background: transparent;
+}
+
+.ken-burns {
+	@include relative;
+	overflow: hidden;
+}
+
+.ken-burns-background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: no-repeat center center;
+	background-size: cover;
+	animation: kenburns 40s infinite;
+}
+
+.page-title {
+	background-color: $primary-light;
+	padding-bottom: 0 !important;
+
+	&.mini-height {
+		.hero-body {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+
+			h1,
+			.title {
+				@include fontsize(20);
+			}
+
+			h3,
+			.subtitle,
+			.breadcrumb {
+				@include fontsize(13.5);
+			}
+
+		}
+
+	}
+
+	&.is-primary {
+		.hero-body {
+			h3,
+			.subtitle {
+				color: $white;
+			}
+
+			.breadcrumb {
+				li + li {
+					&:before {
+						color: $primary-3;
+					}
+
+				}
+
+				li {
+					&.is-active {
+						a {
+							color: $white;
+						}
+
+					}
+
+					a {
+						&:hover {
+							color: $white;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.is-secondary {
+		.hero-body {
+			h1,
+			.title {
+				color: $white;
+			}
+
+			h3,
+			.subtitle {
+				color: $tertiary;
+			}
+
+			.breadcrumb {
+				li + li {
+					&:before {
+						color: $secondary-5;
+					}
+
+				}
+
+				li {
+					&.is-active {
+						a {
+							color: $tertiary;
+						}
+
+					}
+
+					a {
+						&:hover {
+							color: $tertiary;
+						}
+
+					}
+
+				}
+
+			}
+
+			.button {
+				border: 1px solid $primary;
+
+				&:hover {
+					background-color: transparent;
+					border-color: $white;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.has-text-centered {
+		.hero-body {
+			.breadcrumb {
+				@include fontsize(13);
+				margin-bottom: 1rem;
+			}
+
+			.header-menu-icons {
+				&.social {
+					li {
+						&:first-child {
+							padding-left: 0;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.hero-body {
+		padding-bottom: 5.5rem;
+		padding-top: 5.5rem;
+
+		.button {
+			margin: 0 3px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+		}
+
+		h1,
+		.title {
+			font-weight: 600;
+			text-transform: capitalize;
+			letter-spacing: 0px;
+			@include fontsize(30);
+			color: $secondary;
+		}
+
+		h3,
+		.subtitle {
+			@extend %is-capitalized;
+			letter-spacing: .5px;
+			margin-top: -3px !important;
+			color: $secondary-5;
+			@include fontsize(15);
+			@include font-roboto;
+			font-weight: 400;
+		}
+
+		.level {
+			.level-right {
+				.header-menu-icons {
+					&.social {
+						&:before {
+							display: none;
+						}
+
+					}
+
+				}
+
+			}
+
+			.level-left {
+				.header-menu-icons {
+					&.social {
+						padding-left: 0;
+						padding-right: 10px;
+
+						&:before {
+							display: none;
+						}
+
+						li {
+							&:first-child {
+								padding-left: 0;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.is-medium,
+	&.is-large,
+	&.is-fullheight {
+		.hero-body {
+			> div {
+				&:before {
+					display: none;
+					content: '';
+					height: 49px;
+					width: 1px;
+					background-color: $white;
+					opacity: .45;
+					margin-bottom: 20px;
+					margin-top: -50px;
+				}
+
+			}
+
+			.heading-title-top {
+				padding-bottom: 20px;
+				font-size: 18px;
+				letter-spacing: 2px;
+				color: white;
+			}
+
+		}
+
+		h1 {
+			@extend %is-capitalized;
+			@include fontsize(60);
+			letter-spacing: 0;
+			color: $white;
+		}
+
+		h3 {
+			@extend %is-capitalized;
+			@include fontsize(20);
+			letter-spacing: 0;
+			margin-top: 15px !important;
+			@include font-playfair-display;
+			color: $white;
+		}
+
+	}
+
+	// services page
+	&.services {
+		@include cover-background('../../images/page-title/services.png', $primary-light, 'top', 'center', '', 'cover');
+	}
+
+	// about page
+	&.about {
+		@include cover-background('../../images/page-title/about.png', $primary-light, 'top', 'center', '', 'cover');
+	}
+
+	// blog page
+	&.blog,
+	&.blog-single {
+		@include cover-background('../../images/page-title/blog.png', $primary-light, 'top', 'center', '', 'cover');
+	}
+
+	// contact page
+	&.contact {
+		@include cover-background('../../images/page-title/contact.png', $primary-light, 'top', 'center', '', 'cover');
+	}
+
+	// portfolio page
+	&.portfolio {
+		@include cover-background('../../images/page-title/portfolio.png', $primary-light, 'top', 'center', '', 'cover');
+
+		.hero-body {
+			> div {
+				&:before {
+					background-color: $primary-7;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.parallax-background,
+	&.ken-burns {
+		background: transparent;
+	}
+
+	&.ken-burns {
+		@include relative;
+		overflow: hidden;
+	}
+
+	.ken-burns-background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: no-repeat center center;
+		background-size: cover;
+		animation: kenburns 40s infinite;
+	}
+
+	&.intro-image {
+		.hero-body {
+			h1,
+			#typed-intro,
+			.typed-cursor {
+				color: white;
+				font-size: 80px;
+				text-transform: capitalize;
+				font-weight: 600;
+				letter-spacing: 0;
+				line-height: 1.2;
+			}
+
+			.button {
+				display: inline-flex;
+				height: 3.2em;
+				padding-left: calc(2em - 1px) !important;
+				padding-right: calc(2em - 1px) !important;
+				text-transform: capitalize !important;
+				color: white !important;
+				font-weight: 600 !important;
+				letter-spacing: 0 !important;
+				font-size: 16px !important;
+
+				&:hover {
+					background-color: $white;
+					color: $primary !important;
+				}
+
+				.icon {
+					i {
+						font-size: 20px !important;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

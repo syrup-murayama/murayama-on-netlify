@@ -1,0 +1,5 @@
+{% macro google_maps(style_class, data, global_data) %}
+<div class="{{style_class}}">
+	<iframe src="https://snazzymaps.com/embed/124493" width="100%" height="500px" style="border:none;"></iframe>
+</div>
+{% endmacro %}

@@ -1,0 +1,34 @@
+{% macro tab(style_class, tabs_class, show_icons=false, vertical=false, data, global_data) %}
+
+<div class="tabs-list {{style_class}}{% if vertical %} columns is-variable is-5{% endif %}">
+
+	<div class="tabs {{tabs_class}}{% if vertical %} tabs-vertical column is-3{% endif %}">
+	  <ul>
+
+	  	{% for item in data %}
+	    <li class="{{item.class}}"><a>
+	    	{% if show_icons %}
+	    	<span class="icon {{item.icon_class}}"><i class="{{item.icon}}"></i></span>
+	        <span>{{item.heading | safe}}</span>
+	    	{% else %}
+		    {{item.heading | safe}}
+		    {% endif %}
+		</a></li>
+	    {% endfor %}
+
+	  </ul>
+	</div><!-- .tabs -->
+
+	<div class="tabs-content{% if vertical %} column{% endif %}">
+
+		{% for item in data %}
+		<div class="tab-block content">
+			{{item.content | safe}}
+		</div><!-- .tab-block -->
+		{% endfor %}
+		
+	</div><!-- .tabs-content -->
+
+</div><!-- .tabs-list -->
+
+{% endmacro %}

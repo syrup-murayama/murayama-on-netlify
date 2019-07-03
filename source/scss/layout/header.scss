@@ -1,0 +1,21 @@
+/*
+ * ::::::::::: Header Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+header,
+.site-header-top {
+	background-color: $white;
+	width: 100%;
+	z-index: 100;
+	height: $header-height;
+	@include relative;
+}
+
+.site-header-top {
+	z-index: 200;
+}

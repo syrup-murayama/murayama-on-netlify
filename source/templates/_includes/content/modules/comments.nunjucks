@@ -1,0 +1,74 @@
+{% macro comments(style_class, data, global_data) %}
+
+<ul class="comment-list comments comments-box {{style_class}}">
+
+	{% for comment in data %}
+
+	<li class="media comment comment-box">
+
+		<figure class="media-left avatar">
+			<p class="image">
+			<img src="{{global_data.images_root}}comments/{{comment.author.avatar}}">
+			</p>
+		</figure><!-- .avatar -->
+
+		<div class="media-content comment-body">
+			<div class="level">
+				<div class="level-left">
+					<span class="comment-author"><a href="#">{{comment.author.name}}</a></span>
+					<span class="comment-date"><a href="#">{{comment.date}}</a></span>
+				</div>
+				<div class="level-right">
+					<span class="comment-reply"><a href="#">{{global_data.comment_reply}}</a></span>
+				</div>
+			</div>
+			<div class="content">
+				<p>{{comment.comment_content}}</p>
+			</div>
+
+			{% if comment.nested_comments.length %}
+
+			<ul class="children">
+
+				{% for nested_comment in comment.nested_comments %}
+
+				<li class="media comment comment-box">
+
+					<figure class="media-left avatar">
+						<p class="image">
+						<img src="{{global_data.images_root}}comments/{{nested_comment.author.avatar}}">
+						</p>
+					</figure><!-- .avatar -->
+
+					<div class="media-content comment-body">
+						<div class="level">
+							<div class="level-left">
+								<span class="comment-author"><a href="#">{{nested_comment.author.name}}</a></span>
+								<span class="comment-date"><a href="#">{{nested_comment.date}}</a></span>
+							</div>
+							<div class="level-right">
+								<span class="comment-reply"><a href="#">{{global_data.comment_reply}}</a></span>
+							</div>
+						</div>
+						<div class="content">
+							<p>{{nested_comment.comment_content}}</p>
+						</div>
+					</div><!-- .comment-body -->
+
+				</li><!-- .comment-box -->
+
+				{% endfor %}
+
+			</ul><!-- .children -->
+
+			{% endif %}
+
+		</div><!-- .comment-body -->
+
+	</li><!-- .comment-box -->
+
+	{% endfor %}
+
+</ul><!-- .comments-box -->
+
+{% endmacro %}

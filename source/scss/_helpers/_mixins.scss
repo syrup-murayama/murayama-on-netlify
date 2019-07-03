@@ -1,0 +1,131 @@
+// ::::::::::: Fonts :::::::::::
+
+// Playfair Display font
+@mixin font-playfair-display($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Poppins', sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// Roboto font
+@mixin font-roboto($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Poppins', sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// simple-line-icons font
+@mixin font-fontawesome($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Font Awesome 5 Free';
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// simple-line-icons font
+@mixin font-simple-line-icons($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'simple-line-icons';
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// ionicons font
+@mixin font-ionicons($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Ionicons';
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// Font size
+@mixin fontsize($size:24, $base:16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+// Positioning
+@mixin position($position, $args) {
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+      #{$o}: nth($args, $i + 1);
+    }
+  }
+  position: $position;
+}
+
+// Positioning helpers
+@mixin absolute($args: '') {
+  @include position(absolute, $args);
+}
+
+@mixin fixed($args: '') {
+  @include position(fixed, $args);
+}
+
+@mixin relative($args: '') {
+  @include position(relative, $args);
+}
+
+// transitions
+// Usage: @include transition(width, height 0.3s ease-in-out);
+@mixin transition($transitions...) {
+  $unfoldedTransitions: ();
+  @each $transition in $transitions {
+    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+  }
+  transition: $unfoldedTransitions;
+}
+
+// linear-gradient
+// @source https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+// centre a block of text both horizontally and vertically
+// @see https://codepen.io/maxinacube/pen/tneEq
+@mixin center-element ( $left: 50%, $width: 50%, $align: center ) {
+  position: absolute;
+  top: 50%;
+  left: $left;
+  transform: translate($left * -1,-50%);
+  width: $width;
+  > * {
+    text-align: $align;
+  }
+}
+
+// full page cover background image
+@mixin cover-background($img-uri, $background-color:"", $background-top:"center", $background-left:"center", $background-attachment:"fixed", $background-size:"") {
+  background: $background-color url($img-uri) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment);
+  background-size: unquote($background-size);
+}
+
+// circle box
+@mixin circle($size:40px) {
+     width: $size;
+     height: $size;
+     border-radius: 100%;
+}
+
+// box shadow
+@mixin box-shadow( $horiz : .5em , $vert : .5em , $blur : 0px , $spread : 0px , $color : #000000 ){
+  box-shadow: $horiz $vert $blur $spread $color;
+}

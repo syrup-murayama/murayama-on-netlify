@@ -1,0 +1,25 @@
+<!-- default.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+{% from "_includes/footer/modules/menu.nunjucks" import footer_menu_start %}
+{% from "_includes/footer/modules/menu.nunjucks" import footer_menu_end %}
+{% from "_includes/footer/modules/social-icons.nunjucks" import footer_social_icons %}
+
+{% block footer_content %}
+
+    {{ footer_logo( data = footer.logo, global_data = global ) }}
+
+    {{ footer_menu_start() }}
+            {% for item in footer.navigation.menu %}
+                {{ menuItem(item, active_pages) }}
+            {% endfor %}
+    {{ footer_menu_end() }}
+
+    {{ footer_social_icons( data = footer.social_links, global_data = global ) }}
+
+{% endblock %}

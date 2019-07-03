@@ -1,0 +1,818 @@
+/*
+ * ::::::::::: Lists Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.content {
+	%simple-line-icon {
+		@include font-simple-line-icons;
+		@include fontsize(8);
+	}
+
+	%ionicons-icon {
+		@include font-ionicons;
+		@include fontsize(20);
+		line-height: 1;
+	}
+
+	%default-list-icons-style {
+		vertical-align: middle;
+		opacity: .85;
+		padding-right: 6px;
+		@include transition(all 0.3s ease);
+	}
+
+	ul,
+	ol {
+		// default styles
+
+		@include font-roboto;
+		@include fontsize(14);
+		font-weight: 500;
+
+		li {
+			padding: 4px 0;
+			letter-spacing: 0.5px;
+			// line-height: 1.5;
+			color: $secondary-5;
+
+			ul {
+				margin-top: 1em;
+			}
+
+			a {
+				color: $secondary-5;
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			// custom icons
+
+			.icon {
+				@extend %default-list-icons-style;
+				padding-right: 8px;
+				height: auto;
+				width: auto;
+
+				// fontawesome-icons
+				i[class^='fa-'],
+				i[class*=' fa-'] {
+					@include fontsize(12);
+				}
+
+				// simple-line-icons
+				i[class^='icon-'],
+				i[class*=' icon-'] {
+					@include fontsize(10);
+				}
+
+				// ionic-icons
+				i[class^='ion-'],
+				i[class*=' ion-'] {
+					@include fontsize(14);
+				}
+
+			}
+
+		}
+
+		// custom styles
+
+		&.no-margin {
+			margin: 0;
+			list-style-position: inside;
+		}
+
+		&.no-style {
+			list-style: none;
+		}
+
+		&.list-arrow-right {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %simple-line-icon;
+					content: "\e606";
+				}
+
+			}
+
+		}
+
+		&.list-arrow-round-forward {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f119";
+					padding-right: 8px;
+				}
+
+			}
+
+		}
+
+		&.list-arrow-dropright {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f114";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-checkmark {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f2bc";
+					padding-right: 8px;
+					@include fontsize(15);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-checkmark-circle-outline {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f149";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-checkbox-outline {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f147";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-plus {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f273";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-minus {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f368";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-heart {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f307";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-star {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f384";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-radio-button-on {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f361";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		&.list-arrow-dropright-circle {
+			li {
+				@include transition(all 0.3s ease);
+
+				ul {
+					list-style: none;
+				}
+
+				&:before {
+					@extend %default-list-icons-style;
+					@extend %ionicons-icon;
+					content: "\f283";
+					padding-right: 8px;
+					@include fontsize(14);
+					vertical-align: inherit;
+				}
+
+			}
+
+		}
+
+		// custom styles
+
+		&.style-1 {
+			li {
+				border-bottom: 1px solid $tertiary-10;
+				padding: 8px 0 12px;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+
+			}
+
+		}
+
+		&.style-2 {
+			li {
+				padding: 8px 0 10px;
+
+				&:before {
+					border-left: 3px solid $secondary;
+					content: '';
+					padding-right: 10px;
+				}
+
+			}
+
+		}
+
+		&.style-3 {
+			li {
+				padding: 8px 0;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+
+				// mark
+				.list-mark {
+					@extend %is-uppercase;
+					@include fontsize(10);
+					height: 1.7em;
+					padding-left: .5em;
+					padding-right: .5em;
+					margin-top: 1px;
+					margin-left: 6px;
+				}
+
+			}
+
+		}
+
+		// custom colors
+
+		&.is-success {
+			li {
+				&:before {
+					color: $success;
+				}
+
+			}
+
+		}
+
+		&.is-warning {
+			li {
+				&:before {
+					color: $warning;
+				}
+
+			}
+
+		}
+
+		&.is-white {
+			li {
+				&:before {
+					color: $white;
+				}
+
+			}
+
+		}
+
+		&.is-black {
+			li {
+				&:before {
+					color: $black;
+				}
+
+			}
+
+		}
+
+		&.is-light {
+			li {
+				&:before {
+					color: $light;
+				}
+
+			}
+
+		}
+
+		&.is-dark {
+			li {
+				&:before {
+					color: $dark;
+				}
+
+			}
+
+		}
+
+		&.is-link {
+			li {
+				&:before {
+					color: $link;
+				}
+
+			}
+
+		}
+
+		&.is-info {
+			li {
+				&:before {
+					color: $info;
+				}
+
+			}
+
+		}
+
+		&.is-danger {
+			li {
+				&:before {
+					color: $danger;
+				}
+
+			}
+
+		}
+
+		&.is-black-bis {
+			li {
+				&:before {
+					color: $black-bis;
+				}
+
+			}
+
+		}
+
+		&.is-black-ter {
+			li {
+				&:before {
+					color: $black-ter;
+				}
+
+			}
+
+		}
+
+		&.is-grey-darker {
+			li {
+				&:before {
+					color: $grey-darker;
+				}
+
+			}
+
+		}
+
+		&.is-grey-dark {
+			li {
+				&:before {
+					color: $grey-dark;
+				}
+
+			}
+
+		}
+
+		&.is-grey-light {
+			li {
+				&:before {
+					color: $grey-light;
+				}
+
+			}
+
+		}
+
+		&.is-grey-lighter {
+			li {
+				&:before {
+					color: $grey-lighter;
+				}
+
+			}
+
+		}
+
+		&.is-white-ter {
+			li {
+				&:before {
+					color: $white-ter;
+				}
+
+			}
+
+		}
+
+		&.is-white-bis {
+			li {
+				&:before {
+					color: $white-bis;
+				}
+
+			}
+
+		}
+
+		&.is-primary {
+			li {
+				&:before {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		&.is-primary-2 {
+			li {
+				&:before {
+					color: $primary-2;
+				}
+
+			}
+
+		}
+
+		&.is-primary-3 {
+			li {
+				&:before {
+					color: $primary-3;
+				}
+
+			}
+
+		}
+
+		&.is-primary-4 {
+			li {
+				&:before {
+					color: $primary-4;
+				}
+
+			}
+
+		}
+
+		&.is-primary-5 {
+			li {
+				&:before {
+					color: $primary-5;
+				}
+
+			}
+
+		}
+
+		&.is-primary-6 {
+			li {
+				&:before {
+					color: $primary-6;
+				}
+
+			}
+
+		}
+
+		&.is-primary-7 {
+			li {
+				&:before {
+					color: $primary-7;
+				}
+
+			}
+
+		}
+
+		&.is-primary-light {
+			li {
+				&:before {
+					color: $primary-light;
+				}
+
+			}
+
+		}
+
+		&.is-secondary {
+			li {
+				&:before {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+		&.is-secondary-2 {
+			li {
+				&:before {
+					color: $secondary-2;
+				}
+
+			}
+
+		}
+
+		&.is-secondary-3 {
+			li {
+				&:before {
+					color: $secondary-3;
+				}
+
+			}
+
+		}
+
+		&.is-secondary-4 {
+			li {
+				&:before {
+					color: $secondary-4;
+				}
+
+			}
+
+		}
+
+		&.is-secondary-5 {
+			li {
+				&:before {
+					color: $secondary-5;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary {
+			li {
+				&:before {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-2 {
+			li {
+				&:before {
+					color: $tertiary-2;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-3 {
+			li {
+				&:before {
+					color: $tertiary-3;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-4 {
+			li {
+				&:before {
+					color: $tertiary-4;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-5 {
+			li {
+				&:before {
+					color: $tertiary-5;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-6 {
+			li {
+				&:before {
+					color: $tertiary-6;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-7 {
+			li {
+				&:before {
+					color: $tertiary-7;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-8 {
+			li {
+				&:before {
+					color: $tertiary-8;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-9 {
+			li {
+				&:before {
+					color: $tertiary-9;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary-10 {
+			li {
+				&:before {
+					color: $tertiary-10;
+				}
+
+			}
+
+		}
+
+	}
+
+}

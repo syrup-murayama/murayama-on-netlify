@@ -1,0 +1,137 @@
+/*
+ * ::::::::::: Works Latest Styles :::::::::::
+ */
+
+// ::::::::::: Imports ::::::::::: //
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/title';
+
+// ::::::::::: Styles ::::::::::: //
+
+.works-latest {
+	.works-latest-item {
+		overflow: hidden;
+
+		img {
+			@include relative;
+			@include transition(all 0.4s ease-in-out);
+			display: block;
+		}
+
+		.works-latest-item-icon {
+			@include center-element($left: 50%, $width:auto, $align:center);
+			color: $white;
+
+			.icon {
+				@include circle(70px);
+				border: 1px solid $white;
+				color: $white;
+				background-color: transparent;
+				opacity: .8;
+				@include transition(all 0.4s ease-in-out);
+
+				i {
+					@include fontsize(25);
+				}
+
+				&:hover {
+					opacity: 1;
+				}
+
+			}
+
+		}
+
+		.works-latest-item-meta {
+			display: none;
+			@include absolute(left 5% bottom 13%);
+			padding: 10px;
+
+			h3 {
+				@extend .title;
+				@include fontsize(28);
+				font-weight: 600;
+				text-transform: capitalize;
+				letter-spacing: .5px;
+				@include transition(all 0.4s ease);
+				margin-bottom: $works-list-h3-margin-bottom !important;
+				color: $white;
+				opacity: .9;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				a {
+					color: $white;
+					opacity: .9;
+					@include transition(all 0.4s ease);
+
+					&:hover {
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+			h5 {
+				@extend .title;
+				@include fontsize(14);
+				font-weight: 500;
+				@extend %is-uppercase;
+				letter-spacing: 1px;
+				@include transition(all 0.4s ease);
+				color: $white;
+				opacity: .7;
+				@include font-roboto;
+
+				&:hover {
+					opacity: .9;
+				}
+
+				a {
+					color: $white;
+					opacity: .7;
+					@include transition(all 0.4s ease);
+
+					&:hover {
+						opacity: .9;
+					}
+
+				}
+
+			}
+
+			p {
+				@include fontsize(15);
+				@extend %is-capitalized;
+				color: $white;
+				opacity: .7;
+				max-width: 60%;
+			}
+
+		}
+
+	}
+
+	.owl-item {
+		&.active {
+			.works-latest-item {
+				&:hover {
+					img {
+						transform: scale(1.05);
+					}
+
+				}
+			}
+
+			.works-latest-item-meta {
+				display: block;
+			}
+
+		}
+
+	}
+
+}

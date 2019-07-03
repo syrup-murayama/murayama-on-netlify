@@ -1,0 +1,80 @@
+/*
+ * ::::::::::: Instafeed Plugin Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/grid/columns';
+
+//:::::::::::Styles::::::::::://
+
+.instafeed {
+	.instafeed-image {
+		overflow: hidden;
+		@include relative;
+
+		img {
+			// @include relative;
+			@include transition(all 0.4s ease);
+			display: block;
+		}
+
+		.instafeed-overlay {
+			background: rgba(0, 0, 0, 0.5);
+			@include absolute(left 0 top 0);
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			@include transition(all 0.4s ease);
+			z-index: 1;
+
+			.instafeed-info {
+				@include center-element($left: 50%, $width:auto, $align:center);
+				color: $white;
+				@include font-roboto;
+				@include fontsize(17);
+
+				span {
+					display: inline-block;
+					padding: 0 10px;
+
+					i {
+						@include fontsize(19);
+						vertical-align: text-top;
+						margin-right: 1px;
+					}
+
+				}
+
+			}
+
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+
+			.instafeed-overlay {
+				opacity: 1;
+			}
+
+		}
+
+	}
+
+	// for columns
+	&.columns-is-1 { .column { @extend .is-1; } }
+	&.columns-is-2 { .column { @extend .is-3; } }
+	&.columns-is-3 { .column { @extend .is-3; } }
+	&.columns-is-4 { .column { @extend .is-4; } }
+	&.columns-is-5 { .column { @extend .is-5; } }
+	&.columns-is-6 { .column { @extend .is-6; } }
+	&.columns-is-7 { .column { @extend .is-7; } }
+	&.columns-is-8 { .column { @extend .is-8; } }
+	&.columns-is-9 { .column { @extend .is-9; } }
+	&.columns-is-10 { .column { @extend .is-10; } }
+	&.columns-is-11 { .column { @extend .is-11; } }
+	&.columns-is-12 { .column { @extend .is-12; } }
+
+}

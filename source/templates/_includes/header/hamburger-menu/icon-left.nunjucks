@@ -1,0 +1,33 @@
+<!-- hamburger-menu/icon-left.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/header/_layout.nunjucks" %}
+
+<!-- set header layout options -->
+{% set show_header_left = true %}
+{% set show_header_center = false %}
+{% set show_header_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+{% from "_includes/header/modules/logo.nunjucks" import menu_logo %}
+
+{% block header_navigation_left %}
+    {{ menu_start( style_class = 'left' ) }}
+        {% for item in header.navigation.menu_left %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+        {% for item in header.navigation.menu_right %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+    <div class="hamburger-menu">
+        <span class="hamburger-menu-icon"></span>
+    </div><!-- .hamburger-menu -->
+{% endblock %}
+
+{% block header_navigation_right %}
+    {{ menu_logo( data = header.logo_right, global_data = global ) }}
+{% endblock %}

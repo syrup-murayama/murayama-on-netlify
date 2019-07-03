@@ -1,0 +1,162 @@
+<!-- pages/contact-2.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_layouts/default.nunjucks" %}
+
+<!-- set menu active pages -->
+{% set active_pages = ["pages", "contact", "contact 2"] %}
+
+<!-- set sidebar options -->
+{% set sidebar = contact.sidebar %}
+
+<!-- set body classes for page -->
+{% block page_class %}page-contact page-header-hamburger-menu{% endblock %}
+
+<!-- disable this layout or content sections -->
+{% block header_top %}{% endblock %}
+{% block header_bottom_class %}{% endblock %}
+{% block content_header %}{% endblock %}
+{% block content_footer %}{% endblock %}
+{% block footer_top_class %}{% endblock %}
+{% block footer_bottom %}{% endblock %}
+{% block footer_class %}footer-fullwidth{% endblock %}
+
+<!-- header bottom inner | slider -->
+{% block header_bottom_inner_content %}
+<section class="section is-clearfix">
+<div class="container">
+  <div class="intro-text has-text-centered">
+    <h1>
+      Contact
+    </h1>
+    <br><br>
+  </div>
+</div>
+</section>
+{% endblock %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/elements/heading-title.nunjucks" import heading_title %}
+{% from "_includes/content/modules/boxes.nunjucks" import boxes %}
+{% from "_includes/content/elements/google-maps.nunjucks" import google_maps %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+<!-- google-maps section -->
+{{ section_start( default_class = 'hero has-background-dark', class = contact.google_maps.section_class, use_container = false ) }}
+
+		<iframe src="https://snazzymaps.com/embed/129396" width="100%" height="500px" style="border:none;"></iframe>
+
+{{ section_end() }}
+<!-- .{{contact.google_maps.section_class}} -->
+
+<!-- get-in-touch section -->
+{{ section_start() }}
+
+		<div class="columns is-centered">
+			  <div class="column is-two-thirds has-text-centered">
+			    
+			    <p class="heading-title-top has-text-centered">contact us</p>
+		        {{ heading_title( style_class = 'style-3', text = "How we can help" ) }}
+
+			    <p>
+			    	The main component of a healthy environment for self esteem is that it needs be nurturing, main component of a healthy env for self esteem. The main component of a healthy environment for self esteem is that it needs be nurturing, main component of a healthy env for self esteem.
+			    </p>
+
+			    <br><br><br>
+
+			  </div>
+			</div>
+
+			<div class="columns is-centered">
+			  <div class="column is-three-quarters has-text-centered">
+
+			    <div class="columns is-variable is-multiline is-4">
+			    	<div class="column widget is-4 widget-links">
+                      <h3 class="widget-title has-text-primary margin-top-none">Address</h3>
+                      <ul><li>295 Witting Streets Suite 666, <br> Melbourne, Australia</li></ul>
+                    </div>
+                    <div class="column widget is-4 widget-links">
+                      <h3 class="widget-title has-text-primary">Phone</h3>
+                      <ul><li>+ 123 5456 789 01 <br> + 123 5456 789 01</li></ul>
+                    </div>
+                    <div class="column widget is-4 widget-links">
+                      <h3 class="widget-title has-text-primary">Email</h3>
+                      <ul><li>welcome@website.com <br> hello@site.co</li></ul>
+                    </div>
+			    </div>
+
+			  </div>
+			</div>
+
+			<br><br>
+
+			<div class="has-text-centered">
+				<div class="global-social-links style-1">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-instagram"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-pinterest-p"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-google"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-dribbble"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+			</div>
+
+{{ section_end() }}
+<!-- .{{contact.contact_boxes.section_class}} -->
+
+<!-- contact-form section -->
+{{ section_start( class = 'hero has-background-primary-light' ) }}
+
+		{{ heading_title( text = 'Get In Touch' ) }}
+    <br><br>
+
+		{% include "_includes/content/elements/ajax-contact-form.nunjucks" %}
+    <br>
+
+{{ section_end() }}
+<!-- .{{contact.contact_form.section_class}} -->
+
+{% endblock %}

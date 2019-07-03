@@ -1,0 +1,188 @@
+/*
+ * ::::::::::: Divider Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.is-divider,
+.is-divider-vertical {
+	border-top-width: 0.12rem;
+	height: 0.12rem;
+
+	&:after {
+		@include font-roboto;
+		@extend %is-uppercase;
+		letter-spacing: 2px;
+	}
+
+	&.divider-dashed {
+		border-top-style: dashed;
+	}
+
+	&.divider-dotted {
+		border-top-style: dotted;
+	}
+
+	// custom colors
+	&.is-success {
+		border-top-color: $success;
+
+		&:after {
+			color: $success;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $success;
+			}
+
+		}
+
+	}
+
+	&.is-warning {
+		border-top-color: $warning;
+
+		&:after {
+			color: $warning;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $warning;
+			}
+
+		}
+
+	}
+
+	&.is-black {
+		border-top-color: $black;
+
+		&:after {
+			color: $black;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $black;
+			}
+
+		}
+
+	}
+
+	&.is-link {
+		border-top-color: $link;
+
+		&:after {
+			color: $link;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $link;
+			}
+
+		}
+
+	}
+
+	&.is-info {
+		border-top-color: $info;
+
+		&:after {
+			color: $info;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $info;
+			}
+
+		}
+
+	}
+
+	&.is-danger {
+		border-top-color: $danger;
+
+		&:after {
+			color: $danger;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $danger;
+			}
+
+		}
+
+	}
+
+	&.is-primary {
+		border-top-color: $primary;
+
+		&:after {
+			color: $primary;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $primary;
+			}
+
+		}
+
+	}
+
+	&.is-secondary {
+		border-top-color: $secondary;
+
+		&:after {
+			color: $secondary;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $secondary;
+			}
+
+		}
+
+	}
+
+	&.is-tertiary {
+		border-top-color: $tertiary;
+
+		&:after {
+			color: $tertiary;
+		}
+
+		&.is-divider-vertical {
+			&:before {
+				border-left-color: $tertiary;
+			}
+
+		}
+
+	}
+
+}
+
+.hero.has-background-primary-light {
+	.is-divider,
+	.is-divider-vertical {
+		&:after {
+			background-color: $primary-light;
+		}
+	}
+
+}
+
+.is-divider-vertical {
+	height: auto;
+}

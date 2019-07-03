@@ -1,0 +1,342 @@
+{
+  "name": "gulp-workflow",
+  "version": "2.0.0",
+  "description": "Gulp workflow for front-end development",
+  "main": "gulpfile.js",
+  "author": {
+    "name": "mohamdio",
+    "url": "https://mohamd.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamdio/gulp-workflow"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "1.0.9",
+    "animate.css": "3.7.0",
+    "aos": "2.3.4",
+    "beefup": "1.1.7",
+    "bulma": "0.7.1",
+    "bulma-badge": "2.0.0",
+    "bulma-calendar": "5.0.1",
+    "bulma-checkradio": "2.1.0",
+    "bulma-divider": "2.0.1",
+    "bulma-pageloader": "2.1.0",
+    "bulma-pricingtable": "0.2.0",
+    "bulma-quickview": "2.0.0",
+    "bulma-slider": "2.0.0",
+    "bulma-steps": "2.2.1",
+    "bulma-switch": "2.0.0",
+    "bulma-tagsinput": "2.0.0",
+    "bulma-timeline": "3.0.0",
+    "bulma-tooltip": "2.0.2",
+    "chart.js": "2.7.3",
+    "clipboard": "2.0.1",
+    "fitvids": "2.0.0",
+    "flag-icon-css": "3.0.0",
+    "flexslider": "2.7.1",
+    "imagesloaded": "4.1.4",
+    "infinite-scroll": "3.0.5",
+    "instafeed.js": "1.4.1",
+    "ionicons": "3.0.0",
+    "isotope-layout": "3.0.6",
+    "jquery": "3.3.1",
+    "jquery-bar-rating": "1.2.2",
+    "jquery-parallax.js": "1.5.0",
+    "jquery-visible": "1.2.0",
+    "jquery.countdown": "1.2.8",
+    "jquery.counterup": "2.1.0",
+    "magnific-popup": "1.1.0",
+    "noty": "3.2.0-beta",
+    "overhang": "1.0.5",
+    "owl.carousel": "2.3.4",
+    "prismjs": "1.15.0",
+    "progressbar.js": "1.0.1",
+    "rellax": "1.6.2",
+    "simple-line-icons": "2.4.1",
+    "sticky-sidebar": "3.3.1",
+    "typed.js": "2.0.9",
+    "vidbacking": "2.0.1",
+    "waypoints": "4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.24.6",
+    "del": "3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "5.0.0",
+    "gulp-cached": "1.1.1",
+    "gulp-changed": "3.2.0",
+    "gulp-clean-css": "3.10.0",
+    "gulp-concat": "2.6.1",
+    "gulp-cssbeautify": "1.0.0",
+    "gulp-data": "1.3.1",
+    "gulp-favicons": "2.2.7",
+    "gulp-filter": "5.1.0",
+    "gulp-flatten": "0.4.0",
+    "gulp-help": "1.6.1",
+    "gulp-imagemin": "4.1.0",
+    "gulp-inject": "4.3.2",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-load-subtasks": "1.1.2",
+    "gulp-newer": "1.4.0",
+    "gulp-nunjucks-render": "2.2.2",
+    "gulp-plumber": "1.2.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-prettify": "0.5.0",
+    "gulp-rename": "1.4.0",
+    "gulp-replace": "1.0.0",
+    "gulp-sass": "4.0.1",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-strip-css-comments": "2.0.0",
+    "gulp-uglify": "3.0.1",
+    "gulp-util": "3.0.8",
+    "gulp-version-number": "0.1.7",
+    "imagemin-pngquant": "6.0.0",
+    "lazypipe": "1.0.1",
+    "lodash.assign": "4.2.0",
+    "main-yarn-files": "3.0.4",
+    "path": "0.12.7",
+    "postcss-uncss": "0.16.1",
+    "run-sequence": "2.2.1",
+    "sassdoc": "2.5.0",
+    "stream-series": "0.1.1",
+    "uncss": "0.16.2"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "bulma": {
+      "main": [
+        "css/bulma.css"
+      ]
+    },
+    "bulma-quickview": {
+      "main": [
+        "dist/js/bulma-quickview.min.js"
+      ]
+    },
+    "bulma-slider": {
+      "main": [
+        "dist/js/bulma-slider.min.js"
+      ]
+    },
+    "simple-line-icons": {
+      "main": [
+        "css/simple-line-icons.css",
+        "fonts/**/*"
+      ]
+    },
+    "ionicons": {
+      "main": [
+        "dist/css/ionicons.css",
+        "dist/fonts/**/*"
+      ]
+    },
+    "flag-icon-css": {
+      "main": [
+        "css/flag-icon.css"
+      ]
+    },
+    "@fortawesome/fontawesome-free-webfonts": {
+      "main": [
+        "css/fa-regular.css",
+        "css/fa-solid.css",
+        "css/fa-brands.css",
+        "css/fontawesome.css",
+        "webfonts/**/*"
+      ]
+    },
+    "owl.carousel": {
+      "main": [
+        "dist/assets/owl.carousel.css",
+        "dist/assets/owl.theme.default.css",
+        "dist/owl.carousel.js"
+      ]
+    },
+    "instafeed.js": {
+      "main": [
+        "instafeed.js"
+      ]
+    },
+    "isotope-layout": {
+      "main": [
+        "dist/isotope.pkgd.js"
+      ],
+      "dependencies": null
+    },
+    "imagesloaded": {
+      "main": [
+        "imagesloaded.pkgd.js"
+      ],
+      "dependencies": null
+    },
+    "jquery.counterup": {
+      "main": [
+        "jquery.counterup.js"
+      ],
+      "dependencies": null
+    },
+    "flexslider": {
+      "main": [
+        "jquery.flexslider-min.js",
+        "flexslider.css",
+        "flexslider-rtl.css"
+      ],
+      "dependencies": null
+    },
+    "fitvids": {
+      "main": [
+        "dist/fitvids.min.js"
+      ],
+      "dependencies": null
+    },
+    "jquery.countdown": {
+      "main": [
+        "jquery.countdown.js"
+      ],
+      "dependencies": null
+    },
+    "chart.js": {
+      "main": [
+        "dist/Chart.min.js"
+      ],
+      "dependencies": null
+    },
+    "animate.css": {
+      "main": [
+        "animate.css"
+      ]
+    },
+    "typed.js": {
+      "main": [
+        "lib/typed.min.js"
+      ],
+      "dependencies": null
+    },
+    "noty": {
+      "main": [
+        "lib/noty.min.js",
+        "lib/noty.css",
+        "lib/themes/mint.css"
+      ],
+      "dependencies": null
+    },
+    "aos": {
+      "main": [
+        "dist/aos.js",
+        "dist/aos.css"
+      ],
+      "dependencies": null
+    },
+    "infinite-scroll": {
+      "main": [
+        "dist/infinite-scroll.pkgd.min.js"
+      ],
+      "dependencies": null
+    },
+    "overhang": {
+      "main": [
+        "dist/overhang.min.js"
+      ],
+      "dependencies": null
+    },
+    "jquery-visible": {
+      "main": [
+        "jquery.visible.min.js"
+      ],
+      "dependencies": null
+    },
+    "sticky-sidebar": {
+      "main": [
+        "dist/jquery.sticky-sidebar.min.js"
+      ],
+      "dependencies": null
+    },
+    "jquery-bar-rating": {
+      "main": [
+        "dist/jquery.barrating.min.js",
+        "dist/themes/bars-1to10.css",
+        "dist/themes/bars-horizontal.css",
+        "dist/themes/bars-movie.css",
+        "dist/themes/bars-pill.css",
+        "dist/themes/bars-reversed.css",
+        "dist/themes/bars-square.css",
+        "dist/themes/css-stars.css",
+        "dist/themes/fontawesome-stars-o.css",
+        "dist/themes/fontawesome-stars.css"
+      ],
+      "dependencies": null
+    },
+    "jquery-parallax.js": {
+      "main": [
+        "parallax.js"
+      ],
+      "dependencies": null
+    },
+    "rellax": {
+      "main": [
+        "rellax.js"
+      ],
+      "dependencies": null
+    },
+    "vidbacking": {
+      "main": [
+        "dist/jquery.vidbacking.css",
+        "dist/jquery.vidbacking.js"
+      ]
+    },
+    "magnific-popup": {
+      "main": [
+        "dist/magnific-popup.css",
+        "dist/jquery.magnific-popup.min.js"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.js"
+      ]
+    },
+    "beefup": {
+      "main": [
+        "dist/css/jquery.beefup.css",
+        "dist/js/jquery.beefup.min.js"
+      ]
+    },
+    "progressbar.js": {
+      "main": [
+        "dist/progressbar.min.js"
+      ]
+    },
+    "prismjs": {
+      "main": [
+        "themes/prism.css",
+        "themes/prism-tomorrow.css",
+        "prism.js",
+        "plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js",
+        "plugins/line-numbers/prism-line-numbers.min.js",
+        "plugins/line-numbers/prism-line-numbers.css",
+        "plugins/autolinker/prism-autolinker.min.js",
+        "plugins/autolinker/prism-autolinker.css",
+        "plugins/keep-markup/prism-keep-markup.min.js",
+        "plugins/wpd/prism-wpd.min.js",
+        "plugins/wpd/prism-wpd.css",
+        "plugins/previewers/prism-previewers.min.js",
+        "plugins/previewers/prism-previewers.css",
+        "plugins/normalize-whitespace/prism-normalize-whitespace.min.js",
+        "plugins/toolbar/prism-toolbar.min.js",
+        "plugins/toolbar/prism-toolbar.css"
+      ]
+    },
+    "clipboard": {
+      "main": [
+        "dist/clipboard.min.js"
+      ],
+      "dependencies": null
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{% macro widget_content(data, content) %}
+
+<ul>
+    {% if data.widget == 'categories' %}
+	    {% for category in content.categories %}
+		<li><a href="#">{{category.name}}</a><span>({{category.posts}})</span></li>
+		{% endfor %}
+	{% elif data.widget == 'archive' %}
+		{% for link in content.archive %}
+		<li><a href="#">{{link.name}}</a></li>
+		{% endfor %}
+	{% elif data.widget == 'details' %}
+		{% for link in content.details %}
+		<li>
+			{% if link.icon %}
+			<span class="icon"><i class="{{link.icon}}"></i></span>
+			{% endif %}
+			{% for item in link.list %}
+			{% if item.link %}<a href="{{item.link}}">{% endif %}{{item.text}}{% if item.link %}</a>{% endif %}{% if loop.length > 1 and loop.last == false %}, {% endif %}
+			{% endfor %}
+		</li>
+		{% endfor %}
+	{% endif %}
+</ul>
+
+{% endmacro %}

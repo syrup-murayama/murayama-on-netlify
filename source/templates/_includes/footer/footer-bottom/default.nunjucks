@@ -1,0 +1,18 @@
+<!-- default.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/footer-bottom/_layout.nunjucks" %}
+
+<!-- set footer bottom layout options -->
+{% set footer_bottom_use_container = true %}
+{% set show_footer_bottom_left = false %}
+{% set show_footer_bottom_center = true %}
+{% set show_footer_bottom_right = false %}
+
+<!-- import content layouts and modules -->
+
+{% block footer_bottom_just_center %}
+    <span class="footer-copyright">
+		{{footer.copyright | safe}}
+	</span>
+{% endblock %}

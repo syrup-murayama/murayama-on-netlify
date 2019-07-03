@@ -1,0 +1,71 @@
+{% macro slider(section_class='', use_container=false, slider_id, slider_layout='auto', data, global_data) %}
+<section class="hero slider is-clearfix {{section_class}}">
+
+    <div class="rev_slider_wrapper {% if slider_layout == 'fullwidth' %}fullwidthbanner-container{% elif slider_layout == 'fullscreen' %}fullscreen-container{% else %}{% endif %} {% if use_container %}container{% endif %}">
+
+        <div id="{{slider_id}}" class="rev_slider tp-overflow-hidden {% if slider_layout == 'fullwidth' %}fullwidthabanner{% elif slider_layout == 'fullscreen' %}fullscreenbanner{% else %}{% endif %}" data-version="5.4.7" style="display:none">
+
+            <ul>
+
+                {% for slide in data %}
+
+                <li data-transition="{{slide.data_transition}}">
+
+                    <img alt="" class="rev-slidebg" 
+                    src="{{global_data.images_root}}{{slide.image_src}}"
+                    data-bgposition="center center" 
+                    data-bgfit="cover" 
+                    data-bgrepeat="no-repeat" 
+                    data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15"
+                    >
+
+                    <div class="tp-caption tp-resizeme large_text {% if slide.caption_2 %} caption-2{% endif %}" 
+                    data-frames='[{"delay":800,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    {% if slide.caption_2 %}
+                    data-x="left" 
+                    data-hoffset="['-105','-105','0','0']" 
+                    {% else %}
+                    data-x="center" 
+                    data-hoffset="['0','0','0','0']" 
+                    {% endif %}
+                    data-y="center" 
+                    data-voffset="['-32','-32','0','0']"
+                    data-width="['auto']"
+                    {% if slide.caption_2 %}
+                    data-textAlign="['left','left','left','left']"
+                    {% else %}
+                    data-textAlign="['center','center','center','center']"
+                    {% endif %}
+                    data-height="['auto']">
+                    {{slide.text | safe}}
+                    </div>
+
+                    <a class="tp-caption tp-resizeme mfp-lightbox mfp-iframe {% if slide.caption_2 %} button-caption-2{% else %} button is-primary is-rounded {% endif %}" href="https://www.youtube.com/watch?v=s_e7jp-x-Wo" 
+                    data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    {% if slide.caption_2 %}
+                    data-x="left" 
+                    data-hoffset="['-105','-105','0','0']" 
+                    {% else %}
+                    data-x="center" 
+                    data-hoffset="['0','0','0','0']" 
+                    {% endif %}
+                    data-y="center" 
+                    data-voffset="['138','138','0','0']" 
+                    data-type="button">
+                    <span class="icon{% if slide.caption_2 %} ripple-effect{% endif %}"><i class="ion-ios-play"></i></span>
+                    <span>{{slide.button | safe}}</span>
+                    </a>
+
+                </li><!-- slide -->
+
+                {% endfor %}
+
+
+            </ul>
+
+        </div><!-- .rev_slider -->
+
+    </div><!-- .rev_slider_wrapper -->
+
+</section><!-- .slider -->
+{% endmacro %}

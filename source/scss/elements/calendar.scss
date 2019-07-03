@@ -1,0 +1,248 @@
+/*
+ * ::::::::::: Calendar Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.calendar {
+	@include font-roboto;
+
+	button {
+		@include font-roboto;
+
+		&.button {
+			&.is-text {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	.calendar-footer {
+		margin-top: .8rem;
+		margin-bottom: .6rem;
+	}
+
+	.calendar-nav {
+		.calendar-nav-month,
+		.calendar-nav-year {
+			color: $white;
+		}
+
+	}
+
+	.calendar-body {
+		.calendar-dates {
+			.calendar-days {
+				.calendar-date {
+					.date-item {
+						@include fontsize(12);
+
+						&.is-active {
+							color: $white;
+
+							&:hover {
+								color: $secondary;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// full-width
+.calendar-full-width {
+	.calendar {
+		width: 100%;
+		max-width: 100%;
+	}
+
+}
+
+// colors
+.calendar-is-info {
+	.calendar {
+		.calendar-nav {
+			background-color: $info;
+		}
+
+		.calendar-body {
+			.calendar-dates {
+				.calendar-days {
+					.calendar-date {
+						.date-item {
+							&:hover {
+								border-color: $info;
+							}
+
+							&.is-today {
+								border-color: $info;
+								color: $info;
+							}
+
+							&.is-active {
+								background: $info;
+								border-color: $info;
+
+								&:hover {
+									background: $white;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.calendar-is-success {
+	.calendar {
+		.calendar-nav {
+			background-color: $success;
+		}
+
+		.calendar-body {
+			.calendar-dates {
+				.calendar-days {
+					.calendar-date {
+						.date-item {
+							&:hover {
+								border-color: $success;
+							}
+
+							&.is-today {
+								border-color: $success;
+								color: $success;
+							}
+
+							&.is-active {
+								background: $success;
+								border-color: $success;
+
+								&:hover {
+									background: $white;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.calendar-is-warning {
+	.calendar {
+		.calendar-nav {
+			background-color: $warning;
+		}
+
+		.calendar-body {
+			.calendar-dates {
+				.calendar-days {
+					.calendar-date {
+						.date-item {
+							&:hover {
+								border-color: $warning;
+							}
+
+							&.is-today {
+								border-color: $warning;
+								color: $warning;
+							}
+
+							&.is-active {
+								background: $warning;
+								border-color: $warning;
+
+								&:hover {
+									background: $white;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.calendar-is-danger {
+	.calendar {
+		.calendar-nav {
+			background-color: $danger;
+		}
+
+		.calendar-body {
+			.calendar-dates {
+				.calendar-days {
+					.calendar-date {
+						.date-item {
+							&:hover {
+								border-color: $danger;
+							}
+
+							&.is-today {
+								border-color: $danger;
+								color: $danger;
+							}
+
+							&.is-active {
+								background: $danger;
+								border-color: $danger;
+
+								&:hover {
+									background: $white;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

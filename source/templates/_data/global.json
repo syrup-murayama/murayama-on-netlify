@@ -1,0 +1,816 @@
+{
+	"global": {
+		"site_title": "Creative",
+		"template_title": "Joo - Niche Multi-Purpose HTML Template",
+		"more_text": {
+			"more": "More",
+			"about": "More About",
+			"read": "Read More"
+		},
+		"images_root": "/assets/images/",
+		"pagination": {
+			"separate_next_prev": true,
+			"hide_disabled_next_prev": true,
+			"list": [
+				{ "type": "previous", "text": "Prev", "link": "#", "disabled": false },
+				{ "text": "1", "link": "#", "current": false },
+				{ "text": "2", "link": "#", "current": true, "disabled": false },
+				{ "text": "3", "link": "#", "current": false, "disabled": false },
+				{ "type": "dots", "text": "...", "link": "#" },
+				{ "text": "11", "link": "#", "current": false, "disabled": false },
+				{ "text": "12", "link": "#", "current": false, "disabled": false },
+				{ "type": "next", "text": "Next", "link": "#" }
+			]
+		},
+		"comment_reply": "reply"
+	},
+	"header": {
+		"logo": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": "",
+				"right": ""
+			}
+		},
+		"logo_left": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"right": ""
+			}
+		},
+		"logo_right": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": ""
+			}
+		},
+		"logo_center_menu": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": ""
+			}
+		},
+		"navigation": {
+			"menu_left": [
+				{ "title": "home", "url": "/", "icon": "icon-home", "class": "mega-menu niche-templates",
+					"items": [
+						{ "title": "Creative 01", "image": "/demos/creative-1.png", "url": "https://themes.jozoor.com/html/joo/creative/01/" },
+						{ "title": "Corporate 01", "image": "/demos/corporate-1.png", "url": "https://themes.jozoor.com/html/joo/corporate/01/" },
+						{ "title": "Burger Restaurant", "image": "/demos/entertainment-2.png", "url": "https://themes.jozoor.com/html/joo/entertainment/02/" },
+						{ "title": "Wedding", "image": "/demos/wedding-1.png", "url": "https://themes.jozoor.com/html/joo/wedding/01/" },
+						{ "title": "Corporate 02", "image": "/demos/corporate-2.png", "url": "https://themes.jozoor.com/html/joo/corporate/02/" },
+						{ "title": "Barber Shop", "image": "/demos/entertainment-3.png", "url": "https://themes.jozoor.com/html/joo/entertainment/03/" },
+						{ "title": "Logistics Cargo", "image": "/demos/corporate-3.png", "url": "https://themes.jozoor.com/html/joo/corporate/03/" },
+						{ "title": "Restaurant 01", "image": "/demos/entertainment-1.png", "url": "https://themes.jozoor.com/html/joo/entertainment/01/" },
+						{ "title": "Wedding Planner", "image": "/demos/wedding-2.png", "url": "https://themes.jozoor.com/html/joo/wedding/02/" },
+						{ "title": "Logistics Cargo 02", "image": "/demos/corporate-4.png", "url": "https://themes.jozoor.com/html/joo/corporate/04/" },
+						{ "title": "Creative 02", "image": "/demos/creative-2.png", "url": "https://themes.jozoor.com/html/joo/creative/02/", "active": true },
+						{ "title": "Bridal Dresses", "image": "/demos/wedding-3.png", "url": "https://themes.jozoor.com/html/joo/wedding/03/" },
+						{ "title": "Creative 03", "image": "/demos/creative-3.png", "url": "https://themes.jozoor.com/html/joo/creative/03/" },
+						{ "title": "Coming Soon ", "image": "/demos/specialty-1.png", "url": "https://themes.jozoor.com/html/joo/specialty/01/" }
+					]
+				},
+				{ "title": "about", "url": "/pages/about.html" }
+			],
+			"menu_right": [
+				{ "title": "blog", "url": "/blog/" },
+				{ "title": "contact", "url": "/pages/contact.html" }
+			]
+		}
+	},
+	"one_page": {
+		"navigation": {
+			"menu": [
+				{ "title": "home", "url": "#site-wrap" },
+				{ "title": "features", "url": "#features" },
+				{ "title": "works", "url": "#works" },
+				{ "title": "clients", "url": "#clients" },
+				{ "title": "team", "url": "#team" },
+				{ "title": "blog", "url": "#blog" }
+			]
+		}
+	},
+	"top_bar": {
+		"navigation": {
+			"menu": [
+				{ "title": "about", "url": "/pages/about.html" },
+				{ "title": "services", "url": "/pages/services.html" },
+				{ "title": "pricing", "url": "/pages/pricing.html" },
+				{ "title": "contact", "url": "/pages/contact.html" }
+			]
+		}
+	},
+	"footer": {
+		"copyright": "<a href='/'>Joo</a> © <span class='current-year'></span>. All Rights Reserved.",
+		"instagram_heading_title": "instagram",
+		"logo": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": "JOO~",
+				"right": ""
+			}
+		},
+		"logo_left": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"right": ""
+			}
+		},
+		"logo_right": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": ""
+			}
+		},
+		"logo_center_menu": {
+			"image_src": "logo/logo2.png",
+			"text": {
+				"left": ""
+			}
+		},
+		"social_links": [
+			{ "icon": "fab fa-facebook-f", "link": "#" },
+			{ "icon": "fab fa-twitter", "link": "#" },
+			{ "icon": "fab fa-instagram", "link": "#" },
+			{ "icon": "fab fa-pinterest-p", "link": "#" },
+			{ "icon": "fab fa-google", "link": "#" }
+		],
+		"navigation": {
+			"menu": [
+				{ "title": "home", "url": "/" },
+				{ "title": "about", "url": "/pages/about.html" },
+				{ "title": "services", "url": "/pages/services.html" },
+				{ "title": "portfolio", "url": "/portfolio/" },
+				{ "title": "blog", "url": "/blog/" },
+				{ "title": "contact", "url": "/pages/contact.html" }
+			]
+		}
+	},
+	"sidebar_widgets": {
+		"widgets": {
+			"list": [
+				{ "type": "form", "title": "", "widget": "search", "class": "widget-form" },
+				{ "type": "links", "title": "categories", "widget": "categories", "class": "widget-links" },
+				{ "type": "list", "title": "recent news", "widget": "posts", "class": "widget-list" },
+				{ "type": "social", "title": "Follow Us", "widget": "follow", "class": "widget-social" },
+				{ "type": "tags", "title": "Tags Cloud", "widget": "tags", "class": "widget-tags" },
+				{ "type": "gallery", "title": "Our Work", "widget": "works", "class": "widget-gallery" },
+				{ "type": "html", "title": "services", "widget": "services", "class": "widget-html" },
+				{ "type": "form", "title": "subscribe", "widget": "subscribe", "class": "widget-form" },
+				{ "type": "instafeed", "title": "Instagram", "widget": "instagram", "class": "widget-instafeed" }
+			]
+		},
+		"widgets_content": {
+			"categories": [
+				{ "name": "Prototyping", "posts": "4"},
+				{ "name": "Branding", "posts": "2"},
+				{ "name": "Webdesign", "posts": "3"},
+				{ "name": "Development", "posts": "5"}
+			],
+			"archive": [
+				{ "name": "April  2018"},
+				{ "name": "March 2018"},
+				{ "name": "February 2018"}
+			],
+			"tags": [
+				{ "name": "Branding"},
+				{ "name": "Coding"},
+				{ "name": "Design"},
+				{ "name": "Prototype"},
+				{ "name": "WordPress"}
+			],
+			"social_links": [
+				{ "icon": "fab fa-facebook-f", "link": "#" },
+				{ "icon": "fab fa-twitter", "link": "#" },
+				{ "icon": "fab fa-instagram", "link": "#" },
+				{ "icon": "fab fa-pinterest-p", "link": "#" },
+				{ "icon": "fab fa-dribbble", "link": "#" },
+				{ "icon": "fab fa-google", "link": "#" }
+			],
+			"works": [
+				{ "image_src": "1.png" },
+				{ "image_src": "2.png" },
+				{ "image_src": "3.png" },
+				{ "image_src": "4.png" },
+				{ "image_src": "5.png" },
+				{ "image_src": "6.png" }
+			],
+			"posts": [
+				{
+					"image_src": "1-1.png",
+					"title": "Control Your Own Level of Motivation",
+					"desc": "April 10, 2018"
+				},
+				{
+					"image_src": "1-2.png",
+					"title": "Control Your Own Level of Motivation",
+					"desc": "April 14, 2018"
+				}
+			],
+			"custom_content": [
+				{ "content": "<p>The main component of a healthy environment for self esteem is that it needs be nurturing.</p><a href=\"/pages/services.html\"><img src=\"/assets/images/services/1.png\"></a>" }
+			]
+		}
+	},
+	"comment_form": {
+			"form_fields": [
+				{
+					"field_class": "",
+					"control_class": "is-expanded",
+					"horizontal_fields": [],
+					"class": "textarea",
+					"type": "",
+					"name": "textarea",
+					"placeholder": "Your Comment",
+					"label": "",
+					"label_class": "",
+					"help_text": "",
+					"help_class": "",
+					"disabled": false,
+					"readonly": false,
+					"icon_left": {
+						"icon": "",
+						"class": ""
+					},
+					"icon_right": {
+						"icon": "",
+						"class": ""
+					},
+					"textarea_rows": "",
+					"select_options": [],
+					"radio_options": []
+				},
+				{
+					"field_class": "is-horizontal",
+					"control_class": "",
+					"label": "",
+					"label_class": "is-normal",
+					"horizontal_fields": [
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "text",
+							"name": "name",
+							"placeholder": "Your Name *",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						},
+						{
+							"field_class": "",
+							"control_class": "is-expanded",
+							"class": "input",
+							"type": "email",
+							"name": "email",
+							"placeholder": "Your Email *",
+							"label": "",
+							"label_class": "",
+							"help_text": "",
+							"help_class": "",
+							"disabled": false,
+							"readonly": false,
+							"icon_left": {
+								"icon": "",
+								"class": ""
+							},
+							"icon_right": {
+								"icon": "",
+								"class": ""
+							},
+							"textarea_rows": "",
+							"select_options": [],
+							"radio_options": []
+						}
+					]
+				},
+				{
+					"field_class": "",
+					"control_class": "",
+					"class": "button",
+					"type": "button",
+					"button_text": "post comment"
+				}
+			]
+		},
+		"comments_list": [
+			{
+				"author": { "name": "OLIVIA ALLISON", "avatar": "1.png" },
+				"date": "APRIL 5, 2018",
+				"comment_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non.",
+				"nested_comments": [
+					{
+						"author": { "name": "OLIVIA ALLISON", "avatar": "2.png" },
+						"date": "APRIL 5, 2018",
+						"comment_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non."
+					},
+					{
+						"author": { "name": "OLIVIA ALLISON", "avatar": "1.png" },
+						"date": "APRIL 5, 2018",
+						"comment_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non."
+					}
+				]
+			},
+			{
+				"author": { "name": "OLIVIA ALLISON", "avatar": "1.png" },
+				"date": "APRIL 5, 2018",
+				"comment_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit bland non.",
+				"nested_comments": []
+			}
+		],
+		"slider_revolution": {
+			"slides": [
+				{
+					"data_transition": "crossfade",
+					"image_src": "slider/1.png",
+					"text": "Creative<br>Exceptional Brand",
+					"button": "Watch Video"
+				},
+				{
+					"data_transition": "crossfade",
+					"image_src": "slider/2.png",
+					"text": "Creative<br>Exceptional Brand",
+					"button": "Watch Video",
+					"caption_2": true
+				},
+				{
+					"data_transition": "crossfade",
+					"image_src": "slider/4.png",
+					"text": "Creative<br>Exceptional Brand",
+					"button": "Watch Video"
+				}
+			]
+		},
+		"portfolio_single": {
+
+			"page_title": {
+				"title": "Mohamed & samar",
+				"description": "Break Through Self Doubt And Fear"
+			},
+			"work_content": {
+				"section_class": "portfolio-single",
+				"heading_title": "",
+				"show_widgets": true,
+				"full_width": false,
+				"widgets_top": false,
+				"widgets": {
+					"list": [
+						{ "type": "html", "title": "description", "widget": "description", "class": "widget-html", "column_class": "is-12" },
+						{ "type": "links", "title": "details", "widget": "details", "class": "widget-links", "column_class": "is-12" },
+						{ "type": "html", "title": "", "widget": "button", "class": "widget-html", "column_class": "is-12" },
+						{ "type": "social", "title": "Share this", "widget": "share", "class": "widget-social", "column_class": "is-12" }
+					]
+				},
+				"widgets_content": {
+					"description": "<p>The main component of a healthy environment for self esteem is that it needs be nurturing, main component of a healthy env for self esteem.</p>",
+					"details": [
+						{
+							"icon": "icon-folder",
+							"list": [
+								{ "text": "Branding", "link": "#" },
+								{ "text": "Webdesign", "link": "#" }
+							]
+						},
+						{
+							"icon": "icon-tag",
+							"list": [
+								{ "text": "Prototype", "link": "#" },
+								{ "text": "Coding", "link": "#" }
+							]
+						},
+						{
+							"icon": "icon-clock",
+							"list": [
+								{ "text": "April 5, 2018", "link": "" }
+							]
+						}
+					],
+					"button": "<a href=\"#\" class=\"button\">Live Stories</a>",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-pinterest-p", "link": "#" },
+						{ "icon": "fab fa-google", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				}
+			},
+			"works_navigation": {
+				"section_class": "works-navigation",
+				"heading_title": ""
+			},
+			"related_works": {
+				"section_class": "related-works",
+				"heading_title": "related stories",
+				"categories_filter": [],
+				"link": "/portfolio/single.html",
+				"images_folder": "portfolio/",
+				"show_image": true,
+				"show_title": true,
+				"show_categories": true,
+				"show_text": false,
+				"list": [
+					{
+						"image_src": "1.png",
+						"title": "Caminando",
+						"categories": ["Creative"],
+						"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+					},
+					{
+						"image_src": "2.png",
+						"title": "Calligraphy",
+						"categories": ["Branding"],
+						"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+					},
+					{
+						"image_src": "3.png",
+						"title": "Abstract",
+						"categories": ["Vector"],
+						"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+					}
+				]
+			},
+			"pagination": {
+				"separate_next_prev": true,
+				"hide_disabled_next_prev": true,
+				"list": [
+					{ "type": "previous", "text": "", "link": "/portfolio/single.html", "disabled": false },
+					{ "text": "<i class=\"icon-grid\"></i>", "link": "/portfolio/", "current": false },
+					{ "type": "next", "text": "", "link": "/portfolio/single.html" }
+				]
+			}
+
+		},
+		"demos": {
+			"images_folder": "/assets/images/portfolio/",
+			"list": [
+				{ "title": "Creative 01", "image": "/demos/creative-1.png", "url": "https://themes.jozoor.com/html/joo/creative/01/" },
+						{ "title": "Corporate 01", "image": "/demos/corporate-1.png", "url": "https://themes.jozoor.com/html/joo/corporate/01/" },
+						{ "title": "Burger Restaurant", "image": "/demos/entertainment-2.png", "url": "https://themes.jozoor.com/html/joo/entertainment/02/" },
+						{ "title": "Wedding", "image": "/demos/wedding-1.png", "url": "https://themes.jozoor.com/html/joo/wedding/01/" },
+						{ "title": "Corporate 02", "image": "/demos/corporate-2.png", "url": "https://themes.jozoor.com/html/joo/corporate/02/" },
+						{ "title": "Barber Shop", "image": "/demos/entertainment-3.png", "url": "https://themes.jozoor.com/html/joo/entertainment/03/" },
+						{ "title": "Logistics Cargo", "image": "/demos/corporate-3.png", "url": "https://themes.jozoor.com/html/joo/corporate/03/" },
+						{ "title": "Restaurant 01", "image": "/demos/entertainment-1.png", "url": "https://themes.jozoor.com/html/joo/entertainment/01/" },
+						{ "title": "Wedding Planner", "image": "/demos/wedding-2.png", "url": "https://themes.jozoor.com/html/joo/wedding/02/" },
+						{ "title": "Logistics Cargo 02", "image": "/demos/corporate-4.png", "url": "https://themes.jozoor.com/html/joo/corporate/04/" },
+						{ "title": "Creative 02", "image": "/demos/creative-2.png", "url": "https://themes.jozoor.com/html/joo/creative/02/", "active": true },
+						{ "title": "Bridal Dresses", "image": "/demos/wedding-3.png", "url": "https://themes.jozoor.com/html/joo/wedding/03/" },
+						{ "title": "Coming Soon ", "image": "/demos/specialty-1.png", "url": "https://themes.jozoor.com/html/joo/specialty/01/" },
+						{ "title": "Creative 03", "image": "/demos/creative-3.png", "url": "https://themes.jozoor.com/html/joo/creative/03/" }
+			]
+		},
+		"contact": {
+
+			"page_title": {
+				"title": "Contact Us",
+				"description": "Break Through Self Doubt And Fear"
+			},
+			"contact_boxes": {
+				"section_class": "get-in-touch contact-page",
+				"heading_title": "Motivation how to build <br> trust at work",
+				"link": "/pages/contact.html",
+				"show_icon": true,
+				"show_title": true,
+				"show_text": true,
+				"more_text": false,
+				"boxes": [
+					{
+						"icon": "ion-ios-pin-outline",
+						"title": "Address",
+						"text": "295 Witting Streets Suite 666, <br> Melbourne, Australia"
+					},
+					{
+						"icon": "ion-ios-call-outline",
+						"title": "Phone",
+						"text": "+ 123 5456 789 01 <br> + 123 5456 789 01"
+					},
+					{
+						"icon": "ion-ios-mail-outline",
+						"title": "Email",
+						"text": "welcome@website.com <br> hello@site.co"
+					}
+				]
+			},
+			"contact_form": {
+				"section_class": "contact-form",
+				"heading_title": "Get in touch",
+				"form_fields": [
+					{
+						"field_class": "is-horizontal",
+						"control_class": "",
+						"label": "",
+						"label_class": "is-normal",
+						"horizontal_fields": [
+							{
+								"field_class": "",
+								"control_class": "is-expanded",
+								"class": "input",
+								"type": "text",
+								"name": "name",
+								"placeholder": "Your Name",
+								"label": "",
+								"label_class": "",
+								"help_text": "",
+								"help_class": "",
+								"disabled": false,
+								"readonly": false,
+								"icon_left": {
+									"icon": "",
+									"class": ""
+								},
+								"icon_right": {
+									"icon": "",
+									"class": ""
+								},
+								"textarea_rows": "",
+								"select_options": [],
+								"radio_options": []
+							},
+							{
+								"field_class": "",
+								"control_class": "is-expanded",
+								"class": "input",
+								"type": "text",
+								"name": "subject",
+								"placeholder": "Your Subject",
+								"label": "",
+								"label_class": "",
+								"help_text": "",
+								"help_class": "",
+								"disabled": false,
+								"readonly": false,
+								"icon_left": {
+									"icon": "",
+									"class": ""
+								},
+								"icon_right": {
+									"icon": "",
+									"class": ""
+								},
+								"textarea_rows": "",
+								"select_options": [],
+								"radio_options": []
+							}
+						]
+					},
+					{
+						"field_class": "is-horizontal",
+						"control_class": "",
+						"label": "",
+						"label_class": "is-normal",
+						"horizontal_fields": [
+							{
+								"field_class": "",
+								"control_class": "is-expanded",
+								"class": "input",
+								"type": "tel",
+								"name": "phone",
+								"placeholder": "Your Phone",
+								"label": "",
+								"label_class": "",
+								"help_text": "",
+								"help_class": "",
+								"disabled": false,
+								"readonly": false,
+								"icon_left": {
+									"icon": "",
+									"class": ""
+								},
+								"icon_right": {
+									"icon": "",
+									"class": ""
+								},
+								"textarea_rows": "",
+								"select_options": [],
+								"radio_options": []
+							},
+							{
+								"field_class": "",
+								"control_class": "is-expanded",
+								"class": "input",
+								"type": "email",
+								"name": "email",
+								"placeholder": "Your Email",
+								"label": "",
+								"label_class": "",
+								"help_text": "",
+								"help_class": "",
+								"disabled": false,
+								"readonly": false,
+								"icon_left": {
+									"icon": "",
+									"class": ""
+								},
+								"icon_right": {
+									"icon": "",
+									"class": ""
+								},
+								"textarea_rows": "",
+								"select_options": [],
+								"radio_options": []
+							}
+						]
+					},
+					{
+						"field_class": "",
+						"control_class": "is-expanded",
+						"horizontal_fields": [],
+						"class": "textarea",
+						"type": "",
+						"name": "textarea",
+						"placeholder": "Your Message",
+						"label": "",
+						"label_class": "",
+						"help_text": "",
+						"help_class": "",
+						"disabled": false,
+						"readonly": false,
+						"icon_left": {
+							"icon": "",
+							"class": ""
+						},
+						"icon_right": {
+							"icon": "",
+							"class": ""
+						},
+						"textarea_rows": "",
+						"select_options": [],
+						"radio_options": []
+					},
+					{
+						"field_class": "",
+						"control_class": "has-text-centered",
+						"class": "button",
+						"type": "button",
+						"button_text": "Send message"
+					}
+				]
+			},
+			"google_maps": {
+				"section_class": "google-maps",
+				"heading_title": "",
+				"image_placeholder": "global/google-maps.png"
+			}
+
+		},
+		"about": {
+
+		"page_title": {
+			"title": "About us",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"intro": {
+			"section_class": "intro-about",
+			"heading_title": "Mind Power the utimate <br> success formula",
+			"logo_image": "logo/logo.png",
+			"logos_folder": "logos/",
+			"slider_folder": "slider/carousel/about/",
+			"paragraph": "If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum. The patch is just a patch that you apply everyd, If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum. The patch is just a patch that you apply everyd, If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum interchange methods to help stop smoking cigarettes.",
+			"awards_logos": [
+				{ "link": "#", "image_src": "1.png" },
+				{ "link": "#", "image_src": "2.png" },
+				{ "link": "#", "image_src": "3.png" }
+			],
+			"carousel_slider": [
+				{ "image_src": "1.png" }, { "image_src": "2.png" }, { "image_src": "1.png" }
+			]
+		},
+		"services_boxes": {
+			"section_class": "services",
+			"heading_title": "What We Do",
+			"link": "/features",
+			"show_icon": true,
+			"show_title": true,
+			"show_text": true,
+			"more_text": false,
+			"boxes": [
+				{
+                    "icon": "ion-ios-notifications-outline",
+                    "title": "Prototyping",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-create-outline",
+                    "title": "Branding",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-cloud-download-outline",
+                    "title": "Development",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                }
+			]
+		},
+		"team": {
+			"section_class": "our-team",
+			"heading_title": "our team",
+			"link": "/pages/team.html",
+			"images_folder": "team/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": true,
+			"show_text": true,
+			"show_social_links": true,
+			"list": [
+				{
+					"full_width": true,
+					"image_src": "1.png",
+					"title": "Olivia Allison",
+					"categories": ["physiotherapist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality. Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality. Fuidhir pinnately Gothicize impolite backcap soiree bookmate will go now.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "2.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "3.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "4.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				}
+			]
+		},
+		"counters": {
+			"section_class": "counters",
+			"list": [
+				{ "number": "70", "text": "Awards Won" },
+				{ "number": "48", "text": "Satisfied Clients" },
+				{ "number": "56", "text": "Startup Growth" },
+				{ "number": "28", "text": "Average Prices" }
+			]
+		},
+		"testimonials": {
+			"section_class": "testimonials-list",
+			"images_folder": "testimonials/",
+			"show_image": true,
+			"show_text": true,
+			"show_author": true,
+			"list": [
+				{
+					"image_src": "1.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "2.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "3.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				}
+			]
+		}
+
+	}
+
+}

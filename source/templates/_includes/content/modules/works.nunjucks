@@ -1,0 +1,44 @@
+{% macro works(style_class='image-hover effect-5', columns_class='is-4 is-multiline', column_class='is-4', data, global_data, show_categories_filter=true, image_hover=false) %}
+
+<div class="works {{style_class}}">
+
+	{% if show_categories_filter %}
+		{% if data.categories_filter %}
+		<ul class="isotope-filter">
+			{% for category in data.categories_filter %}
+			<li data-filter="{{category.filters}}"{% if category.filters == '*' %} class="active"{% endif %}>{{category.title}}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	{% endif %}   
+
+	<div class="columns is-variable {{columns_class}}">
+
+	    {% for work in data.list %}
+		<div class="column {{column_class}} {% for category in work.categories %}{{category | lower}} {% endfor %}" data-aos="fade-up">
+			<div class="work-item">
+                <figure>
+                	{% if data.show_image %}
+					<img src="{{global_data.images_root}}{{data.images_folder}}{{work.image_src}}">
+					{% endif %}
+                   	<figcaption>
+                   		{% if data.show_title %}<h3>{{work.title}}</h3>{% endif %}
+                   		{% if data.show_categories %}
+                   	    <h5>{% for category in work.categories %}{{category}} {% endfor %}</h5>
+                   	    {% endif %}
+                   	    {% if data.show_text %}
+						<p>{{work.text}}</p>
+						{% endif %}
+	                    <a href="/portfolio/single.html">View more</a>
+					</figcaption>
+                </figure>
+            </div>
+            <!-- .work-item -->
+		</div>
+		{% endfor %}
+
+	</div><!-- .columns -->
+
+</div><!-- .works -->
+
+{% endmacro %}

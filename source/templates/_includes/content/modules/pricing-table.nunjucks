@@ -1,0 +1,33 @@
+{% macro pricing_table(style_class, data, global_data) %}
+
+<div class="pricing-table {{style_class}}">
+
+	{% for plan in data.plans %}
+	<div class="pricing-plan {{plan.class}} {% if plan.is_active %}is-active{% endif %}">
+	{% if data.show_title %}
+	<div class="plan-header">{{plan.title}}</div>
+	{% endif %}
+	{% if data.show_price %}
+	<div class="plan-price">
+		<span class="plan-price-amount"><span class="plan-price-currency">{{data.currency_type}}</span>{{plan.price}}</span>
+	    {% if data.show_price_per %}{{data.price_per}}{% endif %}
+	</div>
+	{% endif %}
+	{% if data.show_items %}
+	<div class="plan-items">
+		{% for item in plan.items %}
+	    <div class="plan-item">{{item}}</div>
+	    {% endfor %}
+	</div>
+	{% endif %}
+	{% if data.show_button %}
+	<div class="plan-footer">
+	  <a href="{{plan.button.link}}" class="button">{{plan.button.text}}</a>
+	</div>
+	{% endif %}
+	</div>
+	{% endfor %}
+
+</div><!-- .pricing-table -->
+
+{% endmacro %}

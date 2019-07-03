@@ -1,0 +1,24 @@
+// === import bulma sass files ===
+// @see https: //bulma.io/documentation/overview/modular/
+
+@import 'lib/bulma/utilities/_all';
+@import 'lib/bulma/base/_all';
+@import 'lib/bulma/elements/_all';
+@import 'lib/bulma/components/_all';
+@import 'lib/bulma/grid/_all';
+@import 'lib/bulma/layout/_all';
+
+// extensions
+@import 'lib/bulma/bulma-pricingtable';
+@import 'lib/bulma/bulma-badge';
+@import 'lib/bulma/bulma-divider';
+@import 'lib/bulma/bulma-tooltip';
+@import 'lib/bulma/bulma-pageloader';
+@import 'lib/bulma/bulma-calendar';
+@import 'lib/bulma/bulma-checkradio';
+@import 'lib/bulma/bulma-steps';
+@import 'lib/bulma/bulma-switch';
+@import 'lib/bulma/bulma-tagsinput';
+@import 'lib/bulma/bulma-timeline';
+@import 'lib/bulma/bulma-quickview';
+@import 'lib/bulma/bulma-slider';

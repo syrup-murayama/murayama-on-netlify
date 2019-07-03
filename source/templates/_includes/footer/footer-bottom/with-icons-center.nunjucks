@@ -1,0 +1,41 @@
+<!-- with-icons-center.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/footer-bottom/_layout.nunjucks" %}
+
+<!-- set footer bottom layout options -->
+{% set footer_bottom_use_container = true %}
+{% set show_footer_bottom_left = true %}
+{% set show_footer_bottom_center = true %}
+{% set show_footer_bottom_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+
+{% block footer_bottom_left %}
+    <span class="footer-copyright">
+		{{footer.copyright | safe}}
+	</span>
+{% endblock %}
+
+{% block footer_bottom_center %}
+    <ul class="header-menu-icons social">
+        {% for social in footer.social_links %}
+        <li>
+            <a href="{{social.link}}" target="_blank">
+                <span class="icon"><i class="{{social.icon}}"></i></span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul><!-- .header-menu-icons -->
+{% endblock %}
+
+{% block footer_bottom_right %}
+    {{ menu_start( style_class = 'right' ) }}
+        {% for item in top_bar.navigation.menu %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+{% endblock %}

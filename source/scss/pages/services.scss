@@ -1,0 +1,42 @@
+/*
+ * ::::::::::: Services Page Custom Styles :::::::::::
+ */
+
+// ::::::::::: Imports ::::::::::: //
+@import '../_config/imports';
+
+// ::::::::::: Styles ::::::::::: //
+
+.page-services {
+
+	.works-list {
+		.container {
+
+			> p {
+				text-align: center;
+				@include fontsize(15.5);
+				@extend %is-capitalized;
+				color: $tertiary;
+				margin-bottom: 4.5rem;
+				padding: 0 14%;
+			}
+
+			.works-button {
+				text-align: center;
+				padding: 1.6rem 0 2.4rem;
+
+				a {
+					padding: $introduction-button-padding;
+				}
+
+			}
+
+		}
+
+	}
+
+	.instagram-feed {
+		background: $primary-light;
+	}
+
+}

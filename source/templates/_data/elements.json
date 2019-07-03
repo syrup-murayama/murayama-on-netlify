@@ -1,0 +1,1870 @@
+{
+
+    "buttons": {
+        "page_title": {
+            "title": "buttons",
+            "description": "Essential Interface Elements"
+        },
+        "default": [
+        	{ "text": "Anchor", "type": "", "input_type": "", "style_class": "is-radiusless" },
+        	{ "text": "Button", "type": "button", "input_type": "", "style_class": "is-radiusless" },
+        	{ "text": "Submit input", "type": "input", "input_type": "", "style_class": "is-radiusless" },
+        	{ "text": "Reset input", "type": "input", "input_type": "reset", "style_class": "is-radiusless" }
+        ],
+        "colors": [
+        	{ "text": "Primary", "style_class": "is-primary is-radiusless" },
+        	{ "text": "Success", "style_class": "is-success is-radiusless" },
+        	{ "text": "warning", "style_class": "is-warning is-radiusless" },
+        	{ "text": "danger", "style_class": "is-danger is-radiusless" },
+        	{ "text": "white", "style_class": "is-white is-radiusless" },
+        	{ "text": "light", "style_class": "is-light is-radiusless" },
+        	{ "text": "dark", "style_class": "is-dark is-radiusless" },
+        	{ "text": "black", "style_class": "is-black is-radiusless" },
+        	{ "text": "text", "style_class": "is-text is-radiusless" }
+        ],
+        "sizes": [
+        	{ "text": "large", "style_class": "is-large is-radiusless" },
+        	{ "text": "medium", "style_class": "is-medium is-radiusless" },
+        	{ "text": "small", "style_class": "is-small is-radiusless" }
+        ],
+        "displays": [
+        	{ "text": "small", "style_class": "is-small is-fullwidth is-radiusless" },
+        	{ "text": "medium", "style_class": "is-medium is-fullwidth is-dar is-radiusless" },
+        	{ "text": "large", "style_class": "is-large is-fullwidth is-black is-radiusless" }
+        ],
+        "styles": {
+        	"outlined": [
+        		{ "text": "Outlined", "style_class": "is-primary is-outlined is-radiusless" },
+	        	{ "text": "Outlined", "style_class": "is-info is-outlined is-radiusless" },
+	        	{ "text": "Outlined", "style_class": "is-success is-outlined is-radiusless" },
+	        	{ "text": "Outlined", "style_class": "is-danger is-outlined is-radiusless" },
+	        	{ "text": "Outlined", "style_class": "is-dark is-outlined is-radiusless" },
+	        	{ "text": "Outlined", "style_class": "is-black is-outlined is-radiusless" }
+        	],
+        	"inverted": [
+        		{ "text": "inverted", "style_class": "is-primary is-inverted is-radiusless" },
+	        	{ "text": "inverted", "style_class": "is-info is-inverted is-radiusless" },
+	        	{ "text": "inverted", "style_class": "is-success is-inverted is-radiusless" },
+	        	{ "text": "inverted", "style_class": "is-danger is-inverted is-radiusless" },
+	        	{ "text": "inverted", "style_class": "is-dark is-inverted is-radiusless" },
+	        	{ "text": "inverted", "style_class": "is-black is-inverted is-radiusless" }
+        	],
+        	"rounded": [
+        		{ "text": "rounded", "style_class": "is-primary is-rounded" },
+	        	{ "text": "rounded", "style_class": "is-info is-rounded" },
+	        	{ "text": "rounded", "style_class": "is-success is-rounded" },
+	        	{ "text": "rounded", "style_class": "is-danger is-rounded" },
+	        	{ "text": "rounded", "style_class": "is-dark is-rounded" },
+	        	{ "text": "rounded", "style_class": "is-black is-rounded" }
+        	]
+        },
+        "states": {
+        	"normal": [
+        		{ "text": "Normal", "style_class": "is-primary" },
+	        	{ "text": "Normal", "style_class": "is-info" },
+	        	{ "text": "Normal", "style_class": "is-success" },
+	        	{ "text": "Normal", "style_class": "is-danger" },
+	        	{ "text": "Normal", "style_class": "is-dark" },
+	        	{ "text": "Normal", "style_class": "is-black" }
+        	],
+        	"disabled": [
+        		{ "text": "disabled", "style_class": "is-primary", "disabled": true },
+	        	{ "text": "disabled", "style_class": "is-info", "disabled": true },
+	        	{ "text": "disabled", "style_class": "is-success", "disabled": true },
+	        	{ "text": "disabled", "style_class": "is-danger", "disabled": true },
+	        	{ "text": "disabled", "style_class": "is-dark", "disabled": true },
+	        	{ "text": "disabled", "style_class": "is-black", "disabled": true }
+        	],
+        	"loading": [
+        		{ "text": "Loading", "style_class": "is-primary is-loading" },
+	        	{ "text": "Loading", "style_class": "is-info is-loading" },
+	        	{ "text": "Loading", "style_class": "is-success is-loading" },
+	        	{ "text": "Loading", "style_class": "is-danger is-loading"},
+	        	{ "text": "Loading", "style_class": "is-dark is-loading" },
+	        	{ "text": "Loading", "style_class": "is-black is-loading" }
+        	]
+        }
+    },
+    "lists": {
+        "page_title": {
+            "title": "lists",
+            "description": "Essential Interface Elements"
+        },
+        "standard": [
+                { "title": "Climatology chronocrator puppysnat" },
+                { "title": "Leacher unrived tomentum insignia no" },
+                { "title": "Ornare vitae pulvinar hendrerit quis" },
+                { "title": "The main component of a healthy test" },
+                { "title": "Environment for self esteem is that go" }
+        ],
+        "custom_icons": [
+                { "title": "Climatology chronocrator puppysnat", "icon": "fab fa-apple" },
+                { "title": "Ornare vitae pulvinar hendrerit quis", "icon": "ion-ios-at-outline" },
+                { "title": "Leacher unrived tomentum insignia no", "icon": "ion-logo-android" },
+                { "title": "The main component of a healthy test", "icon": "ion-ios-bulb-outline" },
+                { "title": "Environment for self esteem is that go", "icon": "far fa-life-ring" }
+        ],
+        "custom_icons2": [
+                { "title": "Climatology chronocrator puppysnat", "icon": "ion-logo-twitter" },
+                { "title": "Ornare vitae pulvinar hendrerit quis", "icon": "ion-ios-umbrella-outline" },
+                { "title": "Leacher unrived tomentum insignia no", "icon": "ion-logo-wordpress" },
+                { "title": "The main component of a healthy test", "icon": "ion-ios-time-outline" },
+                { "title": "Environment for self esteem is that go", "icon": "ion-md-settings" }
+        ],
+        "custom_icons3": [
+                { "title": "Climatology chronocrator puppysnat", "icon": "ion-ios-send" },
+                { "title": "Ornare vitae pulvinar hendrerit quis", "icon": "ion-ios-school-outline" },
+                { "title": "Leacher unrived tomentum insignia no", "icon": "ion-ios-rainy" },
+                { "title": "The main component of a healthy test", "icon": "ion-ios-pin-outline" },
+                { "title": "Environment for self esteem is that go", "icon": "ion-ios-notifications" }
+        ],
+        "custom_icons_colors": [
+                { "title": "Climatology chronocrator puppysnat", "icon": "ion-logo-twitter", "icon_class": "has-text-info" },
+                { "title": "Ornare vitae pulvinar hendrerit quis", "icon": "ion-ios-umbrella-outline", "icon_class": "has-text-warning" },
+                { "title": "Leacher unrived tomentum insignia no", "icon": "ion-logo-wordpress", "icon_class": "has-text-dark" },
+                { "title": "The main component of a healthy test", "icon": "ion-ios-time-outline", "icon_class": "has-text-danger" },
+                { "title": "Environment for self esteem is that go", "icon": "ion-md-settings", "icon_class": "has-text-success" }
+        ],
+        "marks": [
+                { "title": "Climatology chronocrator puppysnat", "mark": { "text": "wow", "class": "is-warning" } },
+                { "title": "Leacher unrived tomentum insignia no", "mark": { "text": "new", "class": "is-success" } },
+                { "title": "Ornare vitae pulvinar hendrerit quis", "mark": { "text": "hot", "class": "is-danger" } },
+                { "title": "The main component of a healthy test", "mark": { "text": "old", "class": "is-secondary" } },
+                { "title": "Environment for self esteem is that go", "mark": { "text": "oky", "class": "is-primary" } }
+        ]
+    },
+    "accordions": {
+        "page_title": {
+            "title": "accordions",
+            "description": "Essential Interface Elements"
+        },
+        "list": [
+            {
+                "heading": "Ornare vitae pulvinar hendrerit quis",
+                "class": "is-open",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Leacher unrived tomentum insignia no",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Climatology chronocrator puppysnatch",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Ornare vitae pulvinar hendrerit quis",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            }
+        ],
+        "toggle": [
+            {
+                "heading": "Ornare vitae pulvinar hendrerit quis",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Leacher unrived tomentum insignia no",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Climatology chronocrator puppysnatch",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Ornare vitae pulvinar hendrerit quis",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            }
+        ],
+        "toggle_buttons": [
+            {
+                "heading": "Ornare vitae pulvinar hendrerit quis",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Leacher unrived tomentum insignia no",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            },
+            {
+                "heading": "Climatology chronocrator puppysnatch",
+                "class": "",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+            }
+        ],
+        "buttons": [
+                { "text": "Toggle 1", "style_class": "is-primary is-outlined" },
+                { "text": "Toggle 2", "style_class": "is-primary is-outlined" },
+                { "text": "Toggle 3", "style_class": "is-primary is-outlined" },
+                { "text": "Open all", "style_class": "is-success is-outlined toggle-open-all" },
+                { "text": "Close all", "style_class": "is-danger is-outlined toggle-close-all" }
+        ]
+    },
+    "tabs": {
+        "page_title": {
+            "title": "tabs",
+            "description": "Essential Interface Elements"
+        },
+        "list": {
+            "default": [
+                {
+                    "heading": "Pictures", "class": "is-active",
+                    "icon": "icon-picture", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, soll vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla asan, metus ultrices eleifend gravida. Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan.</p>"
+
+                },
+                {
+                    "heading": "Music", "class": "",
+                    "icon": "icon-music-tone-alt", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+
+                },
+                {
+                    "heading": "Videos", "class": "",
+                    "icon": "icon-film", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida. Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+
+                },
+                {
+                    "heading": "Documents", "class": "",
+                    "icon": "icon-docs", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+
+                }
+            ],
+            "styles": [
+                {
+                    "heading": "Pictures", "class": "is-active",
+                    "icon": "icon-picture", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+
+                },
+                {
+                    "heading": "Music", "class": "",
+                    "icon": "icon-music-tone-alt", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+
+                },
+                {
+                    "heading": "Videos", "class": "",
+                    "icon": "icon-film", "icon_class": "",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla accumsan, metus ultrices eleifend gravida.</p>"
+
+                }
+            ]
+        }
+    },
+    "breadcrumbs": {
+        "page_title": {
+            "title": "breadcrumbs",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "paginations": {
+        "page_title": {
+            "title": "pagination",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "dividers": {
+        "page_title": {
+            "title": "dividers",
+            "description": "Essential Interface Elements"
+        },
+        "text": "<p class='has-text-centered'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, soll vel erat vel, interdum mattis neque. Sub script works as well!. consectetur adipiscing elit, Nulla asan, metus ultrices eleifend gravida. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+    },
+    "tags": {
+        "page_title": {
+            "title": "tags",
+            "description": "Essential Interface Elements"
+        },
+        "default": [
+            { "text": "One", "class": "", "type": "" },
+            { "text": "Two", "class": "", "type": "" },
+            { "text": "Three", "class": "", "type": "" },
+            { "text": "Four", "class": "", "type": "" },
+            { "text": "Five", "class": "", "type": "" },
+            { "text": "Six", "class": "", "type": "" },
+            { "text": "Seven", "class": "", "type": "" },
+            { "text": "Eight", "class": "", "type": "" },
+            { "text": "Nine", "class": "", "type": "" },
+            { "text": "Ten", "class": "", "type": "" },
+            { "text": "Eleven", "class": "", "type": "" },
+            { "text": "Twelve", "class": "", "type": "" },
+            { "text": "Thirteen", "class": "", "type": "" },
+            { "text": "Fourteen", "class": "", "type": "" },
+            { "text": "Fifteen", "class": "", "type": "" },
+            { "text": "Sixteen", "class": "", "type": "" },
+            { "text": "Seventeen", "class": "", "type": "" },
+            { "text": "Eighteen", "class": "", "type": "" },
+            { "text": "Nineteen", "class": "", "type": "" },
+            { "text": "Twenty", "class": "", "type": "" }
+        ],
+        "colors": [
+            { "text": "Primary", "class": "is-primary", "type": "" },
+            { "text": "Info", "class": "is-info", "type": "" },
+            { "text": "Success", "class": "is-success", "type": "" },
+            { "text": "Warning", "class": "is-warning", "type": "" },
+            { "text": "Danger", "class": "is-danger", "type": "" },
+            { "text": "Black", "class": "is-black", "type": "" },
+            { "text": "Dark", "class": "is-dark", "type": "" },
+            { "text": "White", "class": "is-white", "type": "" }
+        ]
+    },
+    "badges": {
+        "page_title": {
+            "title": "badges",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "counters_list": {
+        "page_title": {
+            "title": "counters",
+            "description": "Essential Interface Elements"
+        },
+        "lists": {
+            "default": {
+                "section_class": "counters",
+                "list": [
+                    { "number": "70", "text": "awards won", "icon": "icon-wallet", "icon_class": "" },
+                    { "number": "48", "text": "satisfied clients", "icon": "icon-cup", "icon_class": "" },
+                    { "number": "56", "text": "startup growth", "icon": "icon-heart", "icon_class": "" },
+                    { "number": "28", "text": "average prices", "icon": "icon-rocket", "icon_class": "" }
+                ]
+            }
+        }
+    },
+    "pricing_tables": {
+        "page_title": {
+            "title": "pricing tables",
+            "description": "Essential Interface Elements"
+        },
+        "styles": {
+            "comparative": {
+                "section_class": "pricingtable",
+                "heading_title": "Our Packages",
+                "currency_type": "$",
+                "price_per": "/month",
+                "show_title": true,
+                "show_price": true,
+                "show_items": true,
+                "show_button": true,
+                "show_price_per": true,
+                "show_currency_type": true,
+                "plans": [
+                    {
+                        "is_active": false,
+                        "title": "Free",
+                        "price": "0",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": false,
+                        "title": "Basic",
+                        "price": "199",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": true,
+                        "title": "Advanced",
+                        "price": "299",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": false,
+                        "title": "Advanced +",
+                        "price": "499",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    }
+                ]
+            },
+            "colors": {
+                "section_class": "pricingtable",
+                "heading_title": "Our Packages",
+                "currency_type": "$",
+                "price_per": "/month",
+                "show_title": true,
+                "show_price": true,
+                "show_items": true,
+                "show_button": true,
+                "show_price_per": true,
+                "show_currency_type": true,
+                "plans": [
+                    {
+                        "is_active": false,
+                        "class": "is-success",
+                        "title": "Free",
+                        "price": "0",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": false,
+                        "class": "is-info",
+                        "title": "Basic",
+                        "price": "199",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": true,
+                        "title": "Advanced",
+                        "price": "299",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    },
+                    {
+                        "is_active": false,
+                        "class": "is-warning",
+                        "title": "Advanced +",
+                        "price": "499",
+                        "items": [
+                            "Climatology puppysnatch test",
+                            "redding loggerheaded needful",
+                            "and some unknown"
+                        ],
+                        "button": {
+                            "text": "Get Now",
+                            "link": "#"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "heading": {
+        "page_title": {
+            "title": "heading",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "icon_boxes": {
+        "page_title": {
+            "title": "icon boxes",
+            "description": "Essential Interface Elements"
+        },
+        "services_boxes": {
+            "link": "/features/",
+            "show_icon": true,
+            "show_title": true,
+            "show_text": true,
+            "more_text": true,
+            "boxes": [
+                {
+                    "icon": "ion-ios-notifications-outline",
+                    "title": "Prototyping",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-create-outline",
+                    "title": "Branding",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-cloud-download-outline",
+                    "title": "Development",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                }
+            ]
+        },
+        "small_boxes": {
+            "link": "/features/",
+            "show_icon": true,
+            "show_title": true,
+            "show_text": false,
+            "more_text": false,
+            "boxes": [
+                {
+                    "icon": "ion-ios-easel-outline",
+                    "title": "Planning",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-notifications-outline",
+                    "title": "Prototyping",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-create-outline",
+                    "title": "Branding",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                },
+                {
+                    "icon": "ion-ios-cloud-download-outline",
+                    "title": "Development",
+                    "text": "Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam."
+                }
+            ]
+        },
+        "services": {
+            "categories_filter": [],
+            "custom_button": {
+                "text": "view stories",
+                "link": "/portfolio/"
+            },
+            "link": "/pages/services.html",
+            "images_folder": "services/",
+            "show_image": true,
+            "show_title": true,
+            "show_categories": false,
+            "show_text": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "title": "Invitations",
+                    "categories": ["Wedding"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                },
+                {
+                    "image_src": "2.png",
+                    "title": "Wedding Dresses",
+                    "categories": ["Announcement"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                },
+                {
+                    "image_src": "3.png",
+                    "title": "Ring & Jewellery",
+                    "categories": ["Wedding"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                }
+            ]
+        }
+    },
+    "call_to_action": {
+        "page_title": {
+            "title": "call to action",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "subscribe_form": {
+        "page_title": {
+            "title": "subscribe",
+            "description": "Essential Interface Elements"
+        },
+        "subscribe": {
+            "section_class": "subscribe-section",
+            "heading_title": "Stay in touch",
+            "text": "We think in different ways and our thinking is decided by many factors. Some are known.",
+            "input_placeholder": "Your Email Address",
+            "button": {
+                "text": "Sign Up!",
+                "link": "#"
+            }
+        },
+        "subscribe_icon": {
+            "section_class": "subscribe-section",
+            "heading_title": "Stay in touch",
+            "text": "We think in different ways and our thinking is decided by many factors. Some are known.",
+            "input_placeholder": "Your Email Address",
+            "button": {
+                "text": "<span class='icon'><i class='ion-ios-mail-outline'></i></span>",
+                "link": "#"
+            }
+        }
+    },
+    "testimonials_list": {
+        "page_title": {
+            "title": "testimonials",
+            "description": "Essential Interface Elements"
+        },
+        "testimonials_1": {
+            "images_folder": "testimonials/",
+            "show_image": false,
+            "show_text": true,
+            "show_author": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "Mohamed Ahmed, <span class='has-text-primary-5'>Apple inc</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "Mohamed Ahmed, <span class='has-text-primary-5'>Apple inc</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "Mohamed Ahmed, <span class='has-text-primary-5'>Apple inc</span>"
+                }
+            ]
+        },
+        "testimonials_2": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": true,
+            "show_text": true,
+            "show_author": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "Mohamed Ahmed<br><span>london</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "Mohamed Ahmed<br><span>london</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "Mohamed Ahmed<br><span>london</span>"
+                }
+            ]
+        },
+        "testimonials_3": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": false,
+            "show_text": true,
+            "show_title": false,
+            "show_author": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                }
+            ]
+        },
+        "testimonials_4": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": true,
+            "show_text": true,
+            "show_title": true,
+            "show_author": true,
+            "list": [
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                }
+            ]
+        },
+        "testimonials_5": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": true,
+            "show_text": true,
+            "show_title": true,
+            "show_author": true,
+            "list": [
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                }
+            ]
+        },
+        "testimonials_6": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": false,
+            "show_text": true,
+            "show_author": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "Mohamed Ahmed<br><span>london</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "Mohamed Ahmed<br><span>london</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "Mohamed Ahmed<br><span>london</span>"
+                }
+            ]
+        },
+        "testimonials_7": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": false,
+            "show_text": true,
+            "show_title": false,
+            "show_author": true,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "1.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "2.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "image_src": "3.png",
+                    "text": "\"Any time we start something new it is exciting and we are very motivated and committed. As time goes by Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc varius\"",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                }
+            ]
+        },
+        "testimonials_8": {
+            "images_folder": "testimonials/",
+            "show_image": true,
+            "show_stars": true,
+            "show_text": true,
+            "show_title": true,
+            "show_author": true,
+            "list": [
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "1.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                    "author": "mohamed ahmed<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "2.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                },
+                {
+                    "title": "awesome design",
+                    "image_src": "3.png",
+                    "text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+                     "author": "olivia allison<br><span>CEO & stylist</span>"
+                }
+            ]
+        }
+    },
+    "clients": {
+        "page_title": {
+            "title": "clients",
+            "description": "Essential Interface Elements"
+        },
+        "list": [
+            { "image_src": "1.png", "link": "#" },
+            { "image_src": "2.png", "link": "#" },
+            { "image_src": "3.png", "link": "#" },
+            { "image_src": "4.png", "link": "#" }
+        ],
+        "carousel_list": [
+            { "image_src": "1.png", "link": "#" },
+            { "image_src": "2.png", "link": "#" },
+            { "image_src": "3.png", "link": "#" },
+            { "image_src": "4.png", "link": "#" },
+            { "image_src": "5.png", "link": "#" },
+            { "image_src": "6.png", "link": "#" },
+            { "image_src": "1.png", "link": "#" },
+            { "image_src": "2.png", "link": "#" },
+            { "image_src": "3.png", "link": "#" },
+            { "image_src": "4.png", "link": "#" },
+            { "image_src": "5.png", "link": "#" },
+            { "image_src": "6.png", "link": "#" }
+        ]
+    },
+    "blockquotes": {
+         "page_title": {
+            "title": "blockquotes",
+            "description": "Essential Interface Elements"
+        },
+        "default": {
+            "content": "Any time we start something new it is exciting and we are very motivated and committed. Ut venenatis, nisl scelerisque.",
+            "author": "Christina & Sandro"
+        }
+    },
+    "typography": {
+        "page_title": {
+            "title": "typography",
+            "description": "Essential Interface Elements"
+        },
+        "content": {
+            "text": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth."
+        }
+    },
+    "pageloader": {
+        "page_title": {
+            "title": "Page-loader",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "icons": {
+        "page_title": {
+            "title": "icons",
+            "description": "Essential Interface Elements"
+        },
+        "list": {
+            "fontawesome": [
+                "far fa-envelope", "far fa-comment-dots", "far fa-clock", "far fa-bell",
+                "far fa-flag", "far fa-calendar", "far fa-compass", "far fa-heart",
+                "far fa-paper-plane", "far fa-bookmark", "far fa-clipboard", "far fa-gem",
+                "far fa-chart-bar", "far fa-address-card", "far fa-star", "far fa-user",
+                "far fa-trash-alt", "far fa-snowflake", "far fa-newspaper", "far fa-lemon"
+            ],
+            "ionicons": [
+                "ion-ios-at-outline", "ion-ios-bulb-outline", "ion-ios-cafe-outline", "ion-ios-camera-outline", "ion-ios-card", "ion-ios-cart-outline", "ion-ios-checkbox-outline", "ion-ios-clock-outline", "ion-ios-cloud-done-outline", "ion-ios-color-palette-outline", "ion-ios-compass-outline", "ion-ios-contact-outline", "ion-ios-desktop-outline", "ion-logo-dribbble", "ion-ios-flask-outline", "ion-ios-glasses-outline", "ion-ios-heart-outline", "ion-ios-home-outline", "ion-ios-ice-cream-outline", "ion-ios-laptop-outline"
+            ],
+            "simple": [
+                "icon-user", "icon-login", "icon-layers", "icon-event",
+                "icon-plane", "icon-notebook", "icon-energy", "icon-speedometer",
+                "icon-shield", "icon-bell", "icon-present", "icon-handbag",
+                "icon-cup", "icon-basket-loaded", "icon-support", "icon-umbrella",
+                "icon-rocket", "icon-share-alt", "icon-microphone", "icon-earphones"
+            ],
+            "social": [
+                "fab fa-facebook-f", "fab fa-twitter", "fab fa-instagram", "fab fa-pinterest-p", "fab fa-google", "fab fa-dribbble", "fab fa-linkedin-in", "fab fa-tumblr", "fab fa-reddit-alien", "fab fa-behance", "fab fa-vine", "fab fa-wordpress-simple", "fab fa-google-plus-g", "fab fa-soundcloud", "fab fa-slack-hash"
+            ]
+        }
+    },
+    "progressbars": {
+        "page_title": {
+            "title": "progress bars",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "calendar": {
+        "page_title": {
+            "title": "calendar",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "timeline": {
+        "page_title": {
+            "title": "timeline",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "box": {
+        "page_title": {
+            "title": "box",
+            "description": "A white box to contain other elements"
+        }
+    },
+    "notification": {
+        "page_title": {
+            "title": "notification",
+            "description": "Essential Interface Elements"
+        },
+        "content": {
+            "text": "Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit."
+        }
+    },
+    "card": {
+        "page_title": {
+            "title": "card",
+            "description": "Essential Interface Elements"
+        },
+        "content": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@jozoor</a>. <a href='#'>#css</a> <a href='#'>#responsive</a> <br> <time datetime='2016-1-1'>11:09 PM - 1 Jan 2016</time>"
+        }
+    },
+    "dropdown": {
+        "page_title": {
+            "title": "dropdown",
+            "description": "Dropdown menu for discoverable content"
+        }
+    },
+    "menu": {
+        "page_title": {
+            "title": "menu",
+            "description": "A simple menu, for any type of vertical navigation"
+        },
+        "docs_content": "<p> Lorem ipsum <sup> <a> [1] </a> </sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub <sub> script </sub> works as well!. consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth. </p><h3> Donec blandit a lorem id convallis </h3> <p class='dropcaps'> The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth. </p><h3> Cras gravida arcu at diam gravida gravida </h3> <p> Curabitur accumsan turpis pharetra <strong> augue tincidunt </strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl. </p><ul> <li> In fermentum leo eu lectus mollis, quis dictum mi aliquet. </li><li> Morbi eu nulla lobortis, lobortis est in, fringilla felis. </li><li> Aliquam nec felis in sapien venenatis viverra fermentum nec lectus. </li><li> Ut non enim metus. </li></ul> <figure> <img src='/assets/images/page-title/blog.png'> <figcaption> Figure 1: Some beautiful placeholders for wedding and love. </figcaption> </img> </figure> <h3> Vivamus maximus ultricies pulvinar </h3> <p> Quisque ante lacus, malesuada ac auctor vitae, congue <a href='#'> non ante </a> . Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus. </p><ol> <li> Donec blandit a lorem id convallis. </li><li> Cras gravida arcu at diam gravida gravida. </li><li> Integer in volutpat libero. </li><li> Donec a diam tellus. </li><li> Aenean nec tortor orci. </li><li> Quisque aliquam cursus urna, non bibendum massa viverra eget. </li><li> Vivamus maximus ultricies pulvinar. </li></ol> <blockquote> Any time we start something new it is exciting and we are very motivated and committed. Ut venenatis, nisl scelerisque. </blockquote> <p> Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em> justo sodales </em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie. Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo. </p><h4> Aenean nec tortor orci </h4> <p> Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur. </p><h5> Quisque aliquam cursus urna, non bibendum massa viverra eget </h5> <p> Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus. </p><br><p class='buttons has-addons is-centered'> <a href='#' class='button'>Donwload Now</a> <a class='button is-secondary'> <span class='icon is-small'><i class='fas fa-check'></i></span> <span>sign up</span> </a> </p><br><p> Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Etiam purus nunc. </p>"
+    },
+    "message": {
+        "page_title": {
+            "title": "message",
+            "description": "Essential Interface Elements"
+        },
+        "content": {
+            "text": "Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit welcome message now."
+        }
+    },
+    "modal": {
+        "page_title": {
+            "title": "modal",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "tables": {
+        "page_title": {
+            "title": "tables",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "code_highlight": {
+        "page_title": {
+            "title": "code highlight",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "columns": {
+        "page_title": {
+            "title": "columns",
+            "description": "Columns powered by Flexbox"
+        }
+    },
+    "layout": {
+        "page_title": {
+            "title": "layout",
+            "description": "The structure of your webpage"
+        }
+    },
+    "form": {
+        "page_title": {
+            "title": "form",
+            "description": "The indispensable form controls"
+        }
+    },
+    "quickview": {
+        "page_title": {
+            "title": "quickview",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "steps": {
+        "page_title": {
+            "title": "steps",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "instagram": {
+        "page_title": {
+            "title": "instagram",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "teams": {
+        "page_title": {
+            "title": "team",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "image_hover": {
+        "page_title": {
+            "title": "image hover",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "lightboxes": {
+        "page_title": {
+            "title": "lightboxes",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "countdown": {
+        "page_title": {
+            "title": "countdown",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "ratings": {
+        "page_title": {
+            "title": "ratings",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "google_map": {
+        "page_title": {
+            "title": "google map",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "backgrounds_types": {
+        "page_title": {
+            "title": "backgrounds types",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "charts": {
+        "page_title": {
+            "title": "charts",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "animations": {
+        "page_title": {
+            "title": "animations",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "notify_bars_alerts": {
+        "page_title": {
+            "title": "notify bars & alerts",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "animated_typing": {
+        "page_title": {
+            "title": "animated typing",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "carousel_slider": {
+        "page_title": {
+            "title": "carousel slider",
+            "description": "Essential Interface Elements"
+        }
+    },
+    "all_elements": {
+        "page_title": {
+            "title": "all elements",
+            "description": "Essential Interface Elements"
+        },
+        "elements": {
+            "list": [
+            { "title": "latest news", "url": "latest-news.html", "icon": "ion-ios-paper-outline" },
+            { "title": "our team", "url": "team.html", "icon": "ion-ios-people-outline" },
+            { "title": "recent work", "url": "recent-work.html", "icon": "ion-ios-desktop-outline" },
+            { "title": "lightboxes", "url": "lightboxes.html", "icon": "ion-ios-search-outline" },
+            { "title": "instagram", "url": "instagram.html", "icon": "fab fa-instagram" },
+            { "title": "accordions", "url": "accordions.html", "icon": "ion-ios-add-circle-outline" },
+            { "title": "tabs", "url": "tabs.html", "icon": "ion-ios-menu-outline" },
+            { "title": "lists", "url": "lists.html", "icon": "ion-ios-list-outline" },
+            { "title": "icons", "url": "icons.html", "icon": "ion-ios-checkmark-circle-outline" },
+            { "title": "buttons", "url": "buttons.html", "icon": "ion-ios-more-outline" },
+            { "title": "breadcrumbs", "url": "breadcrumbs.html", "icon": "ion-ios-arrow-dropright-outline" },
+            { "title": "pagination", "url": "pagination.html", "icon": "ion-ios-code-outline" },
+            { "title": "dividers", "url": "dividers.html", "icon": "ion-ios-git-commit-outline" },
+            { "title": "tags", "url": "tags.html", "icon": "ion-ios-pricetags-outline" },
+            { "title": "badges", "url": "badges.html", "icon": "ion-ios-information-circle-outline" },
+            { "title": "counters", "url": "counters.html", "icon": "ion-ios-disc-outline" },
+            { "title": "pricing tables", "url": "pricing-tables.html", "icon": "ion-ios-browsers-outline" },
+            { "title": "heading", "url": "heading.html", "icon": "ion-ios-menu" },
+            { "title": "icon boxes", "url": "icon-boxes.html", "icon": "ion-ios-square-outline" },
+            { "title": "call to action", "url": "call-to-action.html", "icon": "ion-ios-exit-outline" },
+            { "title": "subscribe", "url": "subscribe.html", "icon": "ion-ios-mail-outline" },
+            { "title": "testimonials", "url": "testimonials.html", "icon": "ion-ios-chatboxes-outline" },
+            { "title": "clients", "url": "clients.html", "icon": "ion-ios-contacts-outline" },
+            { "title": "blockquotes", "url": "blockquotes.html", "icon": "ion-ios-quote-outline" },
+            { "title": "typography", "url": "typography.html", "icon": "ion-ios-create-outline" },
+            { "title": "page-loader", "url": "pageloader.html", "icon": "ion-ios-refresh-outline" },
+            { "title": "progress bars", "url": "progress-bars.html", "icon": "ion-md-list" },
+            { "title": "calendar", "url": "calendar.html", "icon": "ion-ios-calendar-outline" },
+            { "title": "timeline", "url": "timeline.html", "icon": "ion-ios-flag-outline" },
+            { "title": "box", "url": "box.html", "icon": "ion-ios-qr-scanner-outline" },
+            { "title": "notification", "url": "notification.html", "icon": "ion-ios-notifications-outline" },
+            { "title": "card", "url": "card.html", "icon": "ion-ios-albums-outline" },
+            { "title": "dropdown", "url": "dropdown.html", "icon": "ion-ios-arrow-dropdown-outline" },
+            { "title": "menu", "url": "menu.html", "icon": "ion-md-funnel" },
+            { "title": "message", "url": "message.html", "icon": "ion-ios-mail-open-outline" },
+            { "title": "modal", "url": "modal.html", "icon": "ion-ios-photos-outline" },
+            { "title": "tables", "url": "tables.html", "icon": "ion-md-reorder" },
+            { "title": "code highlight", "url": "code-highlight.html", "icon": "ion-ios-code-working-outline" },
+            { "title": "quickview", "url": "quickview.html", "icon": "ion-md-expand" },
+            { "title": "steps", "url": "steps.html", "icon": "ion-ios-more" },
+            { "title": "backgrounds types", "url": "backgrounds-types.html", "icon": "ion-ios-color-palette-outline" },
+            { "title": "google map", "url": "google-map.html", "icon": "ion-ios-pin-outline" },
+            { "title": "ratings", "url": "ratings.html", "icon": "ion-ios-star-outline" },
+            { "title": "image hover", "url": "image-hover.html", "icon": "ion-ios-image-outline" },
+            { "title": "countdown", "url": "countdown.html", "icon": "ion-ios-timer-outline" },
+            { "title": "carousel slider", "url": "carousel-slider.html", "icon": "ion-ios-keypad-outline" },
+            { "title": "animations", "url": "animations.html", "icon": "ion-ios-pulse-outline" },
+            { "title": "notify bars alerts", "url": "notify-bars-alerts.html", "icon": "ion-ios-megaphone-outline" },
+            { "title": "animated typing", "url": "animated-typing.html", "icon": "ion-ios-paper-outline" },
+            { "title": "charts", "url": "charts.html", "icon": "ion-ios-trending-up-outline" }
+            ]
+        }
+    },
+    "recent_work": {
+        "page_title": {
+            "title": "recent work",
+            "description": "Essential Interface Elements"
+        },
+        "works": {
+            "section_class": "works-list",
+            "heading_title": "Our Works",
+            "link": "/portfolio/single.html",
+            "images_folder": "portfolio/",
+            "show_image": true,
+            "show_title": true,
+            "show_categories": true,
+            "show_text": false,
+            "list": [
+                {
+                    "image_src": "1.png",
+                    "title": "Caminando",
+                    "categories": ["Creative"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                },
+                {
+                    "image_src": "2.png",
+                    "title": "Calligraphy",
+                    "categories": ["Branding"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                },
+                {
+                    "image_src": "3.png",
+                    "title": "Abstract",
+                    "categories": ["Vector"],
+                    "text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+                }
+            ]
+        }
+    },
+    "latest_news": {
+        "page_title": {
+            "title": "latest news",
+            "description": "Essential Interface Elements"
+        },
+        "blog": {
+            "section_class": "latest-news",
+            "heading_title": "Latest News",
+            "link": "/blog/single.html",
+            "images_folder": "blog/",
+            "show_image": true,
+            "show_meta": false,
+            "show_title": true,
+            "show_content": true,
+            "more_text": true,
+            "post_meta": [
+                {
+                    "icon": "icon-clock",
+                    "text": [{
+                        "name": "April 5, 2018",
+                        "link": ""
+                    }]
+                },
+                {
+                    "icon": "icon-user",
+                    "text": [{
+                        "name": "Mohamed Ahmed",
+                        "link": "#"
+                    }]
+                },
+                {
+                    "icon": "icon-folder",
+                    "text": [
+                        {
+                            "name": "Wedding",
+                            "link": "#"
+                        },
+                        {
+                            "name": "Love",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "icon": "icon-bubbles",
+                    "text": [{
+                        "name": "2",
+                        "link": "#"
+                    }]
+                }
+            ],
+            "posts": [
+                {
+                    "image_src": "1.png",
+                    "title": "Self Motivation How To Keep",
+                    "content": "The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.."
+                },
+                {
+                    "image_src": "2.png",
+                    "title": "Self Motivation How To Keep",
+                    "content": "The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.."
+                },
+                {
+                    "image_src": "1.png",
+                    "title": "Self Motivation How To Keep",
+                    "content": "The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.."
+                }
+            ]
+        }
+    },
+    "features": {
+        "page_title": {
+            "title": "features",
+            "description": "List of awesome features"
+        },
+        "header": [
+                { "title": "logo center", "url": "/features/header/logo-center.html" },
+                { "title": "logo left", "url": "/features/header/logo-left.html" },
+                { "title": "logo right", "url": "/features/header/logo-right.html" },
+                { "title": "logo & menu center", "url": "/features/header/logo-center-menu-center.html" },
+                { "title": "logo top", "url": "/features/header/logo-top.html",
+                    "items": [
+                        { "title": "& menu with icons", "url": "/features/header/logo-top-menu-with-icons.html" },
+                        { "title": "& logo with icons", "url": "/features/header/logo-top-with-icons.html" }
+                    ]
+                },
+                { "title": "menu with buttons", "url": "/features/header/menu-with-buttons.html",
+                    "items": [
+                        { "title": "& menu center", "url": "/features/header/menu-center-with-buttons.html" },
+                        { "title": "& menu left", "url": "/features/header/menu-left-with-buttons.html" }
+                    ]
+                },
+                { "title": "menu with icons", "url": "/features/header/menu-with-icons.html",
+                    "items": [
+                        { "title": "menu with icons 2", "url": "/features/header/menu-with-icons-2.html" },
+                        { "title": "search default style", "url": "/features/header/menu-with-icons-2-search-default.html" },
+                        { "title": "& menu center", "url": "/features/header/menu-center-with-icons.html" },
+                        { "title": "& menu left", "url": "/features/header/menu-left-with-icons.html" }
+                    ]
+                },
+                { "title": "language switcher", "url": "/features/header/menu-with-language-switcher.html",
+                    "items": [
+                        { "title": "switcher on click", "url": "/features/header/menu-with-language-switcher-click.html" },
+                        { "title": "language switcher 2", "url": "/features/header/menu-with-language-switcher-2.html" }
+                    ]
+                },
+                { "title": "menu top", "url": "/features/header/menu-top.html",
+                    "items": [
+                        { "title": "& logo with icons", "url": "/features/header/menu-top-logo-with-icons.html" }
+                    ]
+                },
+                { "title": "styles", "url": "javascript:void(0);",
+                    "items": [
+                        { "title": "full width", "url": "/features/header/styles/full-width.html",
+                            "items": [
+                                { "title": "transparent", "url": "/features/header/styles/full-width-transparent.html" },
+                                { "title": "transparent border", "url": "/features/header/styles/full-width-transparent-border.html" },
+                                { "title": "background primary", "url": "/features/header/styles/full-width-background-primary.html" },
+                                { "title": "background dark", "url": "/features/header/styles/full-width-background-dark.html" }
+                            ]
+                        },
+                        { "title": "transparent", "url": "/features/header/styles/transparent.html",
+                            "items": [
+                                { "title": "transparent overlay", "url": "/features/header/styles/transparent-overlay.html" }
+                            ]
+                        },
+                        { "title": "background color", "url": "/features/header/styles/background-primary-color.html",
+                            "items": [
+                                { "title": "primary color", "url": "/features/header/styles/background-primary-color.html" },
+                                { "title": "dark color", "url": "/features/header/styles/background-dark-color.html" }
+                            ]
+                        },
+                        { "title": "center overlay", "url": "/features/header/styles/center-overlay.html" },
+
+                        { "title": "menu", "url": "javascript:void(0);",
+
+                            "items": [
+                                { "title": "dropdown icon", "url": "/features/header/styles/menu-dropdown-icon.html" },
+                                { "title": "with icons", "url": "/features/header/styles/menu-icons.html" },
+
+                                { "title": "with border", "url": "/features/header/styles/menu-border-bottom.html",
+                                    "items": [
+                                        { "title": "border bottom", "url": "/features/header/styles/menu-border-bottom.html" },
+                                        { "title": "border top", "url": "/features/header/styles/menu-border-top.html" }
+                                    ]
+                                },
+
+                                { "title": "with background", "url": "/features/header/styles/menu-background-primary.html",
+                                    "items": [
+                                        { "title": "primary color", "url": "/features/header/styles/menu-background-primary.html" },
+                                        { "title": "dark color", "url": "/features/header/styles/menu-background-dark.html" }
+                                    ]
+                                },
+
+                                { "title": "with separator", "url": "/features/header/styles/menu-separator-dots.html",
+                                    "items": [
+                                        { "title": "with dots", "url": "/features/header/styles/menu-separator-dots.html" },
+                                        { "title": "with line", "url": "/features/header/styles/menu-separator-line.html" }
+                                    ]
+                                }
+
+                            ]
+                        },
+
+                        { "title": "dropdown menu", "url": "javascript:void(0);",
+
+                            "items": [
+                                { "title": "with mark", "url": "/features/header/styles/dropdown-menu-mark.html" },
+                                { "title": "background primary", "url": "/features/header/styles/dropdown-menu-primary.html" },
+                                { "title": "background dark", "url": "/features/header/styles/dropdown-menu-dark.html" }
+                            ]
+                        }
+
+                    ]
+                }
+        ],
+        "side_navigation": [
+            { "title": "side left", "url": "/features/side-navigation/side-left.html" },
+            { "title": "side right", "url": "/features/side-navigation/side-right.html" },
+            { "title": "side mini left", "url": "/features/side-navigation/side-mini-left.html" },
+            { "title": "side mini right", "url": "/features/side-navigation/side-mini-right.html" },
+            { "title": "side mini with icons", "url": "/features/side-navigation/side-mini-with-icons.html" },
+            { "title": "side mini logo center", "url": "/features/side-navigation/side-mini-logo-center.html" },
+            { "title": "styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "content align", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "center", "url": "/features/side-navigation/styles/content-align-center.html" },
+                            { "title": "right", "url": "/features/side-navigation/styles/content-align-right.html" }
+                        ]
+                    },
+                    { "title": "background color", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/side-navigation/styles/background-color-primary.html" },
+                            { "title": "dark color", "url": "/features/side-navigation/styles/background-color-dark.html" }
+                        ]
+                    },
+                    { "title": "logo background", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/side-navigation/styles/logo-background-color-primary.html" },
+                            { "title": "dark color", "url": "/features/side-navigation/styles/logo-background-color-dark.html" }
+                        ]
+                    },
+                    { "title": "menu", "url": "javascript:void(0);",
+
+                        "items": [
+                            { "title": "with icons", "url": "/features/side-navigation/styles/menu-icons.html" },
+
+                            { "title": "with background", "url": "/features/side-navigation/styles/menu-background-primary.html",
+                                "items": [
+                                    { "title": "primary color", "url": "/features/side-navigation/styles/menu-background-primary.html" },
+                                    { "title": "dark color", "url": "/features/side-navigation/styles/menu-background-dark.html" }
+                                ]
+                            }
+
+                        ]
+                    }
+                ]
+            },
+            { "title": "mini styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "background color", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/side-navigation/styles/mini-background-color-primary.html" },
+                            { "title": "dark color", "url": "/features/side-navigation/styles/mini-background-color-dark.html" }
+                        ]
+                    },
+                    { "title": "logo background", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/side-navigation/styles/mini-logo-background-color-primary.html" },
+                            { "title": "dark color", "url": "/features/side-navigation/styles/mini-logo-background-color-dark.html" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "hamburger_menu": [
+            { "title": "slide up", "url": "/features/hamburger-menu/slide-up.html",
+                "items": [
+                    { "title": "& icon left", "url": "/features/hamburger-menu/slide-up-icon-left.html" }
+                ]
+            },
+            { "title": "slide down", "url": "/features/hamburger-menu/slide-down.html",
+                "items": [
+                    { "title": "& icon left", "url": "/features/hamburger-menu/slide-down-icon-left.html" }
+                ]
+            },
+            { "title": "slide right", "url": "/features/hamburger-menu/slide-right.html",
+                "items": [
+                    { "title": "push off-canvas", "url": "/features/hamburger-menu/slide-right-push.html" },
+                    { "title": "overlay full-width", "url": "/features/hamburger-menu/slide-right-overlay-full-width.html" }
+                ]
+            },
+            { "title": "slide left", "url": "/features/hamburger-menu/slide-left.html",
+                "items": [
+                    { "title": "push off-canvas", "url": "/features/hamburger-menu/slide-left-push.html" },
+                    { "title": "overlay full-width", "url": "/features/hamburger-menu/slide-left-overlay-full-width.html" }
+                ]
+            },
+            { "title": "styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "transparent", "url": "/features/hamburger-menu/styles/transparent.html" },
+                    { "title": "icon color", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary", "url": "/features/hamburger-menu/styles/icon-primary-color.html" },
+                            { "title": "dark", "url": "/features/hamburger-menu/styles/icon-dark-color.html" },
+                            { "title": "white", "url": "/features/hamburger-menu/styles/icon-white-color.html" }
+                        ]
+                    },
+                    { "title": "icon background", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/hamburger-menu/styles/icon-background-primary-color.html" },
+                            { "title": "dark color", "url": "/features/hamburger-menu/styles/icon-background-dark-color.html" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "sticky_navigation": [
+            { "title": "show on scroll", "url": "/features/sticky-navigation/show-on-scroll.html" },
+            { "title": "hide on scroll", "url": "/features/sticky-navigation/hide-on-scroll.html" },
+            { "title": "one-page navigation", "url": "/features/one-page-navigation.html" }
+        ],
+        "top_bar": [
+            { "title": "default", "url": "/features/top-bar/default.html" },
+            { "title": "language switcher", "url": "/features/top-bar/language-switcher.html" },
+            { "title": "with menu", "url": "/features/top-bar/menu.html" },
+            { "title": "styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "background color", "url": "/features/top-bar/styles/background-primary-color.html",
+                        "items": [
+                            { "title": "primary color", "url": "/features/top-bar/styles/background-primary-color.html" },
+                            { "title": "dark color", "url": "/features/top-bar/styles/background-dark-color.html" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "sliders_intro": [
+            { "title": "revolution slider", "url": "/features/sliders-intro/slider-revolution.html" },
+            { "title": "flex slider", "url": "/features/sliders-intro/slider-flex.html" },
+            { "title": "owl slider", "url": "/features/sliders-intro/slider-owl.html" },
+            { "title": "image intro", "url": "/features/sliders-intro/intro-image.html" },
+            { "title": "parallax intro", "url": "/features/sliders-intro/intro-parallax.html" },
+            { "title": "gallery intro", "url": "/features/sliders-intro/intro-gallery.html" },
+            { "title": "video intro", "url": "/features/sliders-intro/intro-video.html" }
+        ],
+        "footer": [
+            { "title": "default", "url": "/features/footer/default.html#footer" },
+            { "title": "widgets", "url": "/features/footer/widgets.html#footer",
+                "items": [
+                    { "title": "widgets 1", "url": "/features/footer/widgets.html#footer" },
+                    { "title": "widgets 2", "url": "/features/footer/widgets-2.html#footer" },
+                    { "title": "widgets 3", "url": "/features/footer/widgets-3.html#footer" },
+                    { "title": "widgets 4", "url": "/features/footer/widgets-4.html#footer" },
+                    { "title": "widgets 5", "url": "/features/footer/widgets-5.html#footer" },
+                    { "title": "widgets 6", "url": "/features/footer/widgets-6.html#footer" }
+                ]
+            },
+            { "title": "footer top", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "instagram feed", "url": "/features/footer/top/instagram-feed.html#footer-top" },
+                    { "title": "call to action", "url": "/features/footer/top/call-to-action.html#footer-top" },
+                    { "title": "google map", "url": "/features/footer/top/google-map.html#footer-top" },
+                    { "title": "clients", "url": "/features/footer/top/clients.html#footer-top" },
+                    { "title": "subscribe", "url": "/features/footer/top/subscribe.html#footer-top" }
+                ]
+            },
+            { "title": "footer bottom", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "default", "url": "/features/footer/bottom/default.html#footer-bottom" },
+                    { "title": "with icons", "url": "/features/footer/bottom/with-icons.html#footer-bottom" },
+                    { "title": "center icons", "url": "/features/footer/bottom/with-icons-center.html#footer-bottom" },
+                    { "title": "with menu", "url": "/features/footer/bottom/with-menu.html#footer-bottom" },
+                    { "title": "menu & icons", "url": "/features/footer/bottom/with-menu-icons.html#footer-bottom" }
+                ]
+            },
+            { "title": "styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "background color", "url": "/features/footer/styles/background-primary-color.html#footer",
+                        "items": [
+                            { "title": "primary color", "url": "/features/footer/styles/background-primary-color.html#footer" },
+                            { "title": "dark color", "url": "/features/footer/styles/background-dark-color.html#footer" }
+                        ]
+                    },
+                    { "title": "footer reveal", "url": "/features/footer/styles/footer-reveal.html" }
+                ]
+            }
+        ],
+        "page_titles": [
+            { "title": "center alignment", "url": "/features/page-title/center-alignment.html",
+                "items": [
+                    { "title": "with breadcrumb", "url": "/features/page-title/center-alignment-breadcrumb.html" },
+                    { "title": "with icons", "url": "/features/page-title/center-alignment-icons.html" },
+                    { "title": "with buttons", "url": "/features/page-title/center-alignment-buttons.html" }
+                ]
+            },
+            { "title": "left alignment", "url": "/features/page-title/left-alignment.html",
+                "items": [
+                    { "title": "with icons", "url": "/features/page-title/left-alignment-icons.html" },
+                    { "title": "with buttons", "url": "/features/page-title/left-alignment-buttons.html" }
+                ]
+            },
+            { "title": "right alignment", "url": "/features/page-title/right-alignment.html",
+                "items": [
+                    { "title": "with icons", "url": "/features/page-title/right-alignment-icons.html" },
+                    { "title": "with buttons", "url": "/features/page-title/right-alignment-buttons.html" }
+                ]
+            },
+            { "title": "styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "background color", "url": "javascript:void(0);",
+                        "items": [
+                            { "title": "primary color", "url": "/features/page-title/styles/background-primary-color.html" },
+                            { "title": "primary gradient", "url": "/features/page-title/styles/background-primary-color-gradient.html" },
+                            { "title": "dark color", "url": "/features/page-title/styles/background-dark-color.html" },
+                            { "title": "dark gradient", "url": "/features/page-title/styles/background-dark-color-gradient.html" }
+                        ]
+                    },
+                    { "title": "background image", "url": "/features/page-title/styles/background-image.html" },
+                    { "title": "background parallax", "url": "/features/page-title/styles/background-parallax.html" },
+                    { "title": "background ken burns", "url": "/features/page-title/styles/background-ken-burns.html" },
+                    { "title": "background video", "url": "/features/page-title/styles/background-video.html",
+                        "items": [
+                            { "title": "muted video", "url": "/features/page-title/styles/background-video-muted.html" }
+                        ]
+                    },
+                    { "title": "transparent header", "url": "/features/page-title/styles/transparent-header.html" },
+                    { "title": "mini height", "url": "/features/page-title/styles/mini-height.html" },
+                    { "title": "full width", "url": "/features/page-title/styles/full-width.html" }
+                ]
+            },
+            { "title": "breadcrumb styles", "url": "javascript:void(0);",
+                "items": [
+                    { "title": "default separator", "url": "/features/page-title/breadcrumb-styles/default-separator.html" },
+                    { "title": "bullet separator", "url": "/features/page-title/breadcrumb-styles/bullet-separator.html" },
+                    { "title": "arrow separator", "url": "/features/page-title/breadcrumb-styles/arrow-separator.html" },
+                    { "title": "dot separator", "url": "/features/page-title/breadcrumb-styles/dot-separator.html" },
+                    { "title": "succeeds separator", "url": "/features/page-title/breadcrumb-styles/succeeds-separator.html" },
+                    { "title": "with icons", "url": "/features/page-title/breadcrumb-styles/with-icons.html" }
+                ]
+            }
+        ],
+        "columns": [
+            { "title": "basics", "url": "/features/columns/basics.html" },
+            { "title": "sizes", "url": "/features/columns/sizes.html" },
+            { "title": "responsiveness", "url": "/features/columns/responsiveness.html" },
+            { "title": "nesting", "url": "/features/columns/nesting.html" },
+            { "title": "gap", "url": "/features/columns/gap.html" },
+            { "title": "options", "url": "/features/columns/options.html" }
+        ],
+        "layout": [
+            { "title": "boxed", "url": "/features/layout/boxed.html" },
+            { "title": "container", "url": "/features/layout/container.html" },
+            { "title": "level", "url": "/features/layout/level.html" },
+            { "title": "media object", "url": "/features/layout/media-object.html" },
+            { "title": "hero", "url": "/features/layout/hero.html" },
+            { "title": "section", "url": "/features/layout/section.html" },
+            { "title": "tiles", "url": "/features/layout/tiles.html" }
+        ],
+        "form": [
+            { "title": "general", "url": "/features/form/general.html" },
+            { "title": "input", "url": "/features/form/input.html" },
+            { "title": "tags input", "url": "/features/form/tagsinput.html" },
+            { "title": "textarea", "url": "/features/form/textarea.html" },
+            { "title": "select", "url": "/features/form/select.html" },
+            { "title": "checkbox", "url": "/features/form/checkbox.html" },
+            { "title": "radio", "url": "/features/form/radio.html" },
+            { "title": "switch", "url": "/features/form/switch.html" },
+            { "title": "slider", "url": "/features/form/slider.html" },
+            { "title": "file", "url": "/features/form/file.html" }
+        ]
+    },
+    "pages": {
+        "about": [
+            { "title": "default", "url": "/pages/about.html" },
+            { "title": "about 2", "url": "/pages/about-2.html" },
+            { "title": "about 3", "url": "/pages/about-3.html" },
+            { "title": "about 4", "url": "/pages/about-4.html" }
+        ],
+        "services": [
+            { "title": "default", "url": "/pages/services.html" },
+            { "title": "services 2", "url": "/pages/services-2.html" },
+            { "title": "services 3", "url": "/pages/services-3.html" },
+            { "title": "services 4", "url": "/pages/services-4.html" }
+        ],
+        "contact": [
+            { "title": "default", "url": "/pages/contact.html" },
+            { "title": "contact 2", "url": "/pages/contact-2.html" },
+            { "title": "contact 3", "url": "/pages/contact-3.html" }
+        ],
+        "team": [
+            { "title": "default", "url": "/pages/team.html" },
+            { "title": "team 2", "url": "/pages/team-2.html" }
+        ],
+        "gallery": [
+            { "title": "default", "url": "/pages/gallery.html" },
+            { "title": "masonry", "url": "/pages/gallery-masonry.html" },
+            { "title": "masonry justified", "url": "/pages/gallery-justified.html" },
+            { "title": "fullwidth", "url": "/pages/gallery-fullwidth.html" }
+        ],
+        "shop": [
+            { "title": "default", "url": "/pages/shop.html" },
+            { "title": "single product", "url": "/pages/shop-product.html" }
+        ],
+        "user": [
+            { "title": "Login & Register", "url": "/pages/user-login.html" },
+            { "title": "my profile", "url": "/pages/user-profile.html" }
+        ],
+        "more": [
+            { "title": "clients", "url": "/pages/clients.html" },
+            { "title": "pricing", "url": "/pages/pricing.html" },
+            { "title": "testimonials", "url": "/pages/testimonials.html" },
+            { "title": "sitemap", "url": "/pages/sitemap.html" },
+            { "title": "faqs", "url": "/pages/faqs.html" },
+            { "title": "careers", "url": "/pages/careers.html" },
+            { "title": "404", "url": "/pages/404.html" }
+        ]
+    },
+    "shop": {
+        "section_class": "works-list",
+        "heading_title": "Our Works",
+        "categories_filter": [
+            { "title": "show all", "filters": "*" },
+            { "title": "wedding", "filters": ".wedding" },
+            { "title": "announcement", "filters": ".announcement" },
+            { "title": "engagement", "filters": ".engagement" }
+        ],
+        "link": "/portfolio/single.html",
+        "images_folder": "portfolio/",
+        "show_image": true,
+        "show_title": true,
+        "show_categories": true,
+        "show_text": false,
+        "list": [
+            {
+                "image_src": "1.png",
+                "title": "bow tie",
+                "price": "$39.49",
+                "rating": 5
+            },
+            {
+                "image_src": "2.png",
+                "title": "back bag",
+                "price": "$22.99",
+                "rating": 4
+            },
+            {
+                "image_src": "3.png",
+                "title": "Tie bar",
+                "price": "$55.50",
+                "rating": 5
+            },
+            {
+                "image_src": "4.png",
+                "title": "Pocket square",
+                "price": "$11.40",
+                "rating": 4
+            },
+            {
+                "image_src": "5.png",
+                "title": "Shoes & Socks",
+                "price": "$40.49",
+                "rating": 5
+            },
+            {
+                "image_src": "6.png",
+                "title": "Cuff links",
+                "price": "$88.99",
+                "rating": 4
+            }
+        ]
+    }
+
+}

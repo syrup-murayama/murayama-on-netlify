@@ -1,0 +1,102 @@
+{
+	"portfolio_single": {
+
+		"page_title": {
+			"title": "Great Creative Things",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"work_content": {
+			"section_class": "portfolio-single",
+			"heading_title": "",
+			"show_widgets": true,
+			"full_width": false,
+			"widgets_top": false,
+			"widgets": {
+				"list": [
+					{ "type": "html", "title": "description", "widget": "description", "class": "widget-html", "column_class": "is-12" },
+					{ "type": "links", "title": "details", "widget": "details", "class": "widget-links", "column_class": "is-12" },
+					{ "type": "html", "title": "", "widget": "button", "class": "widget-html", "column_class": "is-12" },
+					{ "type": "social", "title": "Share this", "widget": "share", "class": "widget-social", "column_class": "is-12" }
+				]
+			},
+			"widgets_content": {
+				"description": "<p>The main component of a healthy environment for self esteem is the needs be nurturing, main compon of a healthy env for self esteem.</p>",
+				"details": [
+					{
+						"icon": "icon-folder",
+						"list": [
+							{ "text": "Branding", "link": "#" },
+							{ "text": "Prototyping", "link": "#" }
+						]
+					},
+					{
+						"icon": "icon-tag",
+						"list": [
+							{ "text": "Design", "link": "#" },
+							{ "text": "Development", "link": "#" }
+						]
+					},
+					{
+						"icon": "icon-clock",
+						"list": [
+							{ "text": "April 5, 2018", "link": "" }
+						]
+					}
+				],
+				"button": "<a href=\"#\" class=\"button is-rounded\">Start a Project</a>",
+				"social_links": [
+					{ "icon": "fab fa-facebook-f", "link": "#" },
+					{ "icon": "fab fa-twitter", "link": "#" },
+					{ "icon": "fab fa-pinterest-p", "link": "#" },	
+					{ "icon": "fab fa-google", "link": "#" },
+					{ "icon": "fab fa-instagram", "link": "#" }
+				]
+			}
+		},
+		"works_navigation": {
+			"section_class": "works-navigation",
+			"heading_title": ""
+		},
+		"related_works": {
+			"section_class": "related-works",
+			"heading_title": "related projects",
+			"categories_filter": [],
+			"link": "/portfolio/single.html",
+			"images_folder": "portfolio/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": true,
+			"show_text": false,
+			"list": [
+				{
+					"image_src": "1.png",
+					"title": "Caminando",
+					"categories": ["Creative"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Calligraphy",
+					"categories": ["Branding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "3.png",
+					"title": "Abstract",
+					"categories": ["Vector"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				}
+			]
+		},
+		"pagination": {
+			"separate_next_prev": true,
+			"hide_disabled_next_prev": true,
+			"list": [
+				{ "type": "previous", "text": "", "link": "/portfolio/single.html", "disabled": false },
+				{ "text": "<i class=\"icon-grid\"></i>", "link": "/portfolio/", "current": false },
+				{ "type": "next", "text": "", "link": "/portfolio/single.html" }
+			]
+		}
+
+	}
+}

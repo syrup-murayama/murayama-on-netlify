@@ -1,0 +1,16 @@
+/*
+ * ::::::::::: Footer Styles :::::::::::
+ */
+
+// ::::::::::: Imports ::::::::::: //
+@import '../_config/imports';
+@import '../vendor/lib/bulma/layout/section';
+
+// ::::::::::: Styles ::::::::::: //
+
+footer {
+	@extend .section;
+	// @include cover-background('../../images/background/7.png', $primary-light, 'center', 'bottom', '');
+	background-color: $primary-light;
+	padding: 6.5rem 1.5rem;
+}

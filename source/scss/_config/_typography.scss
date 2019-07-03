@@ -1,0 +1,22 @@
+// customizing Template typography
+
+// add font family
+$family-serif: 'Poppins', sans-serif;
+
+// use the font family with bulma
+$family-primary: $family-serif;
+
+// Font size in px
+$menu-font-size: 14;
+$menu-sub-font-size: 12;
+$logo-text-font-size: 26;
+$footer-logo-text-font-size: 29;
+
+// Letter spacing
+$menu-letter-spacing: 1px;
+$logo-text-letter-spacing: 0;
+$menu-sub-letter-spacing: 1px;
+$introduction-heading-letter-spacing: 2px;
+$heading-title-letter-spacing: 0px;
+$works-item-title-letter-spacing: 0px;
+$works-item-subtitle-letter-spacing: 1px;

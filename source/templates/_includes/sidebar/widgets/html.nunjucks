@@ -1,0 +1,19 @@
+{% macro widget_content(data, content) %}
+
+<div class="textwidget">
+
+	{% if data.widget == 'description' %}
+		{{ content.description | safe }}
+	{% elif data.widget == 'button' %}
+		{{ content.button | safe }}
+	{% else %}
+
+	{% for html in content.custom_content %}
+	{{ html.content | safe }}
+	{% endfor %}
+
+	{% endif %}
+
+</div><!-- .textwidget -->
+
+{% endmacro %}

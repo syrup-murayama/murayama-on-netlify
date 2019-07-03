@@ -1,0 +1,53 @@
+{% macro blog_list(style_class, columns_class='is-4 is-multiline', column_class='is-6', data, global_data, show_image, show_meta, show_title, show_content, more_text) %}
+
+
+<div class="blog-list {{style_class}} columns is-variable {{columns_class}}">
+
+    {% for post in data.posts %}
+	<div class="column {{column_class}}">
+		<article class="blog-post">
+			{% if data.show_image or show_image %}
+			<figure class="post-image">
+				<a href="{{data.link}}"><img src="{{global_data.images_root}}{{data.images_folder}}{{post.image_src}}"></a>
+			</figure>
+			{% endif %}
+			<div class="entry-header">
+				{% if data.show_meta or show_meta %}
+				<div class="post-meta">
+					<ul>
+						{% for meta in data.post_meta %}
+						<li>
+						    <span class="icon"><i class="{{meta.icon}}"></i></span>
+						    {% for text in meta.text %}
+						        {% if text.link == '' %}
+						        <span>{{text.name}}{% if loop.length > 1 and loop.last == false %}, {% endif %}</span>
+						        {% else %}
+						        <a href="{{text.link}}"><span>{{text.name}}{% if loop.length > 1 and loop.last == false %}, {% endif %}</span></a>
+                                {% endif %}
+						    {% endfor %}
+						</li>
+						{% endfor %}
+					</ul>
+				</div><!-- .post-meta -->
+				{% endif %}
+				{% if data.show_title or show_title %}
+				<h2 class="entry-title"><a href="{{data.link}}">{{post.title}}</a></h2>
+				{% endif %}
+			</div><!-- .entry-header -->
+			{% if data.show_content or show_content %}
+			<div class="entry-content">
+				<p>{{post.content}}</p>
+			</div><!-- .entry-content -->
+			{% endif %}
+			{% if data.more_text or more_text %}
+			<div class="entry-footer">
+				<a href="{{data.link}}" class="button">{{global_data.more_text.read}}</a>
+			</div><!-- .entry-footer -->
+			{% endif %}
+		</article><!-- .blog-post -->
+	</div>
+	{% endfor %}
+
+</div><!-- .columns -->
+
+{% endmacro %}

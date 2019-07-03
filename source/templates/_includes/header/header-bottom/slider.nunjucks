@@ -1,0 +1,4 @@
+{% from "_includes/header/header-bottom/modules/slider.nunjucks" import slider %}
+{{ slider(
+	slider_id = 'rev_slider_1', slider_layout ='fullscreen', data = slider_revolution.slides, global_data = global
+) }}

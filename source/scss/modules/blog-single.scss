@@ -1,0 +1,99 @@
+/*
+ * ::::::::::: Blog Single Post Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.blog-single {
+	.entry-header {
+		.entry-title {
+			@include fontsize(25.5);
+			margin-bottom: 1.8rem !important;
+		}
+
+	}
+
+	.entry-footer {
+		margin-top: 3.4em;
+		@include font-roboto;
+
+		.post-tags {
+			.icon {
+				width: auto;
+				margin-right: 5px;
+			}
+
+			i {
+				color: $primary;
+				@include fontsize(14);
+			}
+
+			a {
+				@include fontsize(11.8);
+				text-transform: uppercase;
+				letter-spacing: 0.8px;
+				color: $secondary-5;
+				padding: 0 1px;
+				font-weight: 500;
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		.social-share {
+			> span {
+				@include fontsize(11.8);
+				@extend %is-uppercase;
+				letter-spacing: 0.8px;
+				display: inline-block;
+				margin-right: 12px;
+				font-weight: 500;
+			}
+
+			ul {
+				display: inline-block;
+
+				li {
+					display: inline-block;
+					padding-right: 5px;
+
+					&:last-child {
+						padding-right: 0;
+					}
+
+					a {
+						display: inline-block;
+					}
+
+					.icon {
+						@include circle(27px);
+						background-color: $primary;
+						color: $white;
+						@include transition(all 0.4s ease);
+
+						i {
+							@include fontsize(13);
+						}
+
+						&:hover {
+							background-color: $secondary;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,29 @@
+<!-- menu-with-icons-2.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/header/_layout.nunjucks" %}
+
+<!-- set header layout options -->
+{% set show_header_left = true %}
+{% set show_header_center = false %}
+{% set show_header_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+{% from "_includes/header/modules/logo.nunjucks" import menu_logo %}
+{% from "_includes/header/modules/icons.nunjucks" import menu_icons %}
+
+{% block header_navigation_left %}
+    {{ menu_logo( data = header.logo_left, global_data = global ) }}
+{% endblock %}
+
+{% block header_navigation_right %}
+    {{ menu_start( style_class = 'right' ) }}
+	    {% for item in one_page.navigation.menu %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+    {{ menu_icons() }}
+{% endblock %}

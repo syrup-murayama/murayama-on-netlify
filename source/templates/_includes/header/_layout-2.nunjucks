@@ -1,0 +1,42 @@
+<div class="level top">
+
+    {% if show_header_left_top %}
+    <div class="level-left">
+    	{% block header_navigation_left_top %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_center_top %}
+    <div class="level-left">
+    	{% block header_navigation_center_top %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_right_top %}
+	<div class="level-right">
+		{% block header_navigation_right_top %}{% endblock %}
+	</div><!-- .level-right -->
+	{% endif %}
+
+</div><!-- .level.top -->
+<div class="level">
+
+    {% if show_header_left %}
+    <div class="level-left">
+    	{% block header_navigation_left %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_center %}
+    <div class="level-left">
+    	{% block header_navigation_center %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_right %}
+	<div class="level-right">
+		{% block header_navigation_right %}{% endblock %}
+	</div><!-- .level-right -->
+	{% endif %}
+
+</div><!-- .level -->

@@ -1,0 +1,18 @@
+/*
+ * ::::::::::: Timeline Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.timeline {
+	.timeline-header {
+		.tag {
+			@extend %is-capitalized;
+		}
+
+	}
+
+}

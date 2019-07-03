@@ -1,0 +1,20 @@
+{% from "_includes/content/elements/form.nunjucks" import form_fields %}
+
+<!-- successful form message -->
+<div class="overhang-message-content is-hidden success">
+	<span class="icon"><i class="ion-md-notifications"></i></span>
+	Thank You! Your message was sent successfully.
+</div>
+
+<!-- error form message -->
+<div class="overhang-message-content is-hidden error">
+	<span class="icon"><i class="ion-md-notifications"></i></span>
+	Oops! Something went wrong, we couldn't send your message.
+</div>
+
+<!-- ajax contact form -->
+<form accept-charset="UTF-8" class="ajax-contact-form" action="https://usebasin.com/f/3587049dbc33.json" method="POST">
+
+	{{ form_fields( data = contact.contact_form, global_data = global ) }}
+
+</form>

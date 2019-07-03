@@ -1,0 +1,17 @@
+{% macro counters(style_class, data, global_data, show_icons = false, show_text = true) %}
+
+<nav class="level counterup {{style_class}}">
+
+  {% for counter in data.list %}
+  <div class="level-item has-text-centered">
+    <div>
+      {% if show_icons %}<span class="icon {{counter.icon_class}}"><i class="{{counter.icon}}"></i></span>{% endif %}
+      <p class="title counter">{{counter.number}}</p>
+      {% if show_text %}<p class="heading">{{counter.text}}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+</nav><!-- .counterup -->
+
+{% endmacro %}

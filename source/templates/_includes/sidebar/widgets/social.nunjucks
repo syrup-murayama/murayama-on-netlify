@@ -1,0 +1,13 @@
+{% macro widget_content(data, content) %}
+
+<ul>
+	{% for social in content.social_links %}
+    <li>
+        <a href="{{social.link}}" target="_blank">
+            <span class="icon"><i class="{{social.icon}}"></i></span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endmacro %}

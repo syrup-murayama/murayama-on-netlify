@@ -1,0 +1,125 @@
+/*
+ * ::::::::::: Call To Action Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.call-to-action {
+	padding-top: 5.7rem;
+	padding-bottom: 5.7rem;
+
+	&.style-1,
+	&.style-2 {
+		.title {
+			@extend %is-capitalized;
+			color: $secondary;
+			letter-spacing: $heading-title-letter-spacing;
+			@include fontsize(36);
+			font-weight: 600;
+		}
+
+		.heading {
+			padding-bottom: 12px;
+			@include fontsize(14);
+			@extend %is-uppercase;
+			letter-spacing: 1.4px;
+			margin-top: -23px;
+		}
+
+		.button {
+			margin-bottom: -23px;
+		}
+
+	}
+
+	&.style-2 {
+		.title {
+			margin-bottom: 1rem;
+		}
+
+		.heading-title-bottom {
+			padding-bottom: 0;
+		}
+
+		.button {
+			margin-bottom: 0;
+		}
+
+	}
+
+	&.style-3 {
+		.heading-title {
+			// margin-bottom: 5px !important;
+
+			&:after {
+				display: none;
+			}
+
+		}
+
+	}
+
+	&.style-4 {
+		.icon {
+			margin-bottom: 40px;
+			color: $warning;
+
+			i {
+				@include fontsize(54);
+				line-height: 1;
+			}
+
+		}
+
+		.heading-title {
+			margin-bottom: 16px !important;
+		}
+
+		p {
+			margin-bottom: 45px;
+		}
+
+		.button {
+			margin: 0 5px;
+		}
+
+	}
+
+	&.style-5 {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+		.title {
+			@extend %is-capitalized;
+			color: $white;
+			letter-spacing: $heading-title-letter-spacing;
+			@include fontsize(36);
+			font-weight: 600;
+		}
+
+		.heading {
+			@include fontsize(50);
+			@extend %is-uppercase;
+			letter-spacing: 1.4px;
+			color: $primary-6;
+			margin-right: 30px;
+			margin-top: 4px;
+			font-weight: 500;
+		}
+
+		.button {
+			background-color: $primary-6;
+
+			&:hover {
+				background-color: $white;
+				color: $primary-6;
+			}
+
+		}
+
+	}
+
+}

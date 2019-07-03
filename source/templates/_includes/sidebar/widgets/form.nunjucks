@@ -1,0 +1,14 @@
+{% macro widget_content(data, content) %}
+
+<form>
+	<div class="field">
+	  <div class="control is-expanded">
+	    <input class="input" type="text" placeholder="{% if data.widget == 'subscribe' %}your@email.com{% else %}Search...{% endif %}">
+	    <button type="submit" class="button">
+	    	<span class="icon"><i class="{% if data.widget == 'subscribe' %}icon-envelope{% else %}icon-magnifier{% endif %}"></i></span>
+	    </button>
+	  </div>
+	</div>
+</form>
+
+{% endmacro %}

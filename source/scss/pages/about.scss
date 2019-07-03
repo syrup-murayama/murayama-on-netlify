@@ -1,0 +1,29 @@
+/*
+ * ::::::::::: About Page Custom Styles :::::::::::
+ */
+
+// ::::::::::: Imports ::::::::::: //
+@import '../_config/imports';
+
+// ::::::::::: Styles ::::::::::: //
+
+.page-about {
+	.intro-about {
+		figure {
+			text-align: center;
+
+			img {
+				margin-bottom: 2rem;
+				max-width: 115px;
+			}
+
+		}
+
+		p {
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+
+	}
+
+}

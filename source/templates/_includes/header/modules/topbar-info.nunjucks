@@ -1,0 +1,10 @@
+{% macro topbar_info(style_class, data, global_data) %}
+    <ul class="topbar-info {{style_class}}">
+        <li><a href="mailto:noreply@website.com">
+            <span class="icon"><i class="icon-envelope"></i></span> noreply@website.com
+        </a></li>
+        <li><a href="tel:+66396847263">
+            <span class="icon"><i class="icon-phone"></i></span> +66396847263
+        </a></li>
+    </ul>
+{% endmacro %}

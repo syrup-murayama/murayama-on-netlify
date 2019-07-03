@@ -1,0 +1,144 @@
+{
+	"services": {
+
+		"page_title": {
+			"title": "Services",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"services": {
+			"section_class": "works-list",
+			"heading_title": "Mind Power The Ultimate <br> Success Formula",
+			"paragraph": "If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum. The patch is just a patch that you apply everyd",
+			"categories_filter": [],
+			"custom_button": {
+				"text": "view stories",
+				"link": "/portfolio/"
+			},
+			"link": "/pages/services.html",
+			"images_folder": "services/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": false,
+			"show_text": true,
+			"list": [
+				{
+					"image_src": "1.png",
+					"title": "Invitations",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Wedding Dresses",
+					"categories": ["Announcement"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "3.png",
+					"title": "Ring & Jewellery",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "4.png",
+					"title": "Wedding Cake",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "5.png",
+					"title": "Honeymoon",
+					"categories": ["Announcement"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "6.png",
+					"title": "Beauty & Makeup",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				}
+			]
+		},
+		"testimonials": {
+			"section_class": "testimonials-list",
+			"images_folder": "testimonials/",
+			"show_image": true,
+			"show_text": true,
+			"show_author": true,
+			"list": [
+				{
+					"image_src": "1.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "2.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "3.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				}
+			]
+		},
+		"pricing_table": {
+			"section_class": "pricingtable",
+			"heading_title": "Our Packages",
+			"currency_type": "$",
+			"price_per": "/month",
+			"show_title": true,
+			"show_price": true,
+			"show_items": true,
+			"show_button": true,
+			"show_price_per": false,
+			"show_currency_type": true,
+			"plans": [
+				{
+					"is_active": false,
+					"title": "Basic",
+					"price": "199",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				},
+				{
+					"is_active": true,
+					"title": "Advanced",
+					"price": "299",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				},
+				{
+					"is_active": false,
+					"title": "Advanced +",
+					"price": "499",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				}
+			]
+		}
+
+	}
+}

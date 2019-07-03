@@ -1,0 +1,9 @@
+{% macro widget_content(data, content) %}
+
+<div class="tagcloud">
+	{% for tag in content.tags %}
+	<a href="#">{{tag.name}}</a>
+	{% endfor %}
+</div><!-- .tagcloud -->
+
+{% endmacro %}

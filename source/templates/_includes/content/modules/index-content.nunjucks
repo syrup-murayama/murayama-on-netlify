@@ -1,0 +1,161 @@
+<!-- import content layouts and modules -->
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/elements/heading-title.nunjucks" import heading_title %}
+{% from "_includes/content/modules/image-content.nunjucks" import image_content %}
+{% from "_includes/content/modules/boxes.nunjucks" import boxes %}
+{% from "_includes/content/modules/works-slider.nunjucks" import works_slider %}
+{% from "_includes/content/modules/works.nunjucks" import works %}
+{% from "_includes/content/modules/testimonials.nunjucks" import testimonials %}
+{% from "_includes/content/modules/pricing-table.nunjucks" import pricing_table %}
+{% from "_includes/content/modules/subscribe.nunjucks" import subscribe %}
+{% from "_includes/content/modules/blog-list.nunjucks" import blog_list %}
+{% from "_includes/content/modules/counters.nunjucks" import counters %}
+{% from "_includes/content/modules/team.nunjucks" import team %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+<!-- stories section -->
+{{ section_start( id='works', class = 'stories', use_container=false ) }}
+
+	<div class="works image-hover effect-5">
+	    <div class="columns is-variable is-4 is-multiline">
+
+	    	<div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                   	<img src="/assets/images/portfolio/1.png">
+	                   	<figcaption>
+	                   	    <h3>Caminando</h3><h5>Creative</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/2.png">
+	                    <figcaption>
+	                   	    <h3>Calligraphy</h3><h5>Branding</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/3.png">
+	                    <figcaption>
+	                   	    <h3>Abstract</h3><h5>Vector</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/4.png">
+	                    <figcaption>
+	                   	    <h3>lifestyle</h3><h5>healthy</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                   	<img src="/assets/images/portfolio/5.png">
+	                   	<figcaption>
+	                   	    <h3>Caminando</h3><h5>Creative</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/6.png">
+	                    <figcaption>
+	                   	    <h3>Calligraphy</h3><h5>Branding</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                   	<img src="/assets/images/portfolio/7.png">
+	                   	<figcaption>
+	                   	    <h3>Caminando</h3><h5>Creative</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/8.png">
+	                    <figcaption>
+	                   	    <h3>Calligraphy</h3><h5>Branding</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+	        <div class="column is-4" data-aos="fade-up">
+	            <div class="work-item">
+	                <figure>
+	                    <img src="/assets/images/portfolio/9.png">
+	                    <figcaption>
+	                   	    <h3>Abstract</h3><h5>Vector</h5>
+		                    <a href="/portfolio/single.html">View more</a>
+						</figcaption>
+	                </figure>
+	            </div>
+	            <!-- .work-item -->
+	        </div>
+
+
+	    </div>
+	    <!-- .columns -->
+	</div><!-- .works -->
+
+
+{{ section_end() }}
+
+{{ section_start( class = 'subscribe-section' ) }}
+
+	   
+	  <h1 class="heading-title style-1">Let’s make something <br> great together</h1>
+	  <div class="has-text-centered" data-aos="fade-up">
+	  	<a href="/pages/contact.html" class="button is-primary">let's do it!</a>
+	  </div>
+
+
+	{{ section_end() }}
+
+{% endblock %}

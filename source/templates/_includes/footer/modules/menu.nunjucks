@@ -1,0 +1,9 @@
+{% macro footer_menu_start(style_class, data, global_data) %}
+<nav id="footer-navigation" class="footer-navigation {{style_class}}">
+    <ul id="main-footer-menu" class="menu">
+{% endmacro %}
+
+{% macro footer_menu_end(style_class, data, global_data) %}
+	</ul>
+</nav><!-- #footer-navigation -->
+{% endmacro %}

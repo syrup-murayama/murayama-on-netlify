@@ -1,0 +1,255 @@
+/*
+ * ::::::::::: Top Bar Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.site-header-top {
+	padding: 8px 0;
+	@include font-roboto;
+
+	%menu-arrows-icon {
+		@include font-simple-line-icons;
+		@include fontsize(7);
+	}
+
+	%menu-current-link {
+		&.active,
+		&.current,
+		&.current-menu-item,
+		&.current-menu-parent,
+		&.current_page_item,
+		&.current-menu-ancestor {
+			> a {
+				color: $primary-6;
+			}
+
+		}
+
+	}
+
+	.header-menu-icons {
+		&.social {
+			padding-left: 0;
+
+			&:before {
+				display: none;
+			}
+
+			li {
+				vertical-align: text-bottom;
+			}
+
+			.icon {
+				@include circle(22px);
+
+				i {
+					@include fontsize(12);
+				}
+
+			}
+
+		}
+
+	}
+
+	.topbar-info {
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			@include fontsize(12);
+			color: $tertiary;
+
+			a {
+				color: $tertiary;
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+			.icon {
+				height: auto;
+				width: auto;
+				vertical-align: middle;
+				margin-right: 4px;
+				margin-top: -1px;
+
+				i {
+					@include fontsize(14);
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	.nav-menu-dropdown {
+		&.style-2 {
+			margin-left: 13px;
+			padding-left: 4px;
+
+			> li {
+				padding: 0;
+
+				> a {
+					padding: 4px 0;
+
+					&:after {
+						content: "\e604";
+						@extend %menu-arrows-icon;
+						top: 33%;
+					}
+
+				}
+
+				> ul {
+					margin-top: 8px;
+				}
+
+			}
+
+			&:before {
+				height: 65%;
+				top: 17%;
+			}
+
+		}
+
+	}
+
+	.main-navigation {
+		li {
+			@include fontsize(13);
+			display: inline-block;
+			@extend %is-capitalized;
+			padding: 3px 0;
+
+			a {
+				color: $tertiary;
+				padding-left: 15px;
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+			@extend %menu-current-link;
+		}
+
+	}
+
+}
+
+// body cutom classes for top bar header
+body {
+	// default styles
+	&.topbar-default {
+		.site-header-top {
+			border-bottom: 1px solid $tertiary-9;
+		}
+
+	}
+
+	&.topbar-background {
+		&.primary-color,
+		&.dark-color {
+			.site-header-top {
+				background-color: $primary-3;
+
+				.topbar-info {
+					li {
+						color: $white;
+
+						a {
+							color: $white;
+
+							&:hover {
+								color: $secondary;
+							}
+
+						}
+
+						.icon {
+							i {
+								color: $secondary;
+							}
+
+						}
+
+					}
+
+				}
+
+				.header-menu-icons {
+					&.social {
+						.icon {
+							background-color: $secondary;
+
+							&:hover {
+								background-color: $black;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		&.dark-color:not(.primary-color) {
+			.site-header-top {
+				background-color: $secondary-2;
+
+				.topbar-info {
+					li {
+						a {
+							&:hover {
+								color: $primary;
+							}
+
+						}
+
+						.icon {
+							i {
+								color: $primary;
+							}
+
+						}
+
+					}
+
+				}
+
+				.header-menu-icons {
+					&.social {
+						.icon {
+							background-color: $primary;
+
+							&:hover {
+								background-color: $black;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

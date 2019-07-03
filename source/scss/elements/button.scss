@@ -1,0 +1,90 @@
+/*
+ * ::::::::::: Buttons Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+%button-padding-height-font {
+	@include fontsize(18);
+	height: 2.9em;
+	padding-left: calc(2em - 1px);
+	padding-right: calc(2em - 1px);
+}
+
+.button {
+	@extend %is-radiusless;
+	text-transform: capitalize;
+	@extend %is-shadowless;
+	@include font-roboto;
+	border: none;
+	box-shadow: none;
+	letter-spacing: 0;
+	@include transition(all 0.5s ease);
+	color: $white;
+	background-color: $primary;
+	@extend %button-padding-height-font;
+	outline: none;
+	border-radius: 290486px;
+	font-weight: 700;
+
+	&:hover,
+	&:focus {
+		color: $white;
+		background-color: $secondary;
+	}
+
+	&.is-medium {
+		@extend %button-padding-height-font;
+	}
+
+	&.is-large {
+		@extend %button-padding-height-font;
+		@include fontsize(20);
+	}
+
+	&.is-outlined {
+		border: 1px solid;
+
+		&:hover,
+		&:focus {
+			color: $white !important;
+		}
+
+	}
+
+	&.is-rounded {
+		border-radius: 290486px !important;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	&.is-text {
+		text-decoration: none;
+		border-bottom: 1px solid $tertiary-5;
+		padding-left: 0;
+		padding-right: 0;
+		color: $secondary-3;
+		font-weight: 500;
+		@include fontsize(18);
+		height: 2.6em;
+		margin-left: calc(2em - 1px);
+		margin-right: calc(2em - 1px);
+		border-radius: 0;
+
+		&:hover {
+			background-color: transparent;
+			border-bottom-color: $primary;
+		}
+
+	}
+
+}
+
+.field.has-addons .control .button,
+.field.has-addons .control:last-child .input,
+.field.has-addons .control:last-child .select select {
+	@include fontsize(15.8);
+}

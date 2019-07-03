@@ -1,0 +1,11 @@
+{% macro menu_start(style_class, data, global_data) %}
+<div id="nav-wrap">
+    <nav id="site-navigation" class="main-navigation {{style_class}}">
+        <ul id="main-header-menu" class="menu">
+{% endmacro %}
+
+{% macro menu_end(style_class, data, global_data) %}
+		</ul>
+    </nav><!-- #site-navigation -->
+</div><!-- #nav-wrap -->
+{% endmacro %}

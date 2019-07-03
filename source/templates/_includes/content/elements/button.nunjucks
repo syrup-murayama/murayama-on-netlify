@@ -1,0 +1,13 @@
+{% macro button(type, input_type, style_class, text, disabled) %}
+
+    {% if type == 'button' %}
+    <button class="button {{style_class}}"{% if disabled %} disabled{% endif %}>{{text | safe}}</button>
+    {% elif type == 'input' %}
+    <input class="button {{style_class}}" type="submit" value="{{text | safe}}"{% if disabled %} disabled{% endif %}>
+    {% elif type == 'input' and input_type == 'reset' %}
+    <input class="button {{style_class}}" type="reset" value="{{text | safe}}"{% if disabled %} disabled{% endif %}>
+    {% else %}
+    <a class="button {{style_class}}"{% if disabled %} disabled{% endif %}>{{text | safe}}</a>
+    {% endif %}
+
+{% endmacro %}

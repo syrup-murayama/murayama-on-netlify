@@ -1,0 +1,4 @@
+{% macro section_start(default_class='section', id,  class, use_container=true) %}
+<section id="{{id}}" class="{{default_class}} {{class}} is-clearfix">
+	<div {% if use_container %}class="container"{% endif %}>
+{% endmacro %}

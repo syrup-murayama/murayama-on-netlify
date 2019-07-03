@@ -1,0 +1,16 @@
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/elements/heading-title.nunjucks" import heading_title %}
+{% from "_includes/content/modules/subscribe.nunjucks" import subscribe %}
+
+{{ section_start( class = 'subscribe-section' ) }}
+
+	{% if subscribe_form.subscribe.heading_title %}
+		{{ heading_title( text = subscribe_form.subscribe.heading_title ) }}
+	{% endif %}
+
+	{% if subscribe_form.subscribe.text %}<p>{{subscribe_form.subscribe.text}}</p>{% endif %}
+
+	{{ subscribe( style_class = 'style-1', field_class = 'is-grouped', data = subscribe_form.subscribe, global_data = global ) }}
+			
+{{ section_end() }}

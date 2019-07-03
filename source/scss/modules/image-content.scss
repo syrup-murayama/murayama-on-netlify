@@ -1,0 +1,61 @@
+/*
+ * ::::::::::: Image Content Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.image-content {
+	figure {
+		overflow: hidden;
+
+		.image {
+			@include transition(all 0.4s ease-in-out);
+			display: block;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+
+		}
+
+	}
+
+	.content {
+		@include relative;
+
+		.text {
+			@include center-element($left: 5%, $width:auto, $align:left);
+			padding: $introduction-text-padding;
+
+			h4 {
+				color: $primary-2;
+				@extend %is-uppercase;
+				letter-spacing: $introduction-heading-letter-spacing;
+			}
+
+			h1 {
+				@extend %is-uppercase;
+				color: $secondary;
+				letter-spacing: $introduction-heading-letter-spacing;
+				margin-top: $introduction-h1-margin-top;
+				margin-bottom: $introduction-h1-margin-bottom;
+			}
+
+			p {
+				color: $tertiary;
+				@include font-roboto;
+				margin-bottom: $introduction-p-margin-bottom;
+			}
+
+			a {
+				padding: $introduction-button-padding;
+			}
+
+		}
+
+	}
+
+}

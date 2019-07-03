@@ -1,0 +1,673 @@
+/*
+ * ::::::::::: Image Hover Effects Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.image-hover {
+	// common style
+	figure {
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		cursor: pointer;
+		background: #000;
+		margin-bottom: 10px;
+
+		img {
+			position: relative;
+			display: block;
+			min-height: 100%;
+			max-width: 100%;
+			// opacity: 0.8;
+			transition: opacity 0.35s, transform 0.35s;
+		}
+
+		figcaption {
+			padding: 2em;
+			color: #fff;
+			text-transform: capitalize;
+			font-size: 1.25em;
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			&:before,
+			&:after {
+				pointer-events: none;
+			}
+
+			> a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 11;
+				text-indent: 200%;
+				white-space: nowrap;
+				font-size: 0;
+				opacity: 0;
+			}
+
+			h2,
+			h3 {
+				@include fontsize(24);
+				letter-spacing: 0px;
+				margin-bottom: 0.5rem;
+				opacity: 0;
+				transition: opacity 0.35s, transform 0.35s;
+				font-weight: 500;
+			}
+
+			h5,
+			p {
+				@include font-roboto;
+				@include fontsize(13);
+				font-weight: normal;
+				letter-spacing: 1px;
+				opacity: 0;
+				transition: opacity 0.35s, transform 0.35s;
+				text-transform: uppercase;
+			}
+
+			ul {
+				transition: opacity 0.35s, transform 0.35s;
+			}
+
+			.social {
+				li {
+					display: inline-block;
+					padding: 0 4px;
+
+					a {
+						display: inline-block;
+					}
+
+					.icon {
+						@include circle(40px);
+						background-color: transparent;
+						color: $white;
+						@include transition(all 0.4s ease);
+						border: 2px solid $white;
+
+						i {
+							@include fontsize(16);
+
+							&.icon-magnifier,
+							&.icon-control-play {
+								margin-left: 2px;
+							}
+
+							&.icon-basket {
+								@include fontsize(18);
+								margin-left: -2px;
+							}
+
+						}
+
+						&:hover {
+							background-color: $white;
+							color: $secondary-3;
+						}
+
+					}
+
+					&:first-child {
+						@extend %padding-left-none;
+					}
+
+					&:last-child {
+						@extend %padding-right-none;
+						border: 0;
+					}
+
+				}
+
+			}
+
+		}
+
+		&:hover {
+			img {
+				opacity: 0;
+			}
+
+		}
+
+	}
+
+	// colors
+	&.is-primary {
+		figure {
+			background: $primary;
+		}
+
+	}
+
+	&.is-primary-6 {
+		figure {
+			background: $primary-6;
+		}
+
+	}
+
+	&.is-info {
+		figure {
+			background: $info;
+		}
+
+	}
+
+	&.is-success {
+		figure {
+			background: $success;
+		}
+
+	}
+
+	&.is-warning {
+		figure {
+			background: $warning;
+		}
+
+	}
+
+	&.is-danger {
+		figure {
+			background: $danger;
+		}
+
+	}
+
+	// effects
+	&.effect-1 {
+		figure {
+			img {
+				max-width: none;
+				width: -webkit-calc(100% + 50px);
+				width: calc(100% + 50px);
+				// opacity: 0.75;
+				transition: opacity 0.35s, transform 0.35s;
+				transform: translate3d(-40px, 0, 0);
+			}
+
+			figcaption {
+				text-align: left;
+
+				> div {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					padding: 2em;
+					width: 100%;
+					height: 35%;
+				}
+
+			}
+
+			h2,
+			h3,
+			h5,
+			p,
+			ul {
+				transform: translate3d(0, 40px, 0);
+			}
+
+			h5,
+			p {
+				color: rgba(255, 255, 255, 0.8);
+				opacity: 0;
+				transition: opacity 0.2s, transform 0.35s;
+			}
+
+			&:hover {
+				p,
+				h3,
+				h5,
+				ul {
+					opacity: 1;
+				}
+
+				img,
+				h2,
+				h3,
+				h5,
+				p,
+				ul {
+					transform: translate3d(0, 0, 0);
+				}
+
+				h5,
+				p,
+				ul {
+					transition-delay: 0.05s;
+					transition-duration: 0.35s;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-2 {
+		figure {
+			h2,
+			h3 {
+				margin-bottom: 0.6rem;
+			}
+
+			h2,
+			h3,
+			p,
+			h5,
+			ul {
+				transition: opacity 0.35s, transform 0.35s;
+			}
+
+			h2,
+			h3,
+			p,
+			h5,
+			ul {
+				position: absolute;
+				bottom: 38%;
+				left: 0;
+				padding: 2em;
+				width: 100%;
+				opacity: 0;
+				transform: translate3d(0, 10px, 0);
+			}
+
+			&:hover {
+				p,
+				h3,
+				h5,
+				ul {
+					opacity: 1;
+				}
+
+				h2,
+				h3,
+				p,
+				h5,
+				ul {
+					opacity: 1;
+					transform: translate3d(0, 0, 0);
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-3 {
+		figure {
+			figcaption {
+				padding: 3em;
+
+				&:before,
+				&:after {
+					position: absolute;
+					content: '';
+					opacity: 0;
+				}
+
+				&:before {
+					top: 50px;
+					right: 30px;
+					bottom: 50px;
+					left: 30px;
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					transform: scale(0, 1);
+					transform-origin: 0 0;
+				}
+
+				&:after {
+					top: 30px;
+					right: 50px;
+					bottom: 30px;
+					left: 50px;
+					border-right: 1px solid #fff;
+					border-left: 1px solid #fff;
+					transform: scale(1, 0);
+					transform-origin: 100% 0;
+				}
+
+			}
+
+			h2,
+			h3,
+			ul {
+				opacity: 0;
+				padding-top: 42%;
+				transition: transform 0.35s;
+				margin-bottom: 0;
+			}
+
+			p,
+			h5 {
+				padding: 0.5em 2em;
+				text-transform: none;
+				opacity: 0;
+				transform: translate3d(0, -10px, 0);
+			}
+
+			h2,
+			h3,
+			ul {
+				transform: translate3d(0, 30px, 0);
+			}
+
+			h2,
+			h3,
+			img,
+			figcaption::before,
+			figcaption::after,
+			p,
+			h5,
+			ul {
+				transition: opacity 0.35s, transform 0.35s;
+			}
+
+			&:hover {
+				figcaption::before,
+				figcaption::after {
+					opacity: 1;
+					transform: scale(1);
+				}
+
+				h2,
+				h3,
+				p,
+				h5,
+				ul {
+					opacity: 1;
+					transform: translate3d(0, 0, 0);
+				}
+
+				figcaption::after,
+				h2,
+				h3,
+				p,
+				h5,
+				img,
+				ul {
+					transition-delay: 0.15s;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-4 {
+		@extend .effect-2;
+
+		figure {
+			figcaption {
+				&:before {
+					position: absolute;
+					top: 30px;
+					right: 30px;
+					bottom: 30px;
+					left: 30px;
+					border: 1px solid #fff;
+					content: '';
+					opacity: 0;
+					transition: opacity 0.35s, transform 0.35s;
+					transform: scale(0);
+				}
+
+			}
+
+			&:hover {
+				figcaption {
+					&:before {
+						opacity: 1;
+						transform: scale(1);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-5 {
+		@extend .effect-2;
+
+		figure {
+			margin-bottom: 0;
+
+			img {
+				transition: opacity 0.35s, transform 0.35s;
+				transform: scale(1.15);
+			}
+
+			&:hover {
+				img {
+					transform: scale(1);
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-6 {
+		@extend .effect-2;
+
+		figure {
+			figcaption {
+				&:before,
+				&:after {
+					position: absolute;
+					top: 30px;
+					right: 30px;
+					bottom: 30px;
+					left: 30px;
+					content: '';
+					opacity: 0;
+					transition: opacity 0.35s, transform 0.35s;
+				}
+
+				&:before {
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					transform: scale(0, 1);
+				}
+
+				&:after {
+					border-right: 1px solid #fff;
+					border-left: 1px solid #fff;
+					transform: scale(1, 0);
+				}
+
+			}
+
+			&:hover {
+				figcaption {
+					&:before,
+					&:after {
+						opacity: 1;
+						transform: scale(1);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-7 {
+		@extend .effect-2;
+
+		figure {
+			background-color: #fff;
+
+			img {
+				transition: opacity 0.35s, transform 0.35s;
+				transform-origin: 50% 50%;
+			}
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+
+				img {
+					opacity: .8;
+					transform: scale3d(0.92, 0.92, 1);
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-8 {
+		@extend .effect-2;
+
+		figure {
+			figcaption {
+				&:after {
+					transition: opacity 0.35s, transform 0.35s;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					content: '';
+					opacity: 0;
+					transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+					transform-origin: 50% 50%;
+				}
+
+			}
+
+			&:hover {
+				img {
+					transform: scale3d(1.05, 1.05, 1);
+				}
+
+				figcaption {
+					&:after {
+						opacity: 1;
+						transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-9 {
+		@extend .effect-2;
+
+		figure {
+			background-color: $white;
+
+			figcaption {
+				padding-bottom: 1em;
+			}
+
+			h2,
+			h3,
+			p,
+			h5 {
+				bottom: 0;
+			}
+
+			img {
+				backface-visibility: hidden;
+				opacity: 1;
+				z-index: 10;
+			}
+
+			h2,
+			h3 {
+				color: $secondary-3;
+				@include fontsize(21);
+
+				a {
+					color: $secondary-3;
+				}
+
+			}
+
+			p,
+			h5 {
+				color: $primary;
+				@include fontsize(13);
+
+				a {
+					color: $primary;
+				}
+
+			}
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+
+				img {
+					transform: translate3d(0, -100px, 0);
+				}
+
+				h2,
+				h3,
+				p,
+				h5 {
+					transform: none;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.effect-10 {
+		cursor: default;
+		@extend .effect-2;
+	}
+
+	&.owl-carousel {
+		figure {
+			margin-bottom: 0;
+
+			&:hover {
+				@include box-shadow(0px, 9px, 10px, -4px, rgba($tertiary, .1));
+			}
+
+		}
+
+	}
+
+	&.isotope {
+		figure {
+			margin-bottom: 0;
+		}
+
+	}
+
+}

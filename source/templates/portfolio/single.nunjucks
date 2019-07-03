@@ -1,0 +1,215 @@
+<!-- portfolio/single/5.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_layouts/default.nunjucks" %}
+
+<!-- set menu active pages -->
+{% set active_pages = ["portfolio", "single project", "single 5"] %}
+
+<!-- set sidebar options -->
+{% set sidebar = portfolio_single.sidebar %}
+
+<!-- set body classes for page -->
+{% block page_class %}page-portfolio-single page-header-hamburger-menu{% endblock %}
+
+<!-- disable this layout or content sections -->
+{% block header_top %}{% endblock %}
+{% block header_bottom_class %}{% endblock %}
+{% block content_header %}{% endblock %}
+{% block content_footer %}{% endblock %}
+{% block footer_top_class %}{% endblock %}
+{% block footer_bottom %}{% endblock %}
+{% block footer_class %}footer-fullwidth{% endblock %}
+
+<!-- header bottom inner | slider -->
+{% block header_bottom_inner_content %}
+<section class="section is-clearfix">
+<div class="container">
+  <div class="intro-text has-text-centered">
+    <h1>
+      Portfolio
+    </h1>
+  </div>
+</div>
+</section>
+{% endblock %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/elements/heading-title.nunjucks" import heading_title %}
+{% from "_includes/sidebar/widgets/widget-title.nunjucks" import widget_title %}
+{% from "_includes/content/modules/works.nunjucks" import works %}
+{% from "_includes/content/elements/pagination.nunjucks" import pagination %}
+{% from "_includes/content/modules/counters.nunjucks" import counters %}
+{% from "_includes/content/modules/boxes.nunjucks" import boxes %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+  <!-- portfolio-single content section -->
+  {{ section_start( class = portfolio_single.work_content.section_class, use_container=false ) }}
+
+    <br>
+    <div class="columns is-multiline is-variable">
+
+      <div class="column is-8-desktop is-12-tablet">
+
+        <div class="work-content" style="padding: 0 50px;">
+
+        <div class="works isotope masonry image-hover effect-10 mfp-lightbox-gallery">
+
+      <div class="columns is-variable is-4 is-multiline">
+
+            {% for work in portfolio.masonry.list %}
+        <div class="column is-6 {% for category in work.categories %}{{category | lower}} {% endfor %}" data-aos="fade-up">
+          <div class="work-item">
+            <figure>
+              <a href="{{global.images_root}}{{portfolio.works.images_folder}}{{work.image_src}}" class="mfp-lightbox mfp-image" title="{{work.title}}">
+              <img src="{{global.images_root}}{{portfolio.works.images_folder}}{{work.image_src}}">
+                        <figcaption>
+                            <ul class="social">
+                        <li><span class="icon"><i class="icon-magnifier"></i></span></li>
+                            </ul>
+              </figcaption>
+              </a>
+            </figure>
+          </div><!-- .work-item -->
+        </div>
+        {% endfor %}
+
+
+
+      </div><!-- .columns -->
+
+    </div><!-- .works -->
+
+    </div>
+
+      </div>
+
+      <div class="column is-4-desktop is-12-tablet">
+
+        <div class="work-details" style="padding: 0 50px 0 0;">
+
+        <div class="content"><h2>Overview</h2></div>
+
+        <br>
+
+        <p>
+          The main component of a healthy environment for self esteem is that it needs be nurturing, main component of a healthy env for self esteem. The main component of a healthy environment for self esteem is that it needs be nurturing, main component of a healthy env for self esteem.
+        </p>
+
+        <br><br>
+
+        <div class="columns is-variable is-multiline is-4">
+
+          <div class="column widget is-4 widget-links margin-bottom-none">
+                  <h3 class="widget-title has-text-primary-6 margin-top-none">Client</h3>
+                </div>
+                <div class="column widget is-8 widget-links margin-bottom-none">
+                  <ul><li>Jozoor.com</li></ul>
+                </div>
+
+                <div class="column widget is-4 widget-links margin-bottom-none">
+                  <h3 class="widget-title has-text-primary-6 margin-top-none">Date</h3>
+                </div>
+                <div class="column widget is-8 widget-links margin-bottom-none">
+                  <ul><li>April 5, 2018</li></ul>
+                </div>
+
+                <div class="column widget is-4 widget-links margin-bottom-none">
+                  <h3 class="widget-title has-text-primary-6 margin-top-none">Categories</h3>
+                </div>
+                <div class="column widget is-8 widget-links margin-bottom-none">
+                  <ul><li><a href="#">Branding</a>, <a href="#">Design</a></li></ul>
+                </div>
+                 
+        </div>
+
+        <br>
+
+        <div class="global-social-links style-1 has-text-left">
+                  <ul>
+                    <li class="padding-left-none">
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-instagram"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-pinterest-p"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-google"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fab fa-dribbble"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+
+                <br><br>
+
+                <div class="widget widget-html">
+                  <div class="textwidget">
+                    <a href="#" class="button">Start A Project</a>
+                  </div>
+                  <!-- .textwidget -->
+                </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    <br>
+
+  {{ section_end() }}
+
+    <!-- related-works section -->
+  {{ section_start( class = 'related-works has-background-primary-light' ) }}
+
+      {% if portfolio_single.related_works.heading_title %}
+      {{ heading_title( text = portfolio_single.related_works.heading_title ) }}
+      {% endif %}
+
+      <br>
+
+      {{ works( data = portfolio_single.related_works, global_data = global ) }}
+
+      <br><br>
+
+  {{ section_end() }}
+  <!-- .{{portfolio_single.related_works.section_class}} -->
+
+{% endblock %}

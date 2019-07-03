@@ -1,0 +1,58 @@
+/*
+ * ::::::::::: Progress Bar Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.progressbar-heading {
+	text-transform: capitalize;
+	@include fontsize(18);
+	margin-bottom: 5px;
+	@include font-playfair-display;
+	letter-spacing: 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+.progressbar {
+	margin-bottom: 15px;
+	color: $secondary-5;
+	position: relative;
+
+	.progressbar-text {
+		@include absolute(top 0 right 0);
+		color: $secondary-5 !important;
+		@include font-roboto;
+		@extend %is-uppercase;
+		@include fontsize(15);
+	}
+
+	.progressbar-heading {
+		@include fontsize(15);
+		text-align: left;
+	}
+
+	&.no-text {
+		.progressbar-text {
+			display: none;
+		}
+
+	}
+
+	&.circle {
+		width: 180px;
+		height: 180px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: center;
+
+		.progressbar-text {
+			@include fontsize(25);
+		}
+
+	}
+
+}

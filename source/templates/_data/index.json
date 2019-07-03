@@ -1,0 +1,294 @@
+{
+	"index": {
+
+		"introduction": {
+			"section_class": "introduction",
+			"image_src": "global/introduction.png",
+			"subtitle": "About Us",
+			"title": "Do Dreams Serve As A Premonition",
+			"text": "Ornare vitae pulvinar hendrerit quis penatibus a leo a vestibulum some are know is ullamcorper nisi nullam massa volutpat. A suspendisse parturient, consectetur in scelerisque condimentum consectetur cum vivamus a etc. porta parturient rutrum ridiculus sem vestibulum.",
+			"more_link": "/pages/about.html",
+			"more_text": true
+		},
+		"services_boxes": {
+			"section_class": "services",
+			"heading_title": "What We Do",
+			"link": "/pages/services.html",
+			"show_icon": true,
+			"show_title": true,
+			"show_text": true,
+			"more_text": true,
+			"boxes": [
+				{
+					"icon": "ion-ios-easel-outline",
+					"title": "Planning",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia harmoniousness rule."
+				},
+				{
+					"icon": "ion-ios-cafe-outline",
+					"title": "Decore",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia harmoniousness rule."
+				},
+				{
+					"icon": "ion-ios-people-outline",
+					"title": "Consulting",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia harmoniousness rule."
+				}
+			]
+		},
+		"works_latest": {
+			"section_class": "carousel stories",
+			"heading_title": "Latest Stories",
+			"link": "/portfolio/single.html",
+			"images_folder": "slider/carousel/stories/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": true,
+			"show_text": false,
+			"works": [
+				{
+					"image_src": "1.png",
+					"title": "Samir & Hadeer",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Mohamed & Samar",
+					"categories": ["Wedding,", "Love"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "3.png",
+					"title": "Aly & Mona",
+					"categories": ["Love"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				}
+			]
+		},
+		"services": {
+			"section_class": "works-list",
+			"heading_title": "Our Services",
+			"link": "/pages/services.html",
+			"images_folder": "services/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": false,
+			"show_text": false,
+			"list": [
+				{
+					"image_src": "1.png",
+					"title": "Invitations",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Wedding Dresses",
+					"categories": ["Announcement"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "3.png",
+					"title": "Ring & Jewellery",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "4.png",
+					"title": "Wedding Cake",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "5.png",
+					"title": "Honeymoon",
+					"categories": ["Announcement"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				},
+				{
+					"image_src": "6.png",
+					"title": "Beauty & Makeup",
+					"categories": ["Wedding"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality."
+				}
+			]
+		},
+		"testimonials": {
+			"section_class": "testimonials-list",
+			"images_folder": "testimonials/",
+			"show_image": true,
+			"show_text": true,
+			"show_author": true,
+			"list": [
+				{
+					"image_src": "1.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "2.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "3.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				}
+			]
+		},
+		"pricing_table": {
+			"section_class": "pricingtable",
+			"heading_title": "Our Packages",
+			"currency_type": "$",
+			"price_per": "/month",
+			"show_title": true,
+			"show_price": true,
+			"show_items": true,
+			"show_button": true,
+			"show_price_per": false,
+			"show_currency_type": true,
+			"plans": [
+				{
+					"is_active": false,
+					"title": "Basic",
+					"price": "199",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				},
+				{
+					"is_active": true,
+					"title": "Advanced",
+					"price": "299",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				},
+				{
+					"is_active": false,
+					"title": "Advanced +",
+					"price": "499",
+					"items": [
+						"Climatology puppysnatch test",
+						"redding loggerheaded needful",
+						"and some unknown"
+					],
+					"button": {
+						"text": "Get Now",
+						"link": "#"
+					}
+				}
+			]
+		},
+		"subscribe": {
+			"section_class": "subscribe-section",
+			"heading_title": "Stay in touch",
+			"text": "We think in different ways and our thinking is decided by many factors. Some are known.",
+			"input_placeholder": "Your Email Address",
+			"button": {
+				"text": "Sign Up!",
+				"link": "#"
+			}
+		},
+		"blog": {
+			"section_class": "latest-news",
+			"heading_title": "Latest News",
+			"link": "/blog/single.html",
+			"images_folder": "blog/",
+			"show_image": true,
+			"show_meta": false,
+			"show_title": true,
+			"show_content": true,
+			"more_text": true,
+			"post_meta": [
+				{
+					"icon": "icon-clock",
+					"text": [{
+						"name": "April 5, 2018",
+						"link": ""
+					}]
+				},
+				{
+					"icon": "icon-user",
+					"text": [{
+						"name": "Mohamed Ahmed",
+						"link": "#"
+					}]
+				},
+				{
+					"icon": "icon-folder",
+					"text": [
+						{
+							"name": "Wedding",
+							"link": "#"
+						},
+						{
+							"name": "Love",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"icon": "icon-bubbles",
+					"text": [{
+						"name": "2",
+						"link": "#"
+					}]
+				}
+			],
+			"posts": [
+				{
+					"image_src": "1.png",
+					"title": "Self Motivation How To Keep Yourself",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Self Motivation How To Keep Yourself",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.."
+				}
+			]
+		},
+		"contact_boxes": {
+			"section_class": "get-in-touch",
+			"heading_title": "Get in touch",
+			"link": "/pages/contact.html",
+			"show_icon": true,
+			"show_title": true,
+			"show_text": true,
+			"more_text": false,
+			"boxes": [
+				{
+					"icon": "ion-ios-pin-outline",
+					"title": "Address",
+					"text": "295 Witting Streets Suite 666, <br> Melbourne, Australia"
+				},
+				{
+					"icon": "ion-ios-call-outline",
+					"title": "Phone",
+					"text": "+ 123 5456 789 01 <br> + 123 5456 789 01"
+				},
+				{
+					"icon": "ion-ios-mail-outline",
+					"title": "Email",
+					"text": "welcome@website.com <br> hello@site.co"
+				}
+			]
+		}
+
+	}
+}

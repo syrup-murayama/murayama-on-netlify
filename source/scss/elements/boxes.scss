@@ -1,0 +1,2021 @@
+/*
+ * ::::::::::: Boxes Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/title';
+
+//:::::::::::Styles::::::::::://
+
+.box-item {
+	background-color: $white;
+	padding: 60px 30px 50px;
+	text-align: center;
+	@include transition(all 0.4s ease);
+
+	.icon {
+		@include circle(85px);
+		background-color: $primary;
+		color: $white;
+		margin-bottom: 32px;
+		@include transition(all 0.4s ease);
+
+		i {
+			@include fontsize(45);
+		}
+
+	}
+
+	h3 {
+		@extend .title;
+		@include fontsize(24);
+		font-weight: 500;
+		text-transform: capitalize;
+		letter-spacing: 0;
+		@include transition(all 0.4s ease);
+
+		a {
+			color: $secondary-2;
+		}
+
+	}
+
+	p {
+		color: $tertiary;
+		@include fontsize(15);
+		margin-bottom: 28px;
+	}
+
+	.button {
+		@include relative;
+		color: $secondary-3;
+		padding-left: 22px;
+		padding-right: 22px;
+		@include transition(all 0.5s ease);
+		@include fontsize(14);
+		background-color: transparent !important;
+		height: 2.25em;
+
+		&:after {
+			@include font-ionicons;
+			@include fontsize(25);
+			content: "\f119";
+			@include absolute(top -3px right 3px);
+			color: $primary-3;
+			@include transition(all 0.5s ease);
+		}
+
+		&:hover {
+			color: $primary-3;
+
+			&:after {
+				@include absolute(right 0);
+			}
+
+		}
+
+	}
+
+	&:hover {
+		@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+
+		.icon {
+			background-color: $secondary;
+		}
+
+		h3 {
+			a {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.columns {
+	&.is-4 {
+		.column {
+			.box-item {
+				margin-bottom: 0.5rem;
+			}
+
+		}
+
+	}
+
+}
+
+// custom colors
+.boxes-is-info {
+	.box-item {
+		.icon {
+			background-color: $info;
+		}
+
+		.button {
+			&:after {
+				color: $info;
+			}
+
+			&:hover {
+				color: $info;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $info;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $info;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $info;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $info;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $info;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $info;
+					}
+
+				}
+
+				.button {
+					background-color: $info !important;
+					border: 1px solid $info;
+				}
+
+			}
+
+			.button {
+				color: $info;
+
+				&:after {
+					color: $info;
+				}
+
+				&:hover {
+					background-color: $info !important;
+					border: 1px solid $info;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $info;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $info;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// info
+
+.boxes-is-success {
+	.box-item {
+		.icon {
+			background-color: $success;
+		}
+
+		.button {
+			&:after {
+				color: $success;
+			}
+
+			&:hover {
+				color: $success;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $success;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $success;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $success;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $success;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $success;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $success;
+					}
+
+				}
+
+				.button {
+					background-color: $success !important;
+					border: 1px solid $success;
+				}
+
+			}
+
+			.button {
+				color: $success;
+
+				&:after {
+					color: $success;
+				}
+
+				&:hover {
+					background-color: $success !important;
+					border: 1px solid $success;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $success;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $success;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// success
+
+.boxes-is-warning {
+	.box-item {
+		.icon {
+			background-color: $warning;
+		}
+
+		.button {
+			&:after {
+				color: $warning;
+			}
+
+			&:hover {
+				color: $warning;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $warning;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $warning;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $warning;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $warning;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $warning;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $warning;
+					}
+
+				}
+
+				.button {
+					background-color: $warning !important;
+					border: 1px solid $warning;
+				}
+
+			}
+
+			.button {
+				color: $warning;
+
+				&:after {
+					color: $warning;
+				}
+
+				&:hover {
+					background-color: $warning !important;
+					border: 1px solid $warning;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $warning;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $warning;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// warning
+
+.boxes-is-black {
+	.box-item {
+		.icon {
+			background-color: $black;
+		}
+
+		.button {
+			&:after {
+				color: $black;
+			}
+
+			&:hover {
+				color: $black;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $black;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $black;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $black;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $black;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $black;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $black;
+					}
+
+				}
+
+				.button {
+					background-color: $black !important;
+					border: 1px solid $black;
+				}
+
+			}
+
+			.button {
+				color: $black;
+
+				&:after {
+					color: $black;
+				}
+
+				&:hover {
+					background-color: $black !important;
+					border: 1px solid $black;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $black;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $black;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// black
+
+.boxes-is-link {
+	.box-item {
+		.icon {
+			background-color: $link;
+		}
+
+		.button {
+			&:after {
+				color: $link;
+			}
+
+			&:hover {
+				color: $link;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $link;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $link;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $link;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $link;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $link;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $link;
+					}
+
+				}
+
+				.button {
+					background-color: $link !important;
+					border: 1px solid $link;
+				}
+
+			}
+
+			.button {
+				color: $link;
+
+				&:after {
+					color: $link;
+				}
+
+				&:hover {
+					background-color: $link !important;
+					border: 1px solid $link;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $link;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $link;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// link
+
+.boxes-is-danger {
+	.box-item {
+		.icon {
+			background-color: $danger;
+		}
+
+		.button {
+			&:after {
+				color: $danger;
+			}
+
+			&:hover {
+				color: $danger;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $danger;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $danger;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $danger;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $danger;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $danger;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $danger;
+					}
+
+				}
+
+				.button {
+					background-color: $danger !important;
+					border: 1px solid $danger;
+				}
+
+			}
+
+			.button {
+				color: $danger;
+
+				&:after {
+					color: $danger;
+				}
+
+				&:hover {
+					background-color: $danger !important;
+					border: 1px solid $danger;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $danger;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $danger;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// danger
+
+.boxes-is-primary {
+	.box-item {
+		.icon {
+			background-color: $primary;
+		}
+
+		.button {
+			&:after {
+				color: $primary;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $primary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $primary;
+					}
+
+				}
+
+				.button {
+					background-color: $primary !important;
+					border: 1px solid $primary;
+				}
+
+			}
+
+			.button {
+				color: $primary;
+
+				&:after {
+					color: $primary;
+				}
+
+				&:hover {
+					background-color: $primary !important;
+					border: 1px solid $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $primary;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.boxes-is-primary-6 {
+	.box-item {
+		.icon {
+			background-color: $primary-6;
+		}
+
+		.button {
+			&:after {
+				color: $primary-6;
+			}
+
+			&:hover {
+				color: $primary-6;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $primary-6;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $primary-6;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary-6;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $primary-6;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary-6;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $primary-6;
+					}
+
+				}
+
+				.button {
+					background-color: $primary-6 !important;
+					border: 1px solid $primary-6;
+				}
+
+			}
+
+			.button {
+				color: $primary-6;
+
+				&:after {
+					color: $primary-6;
+				}
+
+				&:hover {
+					background-color: $primary-6 !important;
+					border: 1px solid $primary-6;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $primary-6;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $primary-6;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// primary
+
+.boxes-is-secondary {
+	.box-item {
+		.icon {
+			background-color: $secondary;
+		}
+
+		.button {
+			&:after {
+				color: $secondary;
+			}
+
+			&:hover {
+				color: $secondary;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $secondary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $secondary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+				.button {
+					background-color: $secondary !important;
+					border: 1px solid $secondary;
+				}
+
+			}
+
+			.button {
+				color: $secondary;
+
+				&:after {
+					color: $secondary;
+				}
+
+				&:hover {
+					background-color: $secondary !important;
+					border: 1px solid $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $secondary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $secondary;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// secondary
+
+.boxes-is-tertiary {
+	.box-item {
+		.icon {
+			background-color: $tertiary;
+		}
+
+		.button {
+			&:after {
+				color: $tertiary;
+			}
+
+			&:hover {
+				color: $tertiary;
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				background-color: $secondary;
+			}
+
+			h3 {
+				a {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-2 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-3,
+	&.boxes-style-6 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $tertiary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $tertiary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-4 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $tertiary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+				h3 {
+					a {
+						color: $tertiary;
+					}
+
+				}
+
+				.button {
+					background-color: $tertiary !important;
+					border: 1px solid $tertiary;
+				}
+
+			}
+
+			.button {
+				color: $tertiary;
+
+				&:after {
+					color: $tertiary;
+				}
+
+				&:hover {
+					background-color: $tertiary !important;
+					border: 1px solid $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-5 {
+		.box-item {
+			.icon {
+				background-color: transparent;
+				color: $tertiary;
+			}
+
+			&:hover {
+				.icon {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.boxes-style-6 {
+		.box-item {
+			&:hover {
+				border: 1px solid $tertiary;
+
+				h3 {
+					a {
+						color: $secondary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// tertiary
+
+// styles
+
+.boxes-style-1,
+.boxes-style-3,
+.boxes-style-5 {
+	.box-item {
+		padding: 10px 0 10px;
+		background-color: transparent;
+
+		.button {
+			display: none;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			box-shadow: none;
+		}
+
+	}
+
+}
+
+.boxes-style-2 {
+	.box-item {
+		padding: 70px 50px 45px;
+		text-align: inherit;
+
+		.button {
+			display: none;
+		}
+
+		.icon {
+			background-color: transparent;
+			color: $tertiary-6;
+			width: auto;
+			height: auto;
+			margin-bottom: 28px;
+
+			i {
+				line-height: 1;
+				@include fontsize(58);
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				color: $primary;
+			}
+
+			h3 {
+				a {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.boxes-style-3,
+.boxes-style-6 {
+	.box-item {
+		.icon {
+			background-color: transparent;
+			color: $primary;
+			width: auto;
+			height: auto;
+			margin-bottom: 0;
+			margin-top: -10px;
+
+			i {
+				line-height: 1;
+				@include fontsize(49);
+			}
+
+		}
+
+		h3 {
+			margin-bottom: 1.1rem;
+		}
+
+		.media-left {
+			margin-right: 1.7rem;
+		}
+
+		&:hover {
+			.icon {
+				color: $tertiary-6;
+			}
+
+			h3 {
+				a {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.has-text-white {
+		.box-item {
+			h3,
+			h3 a,
+			.icon {
+				color: $white;
+			}
+
+			p {
+				color: rgba($white, 0.85);
+			}
+
+		}
+
+	}
+
+	&.boxes-numbers {
+		.box-item {
+			.icon {
+				border-radius: 100%;
+				border: 1px solid $tertiary-5;
+				color: $tertiary;
+				width: 85px;
+				height: 85px;
+				font-size: 30px;
+				font-weight: 400;
+			}
+
+			&:hover {
+				.icon {
+					color: $white;
+					border: 1px solid $primary-6;
+					background-color: $primary-6;
+				}
+
+				h3 {
+					color: $secondary-2;
+
+					a {
+						color: $secondary-2;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.boxes-style-4 {
+	.box-item {
+		padding-bottom: 60px;
+
+		.icon {
+			background-color: transparent;
+			color: $primary;
+			width: auto;
+			height: auto;
+			margin-bottom: 28px;
+
+			i {
+				line-height: 1;
+				@include fontsize(65);
+			}
+
+		}
+
+		p {
+			margin-bottom: 38px;
+		}
+
+		&:hover {
+			.icon {
+				color: $tertiary-6;
+			}
+
+			h3 {
+				a {
+					color: $primary;
+				}
+
+			}
+
+			.button {
+				color: $white;
+				border: 1px solid $tertiary-10;
+				background-color: $primary !important;
+				border: 1px solid $primary;
+
+				&:after {
+					color: $white;
+					right: 19px;
+				}
+
+			}
+
+		}
+
+		.button {
+			color: $primary;
+			border: 1px solid $tertiary-10;
+			height: 2.8em;
+			padding-right: 41px;
+			padding-left: 23px;
+
+			&:after {
+				color: $primary;
+				top: 0;
+				right: 22px;
+			}
+
+			&:hover {
+				color: $white;
+				border: 1px solid $tertiary-10;
+				background-color: $primary !important;
+				border: 1px solid $primary;
+
+				&:after {
+					color: $white;
+					right: 19px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.boxes-style-5 {
+	.box-item {
+		.button {
+			display: none;
+		}
+
+		.icon {
+			background-color: transparent;
+			color: $primary;
+			width: auto;
+			height: auto;
+			margin-bottom: 28px;
+
+			i {
+				line-height: 1;
+				@include fontsize(49);
+			}
+
+		}
+
+		&:hover {
+			.icon {
+				color: $tertiary-6;
+			}
+
+		}
+
+	}
+
+}
+
+.boxes-style-6 {
+	.box-item {
+		padding: 40px 30px 30px;
+		border: 1px solid $tertiary-10;
+
+		.icon {
+			margin-top: -8px;
+
+			i {
+				line-height: 1;
+				@include fontsize(39);
+			}
+
+		}
+
+		h3 {
+			margin-bottom: 0;
+			font-size: 20px;
+		}
+
+		.media-left {
+			margin-right: 1rem;
+		}
+
+		&:hover {
+			box-shadow: none;
+			border: 1px solid $primary;
+
+			h3 {
+				a {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+}

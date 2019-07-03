@@ -1,0 +1,142 @@
+{% macro menu_icons(style_class, search_class='search-style-2', data, global_data) %}
+
+<ul class="header-menu-icons {{style_class}}">
+    <li class="dropdown-search-form {{search_class}}"><a href="javascript:void(0);"><span class="icon"><i class="icon-magnifier"></i></span></a>
+    	<ul>
+    		<li class="header widget-form">
+    			<form>
+	                <div class="field">
+	                  <div class="control is-expanded">
+	                    <input class="input" type="text" placeholder="Search...">
+	                    <button type="submit" class="button">
+	                      <span class="icon"><i class="icon-magnifier"></i></span>
+	                    </button>
+	                  </div>
+	                </div>
+	            </form>
+    		</li>
+    	</ul>
+    </li>
+    <li class="show-quickview">
+        <a href="javascript:void(0);" data-show="quickview" data-target="quickviewInfo">
+            <span class="icon"><i class="ion-ios-menu"></i></span>
+        </a>
+    </li>
+</ul><!-- .header-menu-icons -->
+
+<div class="modal search-form-overlay">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <form class="widget-form">
+        <div class="field">
+          <div class="control is-expanded">
+            <input class="input" type="text" placeholder="Search...">
+            <button type="submit" class="button">
+              <span class="icon"><i class="icon-magnifier"></i></span>
+            </button>
+          </div>
+        </div>
+    </form>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div><!-- .modal.search-form-overlay -->
+
+<div id="quickviewInfo" class="quickview">
+    <div class="quickview-header">
+      <p class="title"></p>
+      <span class="delete" data-dismiss="quickview"></span>
+    </div>
+
+    <div class="quickview-body">
+      <div class="quickview-block">
+
+        <footer>
+
+        <div class="columns is-variable is-multiline">
+
+        <div class="column is-12">
+
+            <div class="widget widget-html">
+                  <div class="textwidget">
+                    <div id="footer-logo" class="site-logo ">
+                      <a href="/">
+                        <span class="logo-text">Creative</span>
+                      </a>
+                    </div>
+                    <!-- #footer-logo -->
+                    <br>
+                    <p>The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.</p>
+                    <div class="footer-social-links ">
+                      <ul>
+                        <li>
+                          <a href="#" target="_blank">
+                            <span class="icon">
+                              <i class="fab fa-facebook-f"></i>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <span class="icon">
+                              <i class="fab fa-twitter"></i>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <span class="icon">
+                              <i class="fab fa-instagram"></i>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <span class="icon">
+                              <i class="fab fa-pinterest-p"></i>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- .textwidget -->
+                </div>
+
+        </div><!-- .column -->
+
+        <div class="column is-12">
+            <div class="widget widget-instafeed">
+                  <h3 class="widget-title ">Instagram</h3>
+                  <div id="instafeed-footer-2" class="instafeed">
+                    <!-- instagram feed will be loaded here -->
+                </div> 
+            </div>
+        </div><!-- .column -->
+
+        <div class="column is-12">
+            <div class="widget widget-form">
+              <h3 class="widget-title ">subscribe</h3>
+              <p>The main component of a healthy environment for self esteem is that.</p>
+              <br>
+              <form>
+                <div class="field">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="your@email.com">
+                    <button type="submit" class="button is-radiusless">
+                      <span class="icon"><i class="icon-envelope"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div><!-- .column -->
+        
+    </div><!-- .columns -->
+
+    </footer>
+        
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}

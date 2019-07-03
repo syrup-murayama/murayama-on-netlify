@@ -1,0 +1,107 @@
+/*
+ * ::::::::::: Blog Author Box Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/title';
+
+//:::::::::::Styles::::::::::://
+
+.blog-author {
+	margin-top: 2.5em;
+	border: 1px solid $tertiary-10;
+	border-radius: 5px;
+
+	.box {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+
+		&:hover {
+			box-shadow: none;
+		}
+
+	}
+
+	img {
+		max-width: 201px;
+	}
+
+	.bio {
+		padding: 26px 13px 22px;
+
+		p {
+			@include fontsize(14);
+		}
+
+		h3 {
+			@extend .title;
+			@include fontsize(19);
+			font-weight: 500;
+			@extend %is-uppercase;
+			letter-spacing: $works-item-title-letter-spacing;
+			@include transition(all 0.4s ease);
+			margin-bottom: $works-list-h3-margin-bottom !important;
+			color: $secondary-3;
+			font-weight: 500;
+
+			&:hover {
+				color: $primary;
+			}
+
+			a {
+				color: $secondary-3;
+				@include transition(all 0.4s ease);
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		.social-links {
+			margin-top: 26px;
+
+			li {
+				display: inline-block;
+				padding: 0 4px;
+
+				a {
+					display: inline-block;
+				}
+
+				.icon {
+					@include circle(29px);
+					background-color: $primary;
+					color: $white;
+					@include transition(all 0.4s ease);
+
+					i {
+						@include fontsize(14);
+					}
+
+					&:hover {
+						background-color: $secondary;
+					}
+
+				}
+
+				&:first-child {
+					@extend %padding-left-none;
+				}
+
+				&:last-child {
+					@extend %padding-right-none;
+					border: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+}

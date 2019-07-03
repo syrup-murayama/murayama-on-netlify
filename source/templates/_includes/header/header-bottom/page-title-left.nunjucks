@@ -1,0 +1,76 @@
+{% macro page_title_left(
+	section_class='has-text-centered', page_title_class, use_container=true, show_title=true, show_desc=true,
+	show_breadcrumb=false, title_class='', desc_class='', breadcrumb_class='', data, global_data, show_icons=false, show_buttons=false, parallax, show_breadcrumb_icons=false, ken_burns_background=false, ken_burns_background_image, video_background = false, youtube_id
+) %}
+
+<section class="hero page-title {{section_class}} {{page_title_class}}" {{parallax}}>
+
+	{% if video_background %}
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/{{youtube_id}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  class="vidbacking"></iframe>
+	{% endif %}
+
+	{% if ken_burns_background %}
+	<div class="ken-burns-background" style="background-image:url({{ken_burns_background_image}})"></div>
+	{% endif %}
+
+    <div class="hero-body">
+        <div {% if use_container %}class="container"{% endif %}>
+
+        	<div class="level">
+
+            <div>
+	            {% if show_title %}<h1 class="{{title_class}}">{{data.title}}</h1>{% endif %}
+	            {% if show_desc %}<h3 class="{{desc_class}}">{{data.description}}</h3>{% endif %}
+	        </div><!-- .level-left -->
+
+            <div class="level-right">
+                {% if show_breadcrumb %}
+	            <nav class="breadcrumb {{breadcrumb_class}}" aria-label="breadcrumbs">
+				  <ul>
+				  	{% if show_breadcrumb_icons %}
+				  	<li><a href="/">
+				  		<span class="icon is-small"><i class="icon-home"></i></span>
+				  		<span>home</span>
+				  	</a></li>
+				    <li><a href="/portfolio/">
+				    	<span class="icon is-small"><i class="icon-grid"></i></span>
+				  		<span>portfolio</span>
+					</a></li>
+				    <li class="is-active"><a href="#" aria-current="page">
+				    	<span class="icon is-small"><i class="icon-camera"></i></span>
+				  		<span>{{data.title}}</span>
+					</a></li>
+				  	{% else %}
+				    <li><a href="/">home</a></li>
+				    <li><a href="/portfolio/">portfolio</a></li>
+				    <li class="is-active"><a href="#" aria-current="page">{{data.title}}</a></li>
+				    {% endif %}
+				  </ul>
+				</nav><!-- .breadcrumb -->
+				{% endif %}
+				{% if show_icons %}
+		            <ul class="header-menu-icons social">
+				        {% for social in global_data.social_links %}
+				        <li>
+				            <a href="{{social.link}}" target="_blank">
+				                <span class="icon"><i class="{{social.icon}}"></i></span>
+				            </a>
+				        </li>
+				        {% endfor %}
+				    </ul><!-- .header-menu-icons -->
+	            {% endif %}
+	            {% if show_buttons %}
+	            <a href="/pages/contact.html" class="button is-small is-primary is-outlined is-rounded">contact</a>
+			    <a href="/portfolio/" class="button is-small is-rounded">
+			        <span class="icon"><i class="icon-grid"></i></span><span>projects</span>
+			    </a>
+	            {% endif %}
+			</div><!-- .level-right -->
+
+			</div><!-- .level -->
+
+        </div><!-- .hero-body -->
+    </div><!-- .container -->
+</section><!-- .page-title -->
+
+{% endmacro %}

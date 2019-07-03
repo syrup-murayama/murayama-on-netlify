@@ -1,0 +1,621 @@
+/*
+ * ::::::::::: Blog List Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/title';
+
+//:::::::::::Styles::::::::::://
+
+.blog-post {
+	margin-bottom: 25px;
+
+	.post-image {
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		img {
+			@include transition(all 0.4s ease-in-out);
+			display: block;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+
+		}
+
+	}
+
+	.entry-header {
+		.entry-title {
+			@extend .title;
+			@include fontsize(21);
+			font-weight: 500;
+			text-transform: capitalize;
+			letter-spacing: 0;
+			@include transition(all 0.4s ease);
+			margin-bottom: $works-list-h3-margin-bottom !important;
+			color: $secondary-3;
+
+			&:hover {
+				color: $primary;
+			}
+
+			a {
+				color: $secondary-3;
+				@include transition(all 0.4s ease);
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		.post-meta {
+			margin-bottom: 22px;
+
+			ul {
+				li {
+					display: inline-block;
+					color: $secondary-5;
+					@include fontsize(11.5);
+					letter-spacing: 1.1px;
+					@include transition(all 0.4s ease);
+					@include font-roboto;
+					padding-right: 12px;
+					padding-bottom: 5px;
+					@extend %is-uppercase;
+					font-weight: 600;
+
+					a,
+					span {
+						color: $secondary-5;
+						@include transition(all 0.4s ease);
+
+						&:hover {
+							color: $primary-2;
+						}
+
+					}
+
+					.icon {
+						color: $primary-2;
+						@include fontsize(14);
+						vertical-align: text-top;
+						margin-right: 1px;
+						width: auto;
+						height: auto;
+					}
+
+					&:hover {
+						color: $primary-2;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.entry-content {
+		p {
+			@include fontsize(15);
+			color: $tertiary;
+			margin-bottom: 22px;
+		}
+
+	}
+
+	.entry-footer {
+		.button {
+			@include relative;
+			color: $secondary-3;
+			padding-left: 0;
+			padding-right: 22px;
+			@include transition(all 0.5s ease);
+			@include fontsize(13.3);
+			@include font-playfair-display;
+			background-color: transparent;
+			height: 2.25em;
+
+			&:after {
+				@include font-ionicons;
+				@include fontsize(23);
+				content: "\f119";
+				@include absolute(top 0 right 3px);
+				color: $primary-3;
+				@include transition(all 0.5s ease);
+			}
+
+			&:hover {
+				color: $primary-3;
+
+				&:after {
+					@include absolute(right 0px);
+				}
+
+			}
+
+		}
+
+	}
+
+	.works,
+	.image-hover {
+		margin-bottom: 30px;
+
+		.columns {
+			&.is-0,
+			&.is-gapless {
+				.column {
+					.work-item {
+						img {
+							min-width: auto;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	> .video-container,
+	.box {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+}
+
+.blog-list {
+	&.single-post {
+		margin-top: 1rem;
+
+		.blog-post {
+			.post-image {
+				margin-bottom: 10px;
+			}
+
+			.entry-header {
+				.entry-title {
+					@include fontsize(15);
+					line-height: 1.8;
+					margin-bottom: 10px !important;
+				}
+
+			}
+
+			.post-meta {
+				margin-bottom: 8px;
+			}
+
+			.entry-content {
+				p {
+					@include fontsize(14);
+					margin-bottom: 10px;
+				}
+
+			}
+
+		}
+
+	}
+
+	// styles
+	&.style-1 {
+		.blog-post {
+			display: flex;
+			flex-direction: column;
+			background-color: $white;
+			margin-bottom: 0;
+
+			.post-image {
+				margin-bottom: 0;
+
+				img {
+					min-width: 440px;
+				}
+
+			}
+
+			.entry-header,
+			.entry-content {
+				padding: 0 40px;
+			}
+
+			.entry-content {
+				padding-bottom: 20px;
+
+				p {
+					@include fontsize(15);
+				}
+
+			}
+
+			.entry-header {
+				padding-top: 35px;
+
+				.entry-title {
+					@include fontsize(19);
+					@extend %is-capitalized;
+					line-height: 1.6;
+				}
+
+				.post-meta {
+					margin-bottom: 5px;
+
+					ul {
+						li {
+							padding-right: 4px;
+
+							a,
+							span {
+								color: $tertiary;
+
+								&:hover {
+									color: $primary;
+								}
+
+							}
+
+							&:first-child {
+								color: $primary;
+
+								a,
+								span {
+									color: $primary;
+
+									&:hover {
+										color: $secondary-5;
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.column {
+			padding: 0;
+
+			&:nth-child(3n+2) {
+				.blog-post {
+					.post-image {
+						order: 10;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	// style-1
+
+	&.style-2 {
+		.blog-post {
+			background-color: $white;
+			margin-bottom: 10px;
+			@include transition(all 0.4s ease);
+			border-radius: 5px;
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+			}
+
+			.post-image {
+			}
+
+			.entry-header,
+			.entry-content {
+				padding: 0 38px;
+			}
+
+			.entry-content {
+				padding-bottom: 18px;
+
+				p {
+					@include fontsize(15);
+				}
+
+			}
+
+			.entry-header {
+				.entry-title {
+					@include fontsize(24);
+					@extend %is-capitalized;
+					line-height: 1.6;
+					margin-bottom: .55rem !important;
+					font-weight: 600;
+				}
+
+				.post-meta {
+					margin-bottom: 17px;
+
+					ul {
+						li {
+							padding-right: 4px;
+
+							a,
+							span {
+								color: $tertiary;
+
+								&:hover {
+									color: $primary;
+								}
+
+							}
+
+							&:first-child {
+								color: $primary;
+
+								a,
+								span {
+									color: $primary;
+
+									&:hover {
+										color: $secondary-5;
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	// style-2 & style-3
+
+	&.style-3 {
+		.blog-post {
+			background-color: $white;
+			margin-bottom: 10px;
+			@include transition(all 0.4s ease);
+			padding: 44px 40px;
+			border-radius: 5px;
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+			}
+
+			.entry-content {
+				padding: 5px 0 15px;
+
+				p {
+					@include fontsize(16);
+				}
+
+			}
+
+			.entry-footer {
+				.button {
+					@extend %is-capitalized;
+					@include font-roboto;
+					letter-spacing: 1px;
+					font-weight: 600;
+					color: $primary;
+					@include fontsize(15);
+
+					&:hover {
+						color: $secondary-5;
+					}
+
+					&:after {
+						display: none;
+					}
+
+				}
+
+			}
+
+			.entry-header {
+				.entry-title {
+					@include fontsize(23);
+					@extend %is-capitalized;
+					line-height: 1.6;
+					font-weight: 600;
+				}
+
+				.post-meta {
+					margin-bottom: 14px;
+
+					ul {
+						li {
+							padding-right: 4px;
+
+							a,
+							span {
+								color: $tertiary;
+
+								&:hover {
+									color: $primary;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.owl-carousel {
+		padding: 25px 0;
+
+		.blog-post {
+			&:hover {
+				@include box-shadow(0px, 9px, 50px, -4px, rgba($tertiary, .1));
+			}
+
+		}
+
+		.owl-dots {
+			margin-top: 60px;
+
+			.owl-dot {
+				&.active,
+				&:hover {
+					span {
+						background: $primary-5;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	// default styles
+	&.default-style-1 {
+		.blog-post {
+			border: 1px solid $tertiary-10;
+			padding-bottom: 30px;
+			border-radius: 0 0 5px 5px;
+
+			.entry-header,
+			.entry-content,
+			.entry-footer {
+				padding: 0 30px;
+			}
+
+		}
+
+	}
+
+	&.default-style-2 {
+		.blog-post {
+			margin-bottom: 35px;
+
+			.entry-header {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			.entry-footer {
+				display: none;
+			}
+
+		}
+
+	}
+
+	&.style-list {
+		.blog-post {
+			border: 1px solid $tertiary-10;
+			background-color: white;
+			@include transition(all 0.4s ease);
+			border-radius: 5px;
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+			}
+
+			.post-image {
+				margin-bottom: 0;
+			}
+
+			.entry-content p {
+				font-size: 14px;
+			}
+
+			.entry-header,
+			.entry-content,
+			.entry-footer {
+				padding-right: 35px;
+				padding-left: 5px;
+			}
+
+			.entry-header {
+				padding-top: 50px;
+				margin-bottom: 40px;
+
+				.entry-title {
+					font-size: 18px;
+					margin-bottom: 1rem !important;
+				}
+
+				.post-meta ul li {
+					font-size: 11.5px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+body {
+	&.blog-list-style-3 {
+		.section {
+			&.content-with-sidebar {
+				background-color: $primary-light;
+			}
+
+		}
+
+		.site-footer-top {
+			.subscribe-section {
+				background-color: white;
+			}
+
+		}
+
+		.blog-list {
+			&.style-3 {
+				.blog-post {
+					.entry-header {
+						.post-meta ul li {
+							padding-right: 12px;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

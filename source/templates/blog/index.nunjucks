@@ -1,0 +1,250 @@
+<!-- blog/fullwidth.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_layouts/default.nunjucks" %}
+
+<!-- set menu active pages -->
+{% set active_pages = ["blog", "fullwidth"] %}
+
+<!-- set sidebar options -->
+{% set sidebar = false %}
+
+<!-- set body classes for page -->
+{% block page_class %}page-blog blog-list-style-3 page-header-hamburger-menu{% endblock %}
+
+<!-- disable this layout or content sections -->
+{% block header_top %}{% endblock %}
+{% block header_bottom_class %}{% endblock %}
+{% block content_header %}{% endblock %}
+{% block content_footer %}{% endblock %}
+{% block footer_top_class %}{% endblock %}
+{% block footer_bottom %}{% endblock %}
+{% block footer_class %}footer-fullwidth{% endblock %}
+
+<!-- footer top inner -->
+{% block footer_top_inner_content %}
+	{% include "_includes/footer/footer-top/subscribe.nunjucks" %}
+{% endblock %}
+
+<!-- header bottom inner | slider -->
+{% block header_bottom_inner_content %}
+<section class="section is-clearfix">
+<div class="container">
+	<div class="intro-text has-text-centered">
+		<h1>
+			Blog
+		</h1>
+		<br><br>
+	</div>
+</div>
+</section>
+{% endblock %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/modules/blog-list.nunjucks" import blog_list %}
+{% from "_includes/content/elements/pagination.nunjucks" import pagination %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+{{ section_start( class = 'has-background-primary-light', use_container=false ) }}
+
+	<br>
+
+	    <div class="blog-list style-2 columns is-variable is-4 is-multiline">
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/1.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>Branding</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/2.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>Design</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/3.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>Branding</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/2.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>design</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/3.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>branding</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    	<div class="column is-4" data-aos="fade-up">
+	    		<article class="blog-post">
+
+	    			<figure class="post-image">
+		                <a href="/blog/single.html"><img src="/assets/images/blog/1.png"></a>
+		            </figure>
+		            <div class="entry-header">
+		                <h2 class="entry-title">
+		                    <a href="/blog/single.html">self motivation how to keep</a>
+		                </h2>
+		                <div class="post-meta">
+		                    <ul>
+		                    	<li><a href="#"><span>design</span></a></li>
+		                        <li><span>April 5, 2018</span></li>
+		                    </ul>
+		                </div>
+		                <!-- .post-meta -->
+		            </div>
+		            <!-- .entry-header -->
+		            <div class="entry-content">
+		                <p>The main component of a healthy for self esteem is that it needs be nurturing. It should provide warmth..</p>
+		            </div>
+		            <!-- .entry-content -->
+
+	    		</article><!-- .blog-post -->
+	    	</div>
+
+	    </div>
+
+
+	<nav class="pagination is-centered">
+      <ul class="pagination-list">
+        <li>
+          <a href="#" class="pagination-link ">1</a>
+        </li>
+        <li>
+          <a href="#" class="pagination-link is-current">2</a>
+        </li>
+        <li>
+          <a href="#" class="pagination-link ">3</a>
+        </li>
+        <li>
+          <a href="#" class="pagination-ellipsis ">...</a>
+        </li>
+        <li>
+          <a href="#" class="pagination-link ">11</a>
+        </li>
+        <li>
+          <a href="#" class="pagination-link ">12</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br>
+
+{{ section_end() }}
+
+{% endblock %}

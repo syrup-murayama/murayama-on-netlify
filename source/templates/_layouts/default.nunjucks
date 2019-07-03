@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js no-svg">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Jozoor">
+	  <meta name="description" content="Joo - Niche Multi-Purpose HTML Template">
+	  <meta name="keywords" content="creative, niche, responsive, html5, css3, multipurpose, all in one, html, template">
+	  <title>{% block title %}{{global.site_title}} | {{global.template_title}}{% endblock %}</title>
+		<!-- buildvendor:css -->
+		    <!-- vendors:css -->
+		    <!-- endvendors -->
+		<!-- endbuildvendor -->
+		<!-- buildapp:css -->
+		    <!-- styles:css -->
+		    <!-- endstyles -->
+		<!-- endbuildapp -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		<!-- cdn icon fonts
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+			<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+		-->
+		{% include "_includes/favicons.nunjucks" %}
+		{% block custom_code_header %}{% endblock %}
+	</head>
+	<body class="active-pageloader {% block body_classes %}creative{% endblock %} {% block header_classes %}header-hamburger-menu slide-up{% endblock %} {% block footer_classes %}footer-widgets footer-background dark-color widgets-6 footer-reveal{% endblock %} {% block menu_classes %}submenu-show-arrow-right menu-is-capitalized submenu-is-capitalized{% endblock %} {% block logo_classes %}logo-text-is-capitalized{% endblock %} {% block page_class %}page-index page-header-hamburger-menu{% endblock %}">
+
+		<div class="pageloader is-active"></div>
+
+		<div id="site-wrap" class="site">
+
+			{% block header_top %}
+				<div id="header-top-wrap" class="is-clearfix">
+				    <div id="header-top" class="site-header-top">
+				        <div id="header-top-inner" class="site-header-top-inner {% block header_top_class %}container{% endblock %}">
+				        	{% block header_top_inner_content %}{% endblock %}
+						</div><!-- #header-top-inner -->
+				    </div><!-- #header-top -->
+				</div><!-- #header-top-wrap -->
+			{% endblock %}
+
+			{% block header %}
+			    <div id="header-wrap" class="is-clearfix">
+				    <header id="header" class="site-header">
+				        <div id="header-inner" class="site-header-inner {% block header_class %}header-fullwidth{% endblock %}">
+
+						    {% block header_inner_content %}
+							    {% include "_includes/header/hamburger-menu/icon-right.nunjucks" %}
+						    {% endblock %}
+
+						</div><!-- #header-inner -->
+				    </header><!-- #header -->
+				</div><!-- #header-wrap -->
+			{% endblock %}
+
+			{% block header_bottom %}
+				<div id="header-bottom-wrap" class="is-clearfix">
+				    <div id="header-bottom" class="site-header-bottom">
+				        <div id="header-bottom-inner" class="site-header-bottom-inner {% block header_bottom_class %}container{% endblock %}">
+				        	{% block header_bottom_inner_content %}
+				        	    {% include "_includes/header/header-bottom/default.nunjucks" %}
+				        	{% endblock %}
+						</div><!-- #header-bottom-inner -->
+				    </div><!-- #header-bottom -->
+				</div><!-- #header-bottom-wrap -->
+			{% endblock %}
+
+			{% block content_header %}
+				<div id="content-header-wrap" class="is-clearfix">
+				    <div id="content-header" class="site-content-header">
+				    	{% block content_header_inner_content %}{% endblock %}
+				    </div><!-- #content-header -->
+				</div><!-- #content-header-wrap -->
+			{% endblock %}
+
+			<!-- import content layouts and modules -->
+			{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+			{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+
+			{% block content_main %}
+				<div id="content-main-wrap" class="is-clearfix">
+
+				{% if sidebar %}
+
+				{{ section_start( class = sidebar.section_class ) }}
+				<div class="columns is-variable {{sidebar.columns_gap_class}} {% if sidebar.position == 'left' %}is-flex-reverse{% endif %}">
+					<div class="column {% if sidebar.content_column_class %}{{sidebar.content_column_class}}{% else %}is-8{% endif %}">
+
+				{% endif %}
+
+					{% block content_area %}
+						<div id="content-area" class="site-content-area">
+					        <div id="content-area-inner" class="site-content-area-inner">
+					        	{% block content_area_inner_content %}{% endblock %}
+					        </div><!-- #content-area-inner -->
+					    </div><!-- #content-area -->
+					{% endblock %}
+
+                {% if sidebar %}
+
+					</div><!-- .column -->
+
+					{% if sidebar.show %}
+
+						<div class="column is-narrow {{sidebar.column_class}}">
+
+						{% block sidebar %}
+							<aside id="sidebar" class="sidebar {% if sidebar.position == 'left' %}is-left{% endif %}">
+						        <div id="sidebar-inner" class="site-sidebar-inner">
+						        	{% block sidebar_inner_content %}
+							        	{% include "_includes/sidebar/default.nunjucks" %}
+						        	{% endblock %}
+						        </div><!-- #sidebar-inner -->
+						    </aside><!-- #sidebar -->
+						{% endblock %}
+
+		                </div><!-- .column -->
+
+	                {% endif %}
+
+                </div><!-- .columns -->
+	            {{ section_end() }}
+				<!-- .content-with-sidebar -->
+
+				{% endif %}
+
+				</div><!-- #content-main-wrap -->
+			{% endblock %}
+
+			{% block content_footer %}
+				<div id="content-footer-wrap" class="is-clearfix">
+				    <div id="content-footer" class="site-content-footer">
+				    	{% block content_footer_inner_content %}{% endblock %}
+				    </div><!-- #content-footer -->
+				</div><!-- #content-footer-wrap -->
+			{% endblock %}
+
+			{% block footer_top %}
+				<div id="footer-top-wrap" class="is-clearfix">
+				    <div id="footer-top" class="site-footer-top">
+				        <div id="footer-top-inner" class="site-footer-top-inner {% block footer_top_class %}container{% endblock %}">
+				        	{% block footer_top_inner_content %}
+				        	{% include "_includes/footer/footer-top/clients.nunjucks" %}
+				        	{% endblock %}
+						</div><!-- #footer-top-inner -->
+				    </div><!-- #footer-top -->
+				</div><!-- #footer-top-wrap -->
+			{% endblock %}
+
+			{% block footer %}
+			    <div id="footer-wrap" class="is-clearfix">
+				    <footer id="footer" class="site-footer">
+				        <div id="footer-inner" class="site-footer-inner {% block footer_class %}container{% endblock %}">
+
+						    {% block footer_inner_content %}
+							    {% include "_includes/footer/widgets-6.nunjucks" %}
+						    {% endblock %}
+
+						</div><!-- #footer-inner -->
+				    </footer><!-- #footer -->
+				</div><!-- #footer-wrap -->
+			{% endblock %}
+
+			{% block footer_bottom %}
+				<div id="footer-bottom-wrap" class="is-clearfix">
+				    <div id="footer-bottom" class="site-footer-bottom">
+				        <div id="footer-bottom-inner" class="site-footer-bottom-inner {% block footer_bottom_class %}{% endblock %}">
+				        	{% block footer_bottom_inner_content %}
+				        	    {% include "_includes/footer/footer-bottom/with-menu-icons.nunjucks" %}
+				        	{% endblock %}
+						</div><!-- #footer-bottom-inner -->
+				    </div><!-- #footer-bottom -->
+				</div><!-- #footer-bottom-wrap -->
+			{% endblock %}
+
+			<!-- show floating buttons -->
+			{% set floating_buttons = true %}
+			{% set floating_settings = true %}
+
+			{% if floating_buttons %}
+				{% block floating_buttons %}
+
+				    {% if floating_share %}
+					<div class="floating_buttons is-left is-animate">
+						<a href="javascript:void(0);" class="float" id="menu-share">
+							<span class="icon"><i class="icon-share"></i></span>
+						</a>
+						<ul>
+	                        <li>
+	                          <a href="#" target="_blank">
+	                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
+	                          </a>
+	                        </li>
+	                        <li>
+	                          <a href="#" target="_blank">
+	                            <span class="icon"><i class="fab fa-twitter"></i></span>
+	                          </a>
+	                        </li>
+	                        <li>
+	                          <a href="#" target="_blank">
+	                            <span class="icon"><i class="fab fa-pinterest-p"></i></span>
+	                          </a>
+	                        </li>
+                        </ul>
+					</div>
+					{% endif %}
+
+                    {% if floating_settings %}
+					<div class="floating_buttons is-animate">
+						<a href="javascript:void(0);" class="float" id="menu-share">
+							<span class="icon"><i class="icon-settings"></i></span>
+						</a>
+						<ul>
+	                        <li>
+	                          <a href="https://1.envato.market/Jozoor" target="_blank" class="tooltip is-tooltip-left" data-tooltip="BUY NOW">
+	                            <span class="icon"><i class="icon-bag"></i></span>
+	                          </a>
+	                        </li>
+	                        <li>
+	                          <a href="javascript:void(0);" class="tooltip is-tooltip-left" data-tooltip="MORE TEMPLATES" data-show="quickview" data-target="quickviewDemos">
+	                            <span class="icon"><i class="icon-screen-desktop"></i></span>
+	                          </a>
+	                        </li>
+	                        <li>
+	                          <a href="https://themes.jozoor.com/html/joo/creative/02/rtl/" target="_blank" class="tooltip is-tooltip-left" data-tooltip="RTL VERSION">
+	                            <span class="icon"><i class="icon-refresh"></i></span>
+	                          </a>
+	                        </li>
+	                        <li>
+	                          <a href="https://t.me/jozor" target="_blank" class="tooltip is-tooltip-left" data-tooltip="LIVE CHAT">
+	                            <span class="icon"><i class="icon-paper-plane"></i></span>
+	                          </a>
+	                        </li>
+                        </ul>
+					</div>
+
+					<div id="quickviewDemos" class="quickview">
+	                    <div class="quickview-header">
+	                      <p class="title">Niche Templates</p>
+	                      <span class="delete" data-dismiss="quickview"></span>
+	                    </div>
+
+	                    <div class="quickview-body">
+	                      <div class="quickview-block">
+
+	                        <div class="image-hover effect-5">
+							    <div class="columns is-variable is-multiline is-2">
+
+							    	{% for demo in demos.list %}
+
+							    	<div class="column is-6{% if demo.active %} is-active{% endif %}">
+							    		<figure>
+						                   <img src="{{ demos.images_folder }}{{ demo.image }}">
+						                   {% if demo.active %}<span class="tag menu-mark is-primary">active</span>{% endif %}
+						                   <figcaption>
+						                   	    <h5>{{ demo.title }}</h5>
+						                   	    {% if demo.active %}{% else %}
+							                    <a href="{{ demo.url }}" target="_blank">View more</a>
+							                    {% endif %}
+											</figcaption>
+						                </figure>
+							    	</div>
+
+							    	{% endfor %}
+
+							    </div>
+							</div>
+
+	                      </div>
+	                    </div>
+
+	                </div>
+
+					{% endif %}
+
+				{% endblock %}
+			{% endif %}
+
+			{% if back_to_top %}
+				{% block back_to_top %}
+					<a href="javascript:void(0);" id="back-to-top" class="back-to-top">
+						<span class="icon"><i class="ion-ios-arrow-up-outline"></i></span>
+					</a>
+				{% endblock %}
+			{% endif %}
+
+		</div><!-- #site-wrap -->
+
+	    <!-- buildvendor:js -->
+	        <!-- jquery:js -->
+		    <!-- endjquery -->
+		    <!-- vendors:js -->
+		    <!-- endvendors -->
+		<!-- endbuildvendor -->
+		<!-- buildapp:js -->
+		    <!-- scripts:js -->
+		    <!-- endscripts -->
+		<!-- endbuildapp -->
+
+		{% block custom_code_footer %}{% endblock %}
+
+	</body>
+</html>

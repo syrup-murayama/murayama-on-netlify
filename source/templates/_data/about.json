@@ -1,0 +1,146 @@
+{
+	"about": {
+
+		"page_title": {
+			"title": "About us",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"intro": {
+			"section_class": "intro-about",
+			"heading_title": "Mind Power the utimate <br> success formula",
+			"logo_image": "logo/logo.png",
+			"logos_folder": "logos/",
+			"slider_folder": "slider/carousel/about/",
+			"paragraph": "If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum. The patch is just a patch that you apply everyd, If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum. The patch is just a patch that you apply everyd, If you are interested in nicotine interchange methods to help stop smoking cigarettes, you might consider purchasing the patch or nicotine gum interchange methods to help stop smoking cigarettes.",
+			"awards_logos": [
+				{ "link": "#", "image_src": "1.png" },
+				{ "link": "#", "image_src": "2.png" },
+				{ "link": "#", "image_src": "3.png" }
+			],
+			"carousel_slider": [
+				{ "image_src": "3.png" }, { "image_src": "4.png" }, { "image_src": "5.png" }
+			]
+		},
+		"services_boxes": {
+			"section_class": "services",
+			"heading_title": "What We Do",
+			"link": "/pages/services.html",
+			"show_icon": true,
+			"show_title": true,
+			"show_text": true,
+			"more_text": false,
+			"boxes": [
+				{
+					"icon": "ion-ios-easel-outline",
+					"title": "Planning",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia will go now harmoniousness rule again leacher unrived tomentum insignia harmoniousness."
+				},
+				{
+					"icon": "ion-ios-cafe-outline",
+					"title": "Decore",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia will go now harmoniousness rule again leacher unrived tomentum insignia harmoniousness."
+				},
+				{
+					"icon": "ion-ios-people-outline",
+					"title": "Consulting",
+					"text": "Climatology chronocrator puppysnatch leacher unrived tomentum insignia will go now harmoniousness rule again leacher unrived tomentum insignia harmoniousness."
+				}
+			]
+		},
+		"team": {
+			"section_class": "our-team",
+			"heading_title": "our team",
+			"link": "/pages/team.html",
+			"images_folder": "team/",
+			"show_image": true,
+			"show_title": true,
+			"show_categories": true,
+			"show_text": true,
+			"show_social_links": true,
+			"list": [
+				{
+					"full_width": true,
+					"image_src": "1.png",
+					"title": "Olivia Allison",
+					"categories": ["physiotherapist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality. Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality. Fuidhir pinnately Gothicize impolite backcap soiree bookmate will go now.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "2.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "3.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				},
+				{
+					"full_width": false,
+					"image_src": "4.png",
+					"title": "Olivia Allison",
+					"categories": ["stylist"],
+					"text": "Fuidhir pinnately Gothicize impolite backcap soiree bookmate clan unkenning unnaturality.",
+					"social_links": [
+						{ "icon": "fab fa-facebook-f", "link": "#" },
+						{ "icon": "fab fa-twitter", "link": "#" },
+						{ "icon": "fab fa-instagram", "link": "#" }
+					]
+				}
+			]
+		},
+		"counters": {
+			"section_class": "counters",
+			"list": [
+				{ "number": "70", "text": "Awards Won" },
+				{ "number": "48", "text": "Satisfied Clients" },
+				{ "number": "56", "text": "Startup Growth" },
+				{ "number": "28", "text": "Average Prices" }
+			]
+		},
+		"testimonials": {
+			"section_class": "testimonials-list",
+			"images_folder": "testimonials/",
+			"show_image": true,
+			"show_text": true,
+			"show_author": true,
+			"list": [
+				{
+					"image_src": "1.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "2.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				},
+				{
+					"image_src": "3.png",
+					"text": "Any time we start something new it is exciting and we are very motivated and committed. As time goes by",
+					"author": "Christina & Sandro"
+				}
+			]
+		}
+
+	}
+}

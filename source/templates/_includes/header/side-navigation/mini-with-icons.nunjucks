@@ -1,0 +1,73 @@
+<!-- side-navigation/mini-with-icons.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/header/_layout-2.nunjucks" %}
+
+<!-- set header layout options -->
+{% set show_header_left_top = true %}
+{% set show_header_center_top = true %}
+{% set show_header_right_top = true %}
+{% set show_header_left = false %}
+{% set show_header_center = true %}
+{% set show_header_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+{% from "_includes/header/modules/logo.nunjucks" import menu_logo %}
+{% from "_includes/header/modules/icons.nunjucks" import menu_icons %}
+
+{% block header_navigation_left_top %}
+    {{ menu_logo( data = header.logo_center_menu, global_data = global ) }}
+{% endblock %}
+
+{% block header_navigation_center_top %}
+    <ul class="header-menu-icons social">
+        {% for social in footer.social_links %}
+        <li>
+            <a href="{{social.link}}" target="_blank">
+                {% if social.icon == 'fab fa-facebook-f' %}
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+                {% elif social.icon == 'fab fa-pinterest-p' %}
+                <span class="icon"><i class="fab fa-pinterest"></i></span>
+                {% else %}
+                <span class="icon"><i class="{{social.icon}}"></i></span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul><!-- .header-menu-icons -->
+{% endblock %}
+
+{% block header_navigation_right_top %}
+    <ul class="header-menu-icons">
+        <li class="side-push-menu"><a href="javascript:void(0);"><span class="icon"><i class="ion-ios-menu"></i></span></a></li>
+    </ul>
+{% endblock %}
+
+{% block header_navigation_center %}
+    {{ menu_start( style_class = 'left' ) }}
+        {% for item in header.navigation.menu_left %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+        {% for item in header.navigation.menu_right %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+{% endblock %}
+
+{% block header_navigation_right %}
+    <ul class="header-menu-icons social">
+        {% for social in footer.social_links %}
+        <li>
+            <a href="{{social.link}}" target="_blank">
+                <span class="icon"><i class="{{social.icon}}"></i></span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul><!-- .header-menu-icons -->
+    <span class="footer-copyright">
+        {{footer.copyright | safe}}
+    </span>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% macro team(style_class, columns_class='is-4 is-multiline', column_class='is-4', data, global_data) %}
+
+<div class="team {{style_class}}">
+
+	<div class="columns is-variable {{columns_class}}">
+
+	    {% for member in data.list %}
+		<div class="column {{column_class}}{% if member.full_width %} is-12{% endif %}">
+			<div class="team-member">
+
+				{% if member.full_width %}
+				<div class="columns is-variable is-multiline is-7">
+				<div class="column is-narrow">
+				{% endif %}
+
+				{% if data.show_image %}
+				<figure class="team-member-img">
+					<a href="{{data.link}}"><img src="{{global_data.images_root}}{{data.images_folder}}{{member.image_src}}"></a>
+				</figure>
+				{% endif %}
+
+				{% if member.full_width %}
+				</div>
+				<div class="column">
+				{% endif %}
+
+				<div class="team-member-meta">
+					{% if data.show_title %}
+					<h3><a href="{{data.link}}">{{member.title}}</a></h3>
+					{% endif %}
+					{% if data.show_categories %}
+					<h5><a href="{{data.link}}">{% for category in member.categories %}{{category}} {% endfor %}</a></h5>
+					{% endif %}
+					{% if data.show_text %}
+					<p>{{member.text}}</p>
+					{% endif %}
+					{% if data.show_social_links %}
+					<ul class="team-social-links">
+				        {% for social in member.social_links %}
+				        <li>
+				            <a href="{{social.link}}" target="_blank">
+				                <span class="icon"><i class="{{social.icon}}"></i></span>
+				            </a>
+				        </li>
+				        {% endfor %}
+				    </ul>
+					{% endif %}
+
+				</div>
+
+				{% if member.full_width %}
+				</div>
+				</div><!-- .columns -->
+				{% endif %}
+
+			</div><!-- .team-member -->
+		</div>
+		{% endfor %}
+
+	</div><!-- .columns -->
+
+</div><!-- .team -->
+
+{% endmacro %}

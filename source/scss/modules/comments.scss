@@ -1,0 +1,115 @@
+/*
+ * ::::::::::: Comments Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.comment-list,
+.comments {
+	margin-bottom: 3.5rem;
+	margin-top: 1.8rem;
+	border-bottom: 1px solid $tertiary-10;
+	padding-bottom: 2.5rem;
+
+	.media + .media,
+	.comment + .comment,
+	.comment-box + .comment-box {
+		border-top: 1px solid $tertiary-10;
+		margin-top: 2rem;
+		padding-top: 2.5rem;
+	}
+
+	.media .media,
+	.comment .comment,
+	.comment-box .comment-box {
+		border-top: 1px solid $tertiary-10;
+		padding-top: 2.5rem;
+		margin-top: 2rem;
+	}
+
+	.media-left {
+		margin-right: 1.8rem;
+	}
+
+	.media-right {
+		margin-left: 1.8rem;
+	}
+
+	.avatar {
+		img {
+			@include transition(all 0.4s ease);
+			max-width: 100px;
+
+			&:hover {
+				opacity: .8;
+			}
+
+		}
+
+	}
+
+	.comment-body {
+		.level {
+			margin-bottom: .8rem;
+		}
+
+	}
+
+	.comment-author {
+		color: $secondary-3;
+		@include fontsize(16);
+		text-transform: capitalize;
+		display: inline-block;
+		margin-right: 16px;
+		letter-spacing: 1px;
+		font-weight: 500;
+
+		a {
+			color: $secondary-3;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+	.comment-date {
+		@extend %is-uppercase;
+		display: inline-block;
+		color: $tertiary;
+		@include font-roboto;
+		@include fontsize(11.5);
+		margin-top: 3px;
+		letter-spacing: 1px;
+		font-weight: 400;
+
+		a {
+			color: $tertiary;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+	.comment-reply {
+		@include fontsize(12.5);
+		@extend %is-uppercase;
+		display: inline-block;
+		letter-spacing: .8px;
+		@include font-roboto;
+		font-weight: 500;
+	}
+
+	p {
+		@include fontsize(14);
+	}
+
+}

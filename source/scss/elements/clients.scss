@@ -1,0 +1,80 @@
+/*
+ * ::::::::::: Clients Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.clients-list {
+	margin: 20px 0;
+
+	.client-item {
+		min-height: 120px;
+		padding: 20px;
+		@include transition(all 0.4s ease);
+
+		&:hover {
+			img {
+				filter: grayscale(100%);
+			}
+
+		}
+
+	}
+
+	img {
+		max-width: 150px;
+		max-height: 35px;
+		@include transition(all 0.4s ease);
+	}
+
+	// styles
+
+	&.style-1,
+	&.style-2 {
+		.client-item {
+			margin: 4.5px 16px;
+			min-height: 130px;
+			background-color: $white;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				@include box-shadow(2px, 1px, 25px, 5px, rgba($tertiary, .2));
+			}
+
+		}
+
+		&.owl-carousel {
+			.client-item {
+				margin-right: 0;
+				margin-left: 0;
+
+				&:hover {
+					@include box-shadow(0px, 9px, 50px, -4px, rgba($tertiary, .1));
+				}
+
+			}
+
+		}
+
+	}
+
+	&.style-2 {
+		.client-item {
+			border: 1px solid $tertiary-10;
+
+			&:hover {
+				box-shadow: none;
+				border: 1px solid $primary;
+			}
+
+		}
+
+	}
+
+}

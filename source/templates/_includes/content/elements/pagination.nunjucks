@@ -1,0 +1,37 @@
+{% macro pagination(style_class, data, global_data) %}
+
+<nav class="pagination {{style_class}}">
+
+    {% if global_data.pagination.separate_next_prev %}
+	    {% for page in global_data.pagination.list %}
+		    {% if page.type == 'previous' or page.type == 'next' %}
+
+                {% if page.disabled and global_data.pagination.hide_disabled_next_prev %}{% else %}
+			    <a href="{{page.link}}" class="{% if page.type == 'previous' %}pagination-previous{% else %}pagination-next{% endif %}" {% if page.disabled %}disabled{% endif %}>{{page.text | safe}}</a>
+			    {% endif %}
+
+		    {% endif %}
+	    {% endfor %}
+	{% endif %}
+
+	<ul class="pagination-list">
+		{% for page in global_data.pagination.list %}
+
+        {% if ( page.type == 'previous' or page.type == 'next' ) and global_data.pagination.separate_next_prev %}{% else %}
+
+	        {% if page.disabled and global_data.pagination.hide_disabled_next_prev %}{% else %}
+
+			<li>
+				<a href="{{page.link}}" class="{% if page.type == 'previous' %}pagination-previous{% elif page.type == 'next' %}pagination-next{% elif page.type == 'dots' %}pagination-ellipsis{% else %}pagination-link{% endif %} {% if page.current %}is-current{% endif %}" {% if page.disabled %}disabled{% endif %}>{{page.text | safe}}</a>
+			</li>
+
+			{% endif %}
+
+		{% endif %}
+
+		{% endfor %}
+	</ul>
+
+</nav><!-- .pagination -->
+
+{% endmacro %}

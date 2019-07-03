@@ -1,0 +1,9 @@
+{% macro logos_list(style_class, data, global_data) %}
+
+<ul class="logos awards {{style_class}}">
+	{% for logo in data.awards_logos %}
+	<li><a href="{{logo.link}}" target="_blank"><img src="{{global_data.images_root}}{{data.logos_folder}}{{logo.image_src}}"></a></li>
+	{% endfor %}
+</ul>
+
+{% endmacro %}

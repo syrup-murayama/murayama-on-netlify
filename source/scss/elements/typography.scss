@@ -1,0 +1,146 @@
+/*
+ * ::::::::::: Typography Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.content,
+.entry-content {
+	@include font-roboto;
+
+	figure {
+		text-align: inherit;
+		margin-right: 0;
+		margin-left: 0;
+
+		figcaption {
+			@include fontsize(14);
+			color: $tertiary;
+		}
+
+	}
+
+	p {
+		color: $tertiary-7;
+	}
+
+	strong,
+	sub {
+		color: $secondary-3;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include font-playfair-display;
+	}
+
+	pre,
+	code {
+		margin: 1.8em 0 !important;
+		background-color: $tertiary-9;
+	}
+
+	pre {
+		max-height: 30em;
+	}
+
+	mark {
+		padding: 3px 6px;
+	}
+
+	.dropcaps {
+		&:first-letter {
+			background-color: $primary;
+			color: $white;
+			@include fontsize(45);
+			@include font-playfair-display;
+			padding: 5px 12px 10px;
+			float: $float-left;
+			margin: 6px 15px 0 0;
+			@extend %is-uppercase;
+			line-height: 1;
+		}
+
+		&.style-1 {
+			&:first-letter {
+				background-color: transparent !important;
+				color: $primary-4;
+				padding: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				@include fontsize(65);
+			}
+
+		}
+
+		&.style-2 {
+			&:first-letter {
+				border-radius: 5px;
+			}
+
+		}
+
+		&.style-3 {
+			&:first-letter {
+				background-color: transparent !important;
+				color: $primary-4;
+				border: 1px solid $tertiary-10;
+			}
+
+		}
+
+		&.is-info {
+			&:first-letter { background-color: $info; }
+			&.style-1, &.style-3 { &:first-letter { color: $info; } }
+		}
+
+		&.is-success {
+			&:first-letter { background-color: $success; }
+			&.style-1, &.style-3 { &:first-letter { color: $success; } }
+		}
+
+		&.is-warning {
+			&:first-letter { background-color: $warning; }
+			&.style-1, &.style-3 { &:first-letter { color: $warning; } }
+		}
+
+		&.is-black {
+			&:first-letter { background-color: $black; }
+			&.style-1, &.style-3 { &:first-letter { color: $black; } }
+		}
+
+		&.is-link {
+			&:first-letter { background-color: $link; }
+			&.style-1, &.style-3 { &:first-letter { color: $link; } }
+		}
+
+		&.is-danger {
+			&:first-letter { background-color: $danger; }
+			&.style-1, &.style-3 { &:first-letter { color: $danger; } }
+		}
+
+		&.is-primary {
+			&:first-letter { background-color: $primary; }
+			&.style-1, &.style-3 { &:first-letter { color: $primary; } }
+		}
+
+		&.is-secondary {
+			&:first-letter { background-color: $secondary; }
+			&.style-1, &.style-3 { &:first-letter { color: $secondary; } }
+		}
+
+		&.is-tertiary {
+			&:first-letter { background-color: $tertiary; }
+			&.style-1, &.style-3 { &:first-letter { color: $tertiary; } }
+		}
+
+	}
+
+}

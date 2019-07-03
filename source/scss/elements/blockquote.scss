@@ -1,0 +1,576 @@
+/*
+ * ::::::::::: Blockquotes Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.content,
+.entry-content {
+	blockquote {
+		@include font-playfair-display;
+		margin: 1.8em 0;
+		@extend %is-capitalized;
+		color: $secondary-3;
+		@include fontsize(20);
+		line-height: 1.8;
+		@include relative;
+		font-weight: 500;
+
+		span {
+			@include font-roboto;
+			@include fontsize(14);
+			@extend %is-uppercase;
+			color: $primary-4;
+			letter-spacing: 1px;
+			display: block;
+			margin-top: 1.8em;
+
+			&:before {
+				display: inline-block;
+				content: '';
+				width: 15px;
+				height: 1px;
+				border-bottom: 1px solid $tertiary-2;
+				background-color: $tertiary-2;
+				vertical-align: middle;
+				margin: 0 .5rem 0 0;
+			}
+
+		}
+
+		// styles
+
+		&.style-1 {
+			text-align: center;
+			border: none;
+			@include fontsize(25);
+			padding: .8em .1em;
+			margin-top: 2.8em;
+
+			&:before {
+				@include font-fontawesome;
+				@include fontsize(35);
+				content: "\f10d";
+				@include absolute(top -34% left 49%);
+				color: $primary-4;
+				font-weight: 900;
+			}
+
+			span {
+				color: $tertiary;
+
+				&:before {
+					border-color: $primary-4;
+					background-color: $primary-4;
+				}
+
+			}
+
+		}
+
+		&.style-2 {
+			border: none;
+			padding-left: 3.2em;
+			padding-top: .6em;
+			@include fontsize(22);
+
+			&:before {
+				@include font-fontawesome;
+				@include fontsize(33);
+				content: "\f10d";
+				@include absolute(top 0 left 0);
+				color: $primary-4;
+				font-weight: 900;
+			}
+
+		}
+
+		&.style-3 {
+			border: none;
+			padding-top: .4em;
+			@include fontsize(22);
+			text-align: center;
+
+			span {
+				color: $tertiary;
+			}
+
+			&:before {
+				@include font-fontawesome;
+				@include fontsize(33);
+				content: "\f10d";
+				@include absolute(top 0 left 0);
+				color: $primary-4;
+				font-weight: 900;
+			}
+
+			&:after {
+				@include font-fontawesome;
+				@include fontsize(33);
+				content: "\f10e";
+				@include absolute(top 0 right 0);
+				color: $primary-4;
+				font-weight: 900;
+				content: "\f10e";
+			}
+
+		}
+
+		&.style-4 {
+			text-align: center;
+			border: none;
+			@include fontsize(25);
+			padding: .8em .1em;
+			margin-top: 2em;
+
+			&:before {
+				@include font-fontawesome;
+				@include fontsize(80);
+				content: "\f10d";
+				@include absolute(top -20% left 46%);
+				color: $tertiary-10;
+				font-weight: 900;
+				opacity: .7;
+				z-index: -1;
+			}
+
+		}
+
+		&.is-info {
+			border-color: $info;
+
+			span {
+				color: $info;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $info;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $info;
+						background-color: $info;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $info;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $info;
+				}
+
+				&:after {
+					color: $info;
+				}
+
+			}
+
+		}
+
+		&.is-success {
+			border-color: $success;
+
+			span {
+				color: $success;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $success;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $success;
+						background-color: $success;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $success;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $success;
+				}
+
+				&:after {
+					color: $success;
+				}
+
+			}
+
+		}
+
+		&.is-warning {
+			border-color: $warning;
+
+			span {
+				color: $warning;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $warning;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $warning;
+						background-color: $warning;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $warning;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $warning;
+				}
+
+				&:after {
+					color: $warning;
+				}
+
+			}
+
+		}
+
+		&.is-black {
+			border-color: $black;
+
+			span {
+				color: $black;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $black;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $black;
+						background-color: $black;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $black;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $black;
+				}
+
+				&:after {
+					color: $black;
+				}
+
+			}
+
+		}
+
+		&.is-link {
+			border-color: $link;
+
+			span {
+				color: $link;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $link;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $link;
+						background-color: $link;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $link;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $link;
+				}
+
+				&:after {
+					color: $link;
+				}
+
+			}
+
+		}
+
+		&.is-danger {
+			border-color: $danger;
+
+			span {
+				color: $danger;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $danger;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $danger;
+						background-color: $danger;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $danger;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $danger;
+				}
+
+				&:after {
+					color: $danger;
+				}
+
+			}
+
+		}
+
+		&.is-primary {
+			border-color: $primary;
+
+			span {
+				color: $primary;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $primary;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $primary;
+						background-color: $primary;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $primary;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $primary;
+				}
+
+				&:after {
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		&.is-secondary {
+			border-color: $secondary;
+
+			span {
+				color: $secondary;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $secondary;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $secondary;
+						background-color: $secondary;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $secondary;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $secondary;
+				}
+
+				&:after {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+		&.is-tertiary {
+			border-color: $tertiary;
+
+			span {
+				color: $tertiary;
+			}
+
+			&.style-1 {
+				&:before {
+					color: $tertiary;
+				}
+
+				span {
+					color: $tertiary;
+
+					&:before {
+						border-color: $tertiary;
+						background-color: $tertiary;
+					}
+
+				}
+
+			}
+
+			&.style-2 {
+				&:before {
+					color: $tertiary;
+				}
+
+			}
+
+			&.style-3 {
+				span {
+					color: $tertiary;
+				}
+
+				&:before {
+					color: $tertiary;
+				}
+
+				&:after {
+					color: $tertiary;
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,160 @@
+{
+	"blog": {
+
+		"page_title": {
+			"title": "Blog",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"sidebar": {
+			"show": true,
+			"position": "right",
+			"columns_gap_class": "is-5",
+			"column_class": "is-4",
+			"content_column_class": "is-8",
+			"section_class": "content-with-sidebar"
+		},
+		"pagination": {
+			"separate_next_prev": false,
+			"hide_disabled_next_prev": true,
+			"list": [
+				{ "type": "previous", "text": "Prev", "link": "#", "disabled": false },
+				{ "text": "1", "link": "#", "current": false },
+				{ "text": "2", "link": "#", "current": true, "disabled": false },
+				{ "text": "3", "link": "#", "current": false, "disabled": false },
+				{ "type": "dots", "text": "...", "link": "#" },
+				{ "text": "11", "link": "#", "current": false, "disabled": false },
+				{ "text": "12", "link": "#", "current": false, "disabled": false },
+				{ "type": "next", "text": "Next", "link": "#" }
+			]
+		},
+		"blog": {
+			"section_class": "latest-news",
+			"heading_title": "Latest News",
+			"link": "/blog/single.html",
+			"images_folder": "blog/",
+			"show_image": true,
+			"show_meta": true,
+			"show_title": true,
+			"show_content": true,
+			"more_text": true,
+			"post_meta": [
+				{
+					"icon": "icon-clock",
+					"text": [{
+						"name": "April 5, 2018",
+						"link": ""
+					}]
+				},
+				{
+					"icon": "icon-user",
+					"text": [{
+						"name": "Mohamed Ahmed",
+						"link": "#"
+					}]
+				},
+				{
+					"icon": "icon-folder",
+					"text": [
+						{
+							"name": "Branding",
+							"link": "#"
+						},
+						{
+							"name": "design",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"icon": "icon-bubbles",
+					"text": [{
+						"name": "2",
+						"link": "#"
+					}]
+				}
+			],
+			"posts": [
+				{
+					"image_src": "1.png",
+					"title": "Self Motivation How To Keep Yourself",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Self Motivation How To Keep Yourself",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				},
+				{
+					"image_src": "1.png",
+					"title": "Self Motivation How To Keep Yourself",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				}
+			]
+		},
+		"blog_full": {
+			"section_class": "latest-news",
+			"heading_title": "Latest News",
+			"link": "/blog/single.html",
+			"images_folder": "slider/",
+			"show_image": true,
+			"show_meta": true,
+			"show_title": true,
+			"show_content": true,
+			"more_text": true,
+			"post_meta": [
+				{
+					"icon": "icon-clock",
+					"text": [{
+						"name": "April 5, 2018",
+						"link": ""
+					}]
+				},
+				{
+					"icon": "icon-user",
+					"text": [{
+						"name": "Mohamed Ahmed",
+						"link": "#"
+					}]
+				},
+				{
+					"icon": "icon-folder",
+					"text": [
+						{
+							"name": "Branding",
+							"link": "#"
+						},
+						{
+							"name": "design",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"icon": "icon-bubbles",
+					"text": [{
+						"name": "2",
+						"link": "#"
+					}]
+				}
+			],
+			"posts": [
+				{
+					"image_src": "4.png",
+					"title": "The main compont of a healthy environment for self",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				},
+				{
+					"image_src": "3.png",
+					"title": "The main compont of a healthy environment for self",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				},
+				{
+					"image_src": "2.png",
+					"title": "The main compont of a healthy environment for self",
+					"content": "The main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth.."
+				}
+			]
+		}
+
+	}
+}

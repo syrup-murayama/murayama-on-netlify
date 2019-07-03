@@ -1,0 +1,118 @@
+<!-- widgets-3.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+
+{% block footer_content %}
+
+    <div class="columns is-variable is-6 is-multiline">
+
+	    <div class="column">
+
+			<div class="widget widget-html">
+              <div class="textwidget">
+                {{ footer_logo( data = footer.logo_left, global_data = global ) }}
+                <br>
+                <p>The main component of a healthy environment for self esteem is that it needs be nurturing.</p>
+                
+              </div><!-- .textwidget -->
+            </div>
+
+            <div class="widget-links links-with-icons">
+              <ul>
+                <li>
+                	<span class="icon"><i class="icon-location-pin"></i></span>
+                	<a href="#">295 Streets, Melbourne, Australia</a>
+                </li>
+                <li>
+                	<span class="icon"><i class="icon-envelope"></i></span>
+                	<a href="mailto:welcome@website.com">welcome@website.com</a>
+                </li>
+                <li>
+                	<span class="icon"><i class="icon-phone"></i></span>
+                	<a href="tel:+66396847263">+66396847263</a>
+                </li>
+              </ul>
+            </div>
+
+	    </div><!-- .column -->
+
+	    <div class="column">
+	    	<div class="widget widget-form">
+              <h3 class="widget-title ">subscribe</h3>
+              <p>The main component of a healthy environment.</p>
+              <br>
+              <form>
+                <div class="field">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="your@email.com">
+                    <button type="submit" class="button is-radiusless">
+                      <span class="icon"><i class="icon-envelope"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="widget widget-html">
+              <div class="textwidget">
+                <h3 class="widget-title ">follow us</h3>
+                <div class="footer-social-links ">
+                  <ul>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-twitter"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-pinterest-p"></i></span></a></li>
+                  </ul>
+                </div>
+              </div><!-- .textwidget -->
+            </div>
+	    </div><!-- .column -->
+
+	    <div class="column">
+	    	<div class="widget widget-list">
+                      <h3 class="widget-title ">recent news</h3>
+                      <div class="box">
+                        <article class="media">
+                          <div class="media-left">
+                            <figure class="image">
+                              <a href="/blog/single.html">
+                                <img src="/assets/images/blog/1-1.png">
+                              </a>
+                            </figure>
+                          </div>
+                          <div class="media-content">
+                            <div class="content">
+                              <a href="/blog/single.html">Control Your Own Level of Motivation</a>
+                              <p>April 10, 2018</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="box">
+                        <article class="media">
+                          <div class="media-left">
+                            <figure class="image">
+                              <a href="/blog/single.html">
+                                <img src="/assets/images/blog/1-2.png">
+                              </a>
+                            </figure>
+                          </div>
+                          <div class="media-content">
+                            <div class="content">
+                              <a href="/blog/single.html">Control Your Own Level of Motivation</a>
+                              <p>April 14, 2018</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+	    </div><!-- .column -->
+
+	    
+	    
+	</div><!-- .columns -->
+
+{% endblock %}

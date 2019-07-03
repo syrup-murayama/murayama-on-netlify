@@ -1,0 +1,47 @@
+/*
+ * ::::::::::: Logos Styles :::::::::::
+ */
+
+// ::::::::::: Imports ::::::::::: //
+@import '../_config/imports';
+
+// ::::::::::: Styles ::::::::::: //
+
+.logos {
+	&.awards {
+		text-align: center;
+		padding: 2rem 0 4rem;
+
+		li {
+			display: inline-block;
+			padding: 0 3.5rem;
+			border-right: 1px solid $tertiary-9;
+
+			a {
+				display: inline-block;
+			}
+
+			img {
+				@include transition(all 0.4s ease);
+				filter: grayscale(100%);
+
+				&:hover {
+					filter: grayscale(100%);
+				}
+
+			}
+
+			&:first-child {
+				@extend %padding-left-none;
+			}
+
+			&:last-child {
+				@extend %padding-right-none;
+				border: 0;
+			}
+
+		}
+
+	}
+
+}

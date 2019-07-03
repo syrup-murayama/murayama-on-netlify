@@ -1,0 +1,16 @@
+{% macro subscribe(style_class, field_class, data, global_data) %}
+
+<div class="subscribe-form {{style_class}}">
+	<form>
+		<div class="field has-addons has-addons-centered {{field_class}}">
+			<div class="control">
+				<input class="input" type="text" placeholder="{{data.input_placeholder | safe}}">
+			</div>
+			<div class="control">
+				<a href="{{data.button.link}}" class="button">{{data.button.text | safe}}</a>
+			</div>
+		</div>
+	</form>
+</div><!-- .subscribe-form -->
+
+{% endmacro %}

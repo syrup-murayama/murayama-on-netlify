@@ -1,0 +1,24 @@
+<!-- instagram widget -->
+{% from "_includes/sidebar/widgets/widget-title.nunjucks" import widget_title %}
+
+{% for widget in sidebar_widgets.widgets.list %}
+
+{% if widget.widget == 'instagram' %}
+
+<div class="widget {{widget.class}}">
+
+    {% if widget.title %}
+		{{ widget_title( text = widget.title ) }}
+	{% endif %}
+
+	{% from "_includes/sidebar/widgets/" + widget.type + ".nunjucks" import widget_content %}
+
+	<div id="instafeed-footer" class="instafeed">
+		<!-- instagram feed will be loaded here -->
+	</div>
+
+</div><!-- .widget -->
+
+{% endif %}
+
+{% endfor %}

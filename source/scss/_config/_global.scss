@@ -1,0 +1,258 @@
+// Float
+$float-left: left;
+$float-right: right;
+
+// Height
+$logo-max-height: 34px;
+$footer-logo-max-height: 52px;
+$header-height: auto;
+
+// Width
+$menu-sub-ul-min-width: 210px;
+$menu-sub-li-min-width: 210px;
+$mega-menu-sub-ul-min-width: 198px;
+$mega-menu-sub-li-min-width: 198px;
+
+// bulma custom config
+
+// body
+$body-color: $secondary-5;
+
+// transition type
+$easing: ease;
+
+// pricing table extension
+$pricing-plan-border: 1px solid $tertiary-5;
+$pricing-plan-border-radius: 5px;
+$pricing-plan-active-shadow: none;
+$pricing-plan-active-transform: scale(1, 1.11);
+
+// scale(x, y)
+$pricing-header-background: transparent;
+$pricing-item-background: transparent;
+$pricing-item-border: none;
+$pricing-item-color: $tertiary-4;
+$pricing-price-background: transparent;
+
+// form fields
+$control-radius: 4px;
+$input-radius: 0;
+$input-shadow: none;
+$input-background-color: #fff;
+$input-color: $secondary-5;
+$input-hover-color: $tertiary-5;
+$input-border-color: $tertiary-5;
+$input-hover-border-color: $tertiary-5;
+$input-focus-color:	$secondary-5;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow-size: 0;
+$input-focus-box-shadow-color: rgba($link, 0);
+$file-radius: 0;
+$checkbox-radius: 0;
+
+// custom form styles
+$form-field-control-padding-vertical: calc(1.52em - 1px);
+$form-field-control-padding-horizontal: calc(1em - 1px);
+//$form-field-font-size-is-small: ;
+//$form-field-font-size-is-normal: ;
+$form-field-font-size-is-medium: 1.25rem;
+//$form-field-font-size-is-large: ;
+
+// buttons styles
+$button-focus-border-color:	transparent;
+$button-focus-box-shadow-size: 0;
+$button-focus-box-shadow-color:	transparent;
+
+// pagination
+$pagination-color: $tertiary;
+$pagination-border-color: $tertiary-5;
+$pagination-hover-color: #fff;
+$pagination-hover-border-color: transparent;
+$pagination-focus-color: #fff;
+$pagination-focus-border-color: $tertiary-5;
+$pagination-ellipsis-color: $tertiary;
+$pagination-active-color: #fff;
+$pagination-active-border-color: transparent;
+$pagination-disabled-color:	$tertiary;
+$pagination-disabled-background-color: $tertiary-5;
+$pagination-disabled-border-color: transparent;
+$pagination-current-color: #fff;
+$pagination-current-background-color: $primary;
+$pagination-current-border-color: transparent;
+
+// box styles
+$box-padding: 0;
+$box-radius: 5px;
+$box-shadow: none;
+//$box-background-color: transparent;
+
+// tags
+$tag-radius: 0;
+$tag-color: $secondary-4;
+
+// content styles
+$content-heading-color: $secondary-3;
+$content-blockquote-background-color: transparent;
+$content-blockquote-border-left: 4px solid $primary;
+$content-blockquote-padding: 1.4em 1.8em;
+
+// modal
+$modal-content-width: 800px;
+$modal-z: 9999;
+$modal-close-right: 30px;
+$modal-close-top: 30px;
+$modal-card-head-radius: 0;
+$modal-card-foot-radius: 0;
+$modal-card-head-background-color: $tertiary-10;
+$modal-card-head-border-bottom: 1px solid $tertiary-9;
+$modal-card-foot-border-top: 1px solid $tertiary-9;
+
+// breadcrumb
+$breadcrumb-item-color: $primary-3;
+$breadcrumb-item-hover-color: $secondary-3;
+$breadcrumb-item-active-color: $secondary-5;
+$breadcrumb-item-separator-color: $tertiary;
+
+// tabs
+$tabs-border-bottom-width: 1px !important;
+$tabs-border-bottom-style: solid !important;
+$tabs-border-bottom-color: $tertiary-10 !important;
+$tabs-link-hover-border-bottom-color: $tertiary-4 !important;
+$tabs-link-active-border-bottom-color: $link !important;
+$tabs-link-color: $secondary-3 !important;
+$tabs-link-hover-color: $secondary-5 !important;
+$tabs-link-active-color: $link !important;
+$tabs-link-padding: 0.8em 1.2em;
+
+$tabs-boxed-link-radius: 0px;
+$tabs-boxed-link-active-border-color: $tertiary-10;
+$tabs-boxed-link-hover-background-color: rgba($tertiary-10, 0.5);
+$tabs-boxed-link-hover-background-color: rgba($tertiary-10, 0.5);
+$tabs-boxed-link-hover-border-bottom-color: $tertiary-10 !important;
+
+$tabs-toggle-link-radius: 0px;
+$tabs-toggle-link-border-color: $tertiary-10 !important;
+$tabs-toggle-link-border-style: solid !important;
+$tabs-toggle-link-border-width: 1px !important;
+$tabs-toggle-link-hover-border-color: $tertiary-10 !important;
+$tabs-toggle-link-active-border-color: $link !important;
+$tabs-toggle-link-active-color: white !important;
+
+// divider
+$divider-background-color: $tertiary-10;
+$divider-thickness: .1rem;
+$divider-font-size: 0.875rem;
+
+// calendar
+$calendar-border: 1px solid $tertiary-10;
+$calendar-border-radius: 0;
+$calendar-date-padding:	.3rem 0;
+
+// notification
+$notification-radius: 5px;
+$notification-background-color: rgba($tertiary-10, .5);
+
+// card
+$card-shadow: 0 2px 3px rgba($tertiary, 0.1), 0 0 0 1px rgba($tertiary, 0.1);
+$card-color: $tertiary;
+$card-footer-border-top: 1px solid $tertiary-10;
+$card-header-weight: 400;
+
+// dropdown
+$dropdown-content-shadow: 0 2px 3px rgba($tertiary, 0.1), 0 0 0 1px rgba($tertiary, 0.1);
+$dropdown-divider-background-color: $tertiary-10;
+$dropdown-item-color: $secondary-5;
+$dropdown-item-hover-color: $secondary;
+$dropdown-item-hover-background-color: $tertiary-10;
+
+// menu
+$menu-item-color: $secondary-4;
+$menu-item-radius: 0;
+$menu-item-hover-color: $secondary;
+$menu-item-hover-background-color: $tertiary-10;
+$menu-list-border-left: 1px solid $tertiary-10;
+$menu-label-color: $secondary-5;
+
+// message
+$message-radius: 5px;
+$message-header-radius: 0;
+$message-body-radius: 0;
+$message-header-color: white;
+$message-header-weight: 500;
+$message-background-color: rgba($tertiary-10, .5);
+
+// tables
+$table-cell-border: 1px solid $tertiary-10;
+$table-cell-padding: 0.75em 0.75em;
+
+// quickview
+$quickview-divider: 1px solid $tertiary-10;
+
+// code 
+$code-size: initial;
+
+// share commons
+%display-block {
+	display: block;
+}
+
+%display-none {
+	display: none;
+}
+
+%padding-left-none {
+	padding-left: 0;
+}
+
+%padding-right-none {
+	padding-right: 0;
+}
+
+%padding-none {
+	padding: 0;
+}
+
+%is-radiusless {
+	border-radius: 0;
+}
+
+%is-uppercase {
+	text-transform: uppercase;
+}
+
+%is-marginless {
+	margin: 0;
+}
+
+%is-paddingless {
+	padding: 0;
+}
+
+%is-shadowless {
+	box-shadow: none;
+}
+
+%is-capitalized {
+  text-transform: capitalize;
+}
+
+%is-lowercase {
+  text-transform: lowercase;
+}
+
+%is-italic {
+	font-style: italic;
+}
+
+// Mega Menu Divider
+%mega-menu-column-divider {
+	&:after {
+		@extend %display-block;
+		content: '';
+		width: 1px;
+		height: 80%;
+		@include absolute(top 12% right 10%);
+		@include linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(216, 216, 216, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+	}
+
+}

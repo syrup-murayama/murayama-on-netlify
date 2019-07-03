@@ -1,0 +1,212 @@
+<!-- pages/about.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_layouts/default.nunjucks" %}
+
+<!-- set menu active pages -->
+{% set active_pages = ["pages", "about"] %}
+
+<!-- set sidebar options -->
+{% set sidebar = about.sidebar %}
+
+<!-- disable this layout or content sections -->
+{% block header_top %}{% endblock %}
+{% block header_bottom_class %}{% endblock %}
+{% block content_header %}{% endblock %}
+{% block content_footer %}{% endblock %}
+{% block footer_top_class %}{% endblock %}
+{% block footer_bottom %}{% endblock %}
+{% block footer_class %}footer-fullwidth{% endblock %}
+
+<!-- header bottom inner | slider -->
+{% block header_bottom_inner_content %}
+<section class="section is-clearfix">
+<div class="container">
+	<div class="intro-text has-text-centered">
+		<h1>
+			About
+		</h1>
+		<br><br>
+	</div>
+</div>
+</section>
+{% endblock %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/content/layouts/section-start.nunjucks" import section_start %}
+{% from "_includes/content/layouts/section-end.nunjucks" import section_end %}
+{% from "_includes/content/elements/heading-title.nunjucks" import heading_title %}
+{% from "_includes/content/modules/logos-list.nunjucks" import logos_list %}
+{% from "_includes/content/modules/carousel-image.nunjucks" import carousel_image %}
+{% from "_includes/content/modules/boxes.nunjucks" import boxes %}
+{% from "_includes/content/modules/team.nunjucks" import team %}
+{% from "_includes/content/modules/counters.nunjucks" import counters %}
+{% from "_includes/content/modules/testimonials.nunjucks" import testimonials %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+{{ section_start( class = 'has-background-secondary' ) }}
+
+	<div class="columns is-variable is-6 is-multiline boxes-style-3">
+          <div class="column is-4 aos-init aos-animate" data-aos="fade">
+            <div class="box-item media">
+              
+              <div class="media-content">
+                <h3>
+                  <a href="#" class="has-text-white">Who We Are</a>
+                </h3>
+                <p class="has-text-tertiary">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam vitae pulvinar again.</p>
+              </div>
+            </div>
+            <!-- .box-item -->
+          </div>
+          <div class="column is-4 aos-init aos-animate" data-aos="fade">
+            <div class="box-item media">
+              
+              <div class="media-content">
+                <h3>
+                  <a href="#" class="has-text-white">What We Do</a>
+                </h3>
+                <p class="has-text-tertiary">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam vitae pulvinar again.</p>
+              </div>
+            </div>
+            <!-- .box-item -->
+          </div>
+          <div class="column is-4 aos-init aos-animate" data-aos="fade">
+            <div class="box-item media">
+              
+              <div class="media-content">
+                <h3>
+                  <a href="#" class="has-text-white">Our Mission</a>
+                </h3>
+                <p class="has-text-tertiary">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam vitae pulvinar again.</p>
+              </div>
+            </div>
+            <!-- .box-item -->
+          </div>
+        </div>
+
+{{ section_end() }}
+
+<section class="section welcome-section mixed-background watch-video is-clearfix">
+  <div class="section-body">
+
+  	<div class="works-latest" data-aos="fade-up">
+          <div class="works-latest-item">
+            <img src="/assets/images/global/about.png">
+            <div class="works-latest-item-icon style-2">
+              <a href="https://www.youtube.com/watch?v=s_e7jp-x-Wo" class="mfp-lightbox mfp-iframe">
+                <span class="icon ripple-effect"><i class="ion-ios-play"></i></span>
+              </a>
+            </div>
+            <!-- .works-latest-icon -->
+          </div>
+          <!-- .works-latest-item -->
+        </div>
+    
+  </div>
+</section>
+
+{{ section_start( class = 'watch-video' ) }}
+
+    <div class="columns is-variable is-8 is-multiline">
+
+      <div class="column is-6-desktop is-12-tablet" data-aos="fade">
+      	{{ heading_title( style_class = 'style-1 has-text-left', text = "Check our Services" ) }}
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi, nulla nunc.</p>
+        <br>
+        <div class="works-button">
+	    <a href="#" class="button is-primary">read more</a>
+	    </div><!-- .works-button -->
+      </div>
+
+      <div class="column is-6-desktop is-12-tablet" data-aos="fade">
+      	<div class="progressbar bar-2" data-value="0.8" data-options='{ "color": "#000000" }'>
+            <div class="progressbar-heading">Web Design</div>
+        </div>
+
+        <div class="progressbar bar-3" data-value="0.9" data-options='{ "color": "#000000" }'>
+            <div class="progressbar-heading">Marketing</div>
+        </div>
+
+        <div class="progressbar bar-4" data-value="0.85" data-options='{ "color": "#000000" }'>
+            <div class="progressbar-heading">Development</div>
+        </div>
+
+        <div class="progressbar bar-5" data-value="0.95" data-options='{ "color": "#000000" }'>
+            <div class="progressbar-heading">WordPress</div>
+        </div>
+      </div>
+
+     </div>
+
+
+{{ section_end() }}
+
+{{ section_start( class = 'has-background-primary-light' ) }}
+
+<br>
+
+    <div class="works isotope masonry image-hover effect-10 mfp-lightbox-gallery">
+
+		<div class="columns is-variable is-3 is-multiline">
+
+			<div class="column is-6" data-aos="fade-up">
+				<div class="work-item">
+                    <figure>
+						<a href="/assets/images/portfolio/14.png" class="mfp-lightbox mfp-image" title="Creative">
+		                   	<img src="/assets/images/portfolio/14.png">
+		                   <figcaption>
+		                   	    <ul class="social">
+				                <li><span class="icon"><i class="icon-magnifier"></i></span></li>
+		                   	    </ul>
+							</figcaption>
+						</a>
+					</figure>
+                </div>
+			</div>
+			<div class="column is-6" data-aos="fade-up">
+					<div class="work-item">
+                        <figure>
+							<a href="/assets/images/blog/3.png" class="mfp-lightbox mfp-image" title="Creative">
+			                   	<img src="/assets/images/blog/3.png">
+			                   <figcaption>
+			                   	    <ul class="social">
+					                <li><span class="icon"><i class="icon-magnifier"></i></span></li>
+			                   	    </ul>
+								</figcaption>
+							</a>
+						</figure>
+                    </div>
+				</div>
+			<div class="column is-6" data-aos="fade-up">
+					<div class="work-item">
+                        <figure>
+							<a href="/assets/images/portfolio/10.png" class="mfp-lightbox mfp-image" title="Creative">
+			                   	<img src="/assets/images/portfolio/10.png">
+			                   <figcaption>
+			                   	    <ul class="social">
+					                <li><span class="icon"><i class="icon-magnifier"></i></span></li>
+			                   	    </ul>
+								</figcaption>
+							</a>
+						</figure>
+                    </div>
+				</div>
+
+		</div>
+
+{{ section_end() }}
+
+{{ section_start( class = 'has-background-primary' ) }}
+
+   <br><br>
+
+	   {{ testimonials( style_class = 'style-1', data = testimonials_list.testimonials_1, global_data = global ) }}
+
+	<br>
+
+{{ section_end() }}
+
+{% endblock %}

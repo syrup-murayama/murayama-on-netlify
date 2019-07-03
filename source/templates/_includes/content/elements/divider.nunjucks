@@ -1,0 +1,7 @@
+{% macro divider(style_class, text, no_content = false) %}
+{% if no_content %}
+<div class="is-divider {{style_class}}"></div>
+{% else %}
+<div class="is-divider {{style_class}}" data-content="{{text | safe}}"></div>
+{% endif %}
+{% endmacro %}

@@ -1,0 +1,57 @@
+<!-- widgets-2.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+
+{% block footer_content %}
+
+    <div class="columns is-variable is-6 is-multiline">
+
+	    <div class="column is-4">
+
+			<div class="widget widget-html">
+              <div class="textwidget">
+                {{ footer_logo( data = footer.logo_left, global_data = global ) }}
+                <br>
+                <p>The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.</p>
+                <div class="footer-social-links ">
+                  <ul>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-twitter"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-pinterest-p"></i></span></a></li>
+                  </ul>
+                </div>
+              </div><!-- .textwidget -->
+            </div>
+
+	    </div><!-- .column -->
+
+	    <div class="column is-4">
+	    	{% include "_includes/footer/modules/instagram.nunjucks" %}
+	    </div><!-- .column -->
+
+	    <div class="column is-4">
+	    	<div class="widget widget-form">
+              <h3 class="widget-title ">subscribe</h3>
+              <p>The main component of a healthy environment for self esteem is that.</p>
+              <br>
+              <form>
+                <div class="field">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="your@email.com">
+                    <button type="submit" class="button is-radiusless">
+                      <span class="icon"><i class="icon-envelope"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+	    </div><!-- .column -->
+	    
+	</div><!-- .columns -->
+
+{% endblock %}

@@ -1,0 +1,315 @@
+/*
+ * ::::::::::: Header Sticky Navigation Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+// body cutom classes for sticky header
+body {
+	&.header-sticky {
+		header {
+			z-index: 100;
+		}
+
+		&.header-topbar {
+			&.hide-on-scroll {
+				header {
+					@include relative;
+				}
+
+			}
+
+			&.header-transparent,
+			&.header-transparent-overlay {
+				&.hide-on-scroll {
+					header {
+						@include absolute;
+						top: 44px;
+					}
+
+				}
+
+			}
+
+		}
+
+		&.hide-on-scroll {
+			header {
+				// @include fixed(top 0);
+				top: 0;
+				@include transition(all 0.4s ease);
+			}
+
+		}
+
+		&.hide-on-scroll,
+		&.show-on-scroll {
+			header {
+				&.hide-on-scroll,
+				&.show-on-scroll,
+				&.responsive-on-scroll {
+					max-height: 60px;
+					box-shadow: 0px 1px 2px 0.5px rgba($tertiary-3, 0.2);
+
+					.main-navigation > ul {
+						> li {
+							> a {
+								margin: 5.5px 0;
+							}
+
+						}
+
+					}
+
+					.nav-menu-dropdown > li {
+						padding: 13px 0;
+					}
+
+				}
+
+			}
+
+			&.header-logo-top {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						.level {
+							border-top: 0;
+
+							&.top {
+								display: none;
+							}
+
+						}
+
+						.header-menu-icons li > ul {
+							margin-top: 12px;
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-menu-top {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						.level {
+							border-top: 0;
+							display: none;
+
+							&.top {
+								display: flex;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-menu-with-icons {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						.header-menu-icons li > ul {
+							margin-top: 17px;
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-transparent,
+			&.header-transparent-overlay {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						background-color: $white;
+					}
+
+				}
+
+			}
+
+			&.header-center-overlay {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						padding-top: 0;
+						background-color: $white;
+
+						.site-header-inner {
+							padding: 0;
+							background-color: transparent;
+						}
+
+						.level {
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-menu-separator-dots {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						.main-navigation {
+							> ul > li {
+								&:after {
+									top: 10px;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-menu-separator-line {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						.main-navigation {
+							> ul > li {
+								&:after {
+									top: 35%;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-transparent-border {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						background-color: $white;
+						border-bottom: 0;
+
+						.header-menu-icons {
+							border-left: 0;
+
+							> li {
+								padding: 0;
+								padding-left: 8px;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.header-hamburger-menu {
+				header {
+					&.hide-on-scroll,
+					&.show-on-scroll,
+					&.responsive-on-scroll {
+						#header-logo {
+							padding: 10px 0;
+						}
+
+					}
+
+				}
+
+				&.primary-color,
+				&.dark-color {
+					header {
+						&.hide-on-scroll,
+						&.show-on-scroll,
+						&.responsive-on-scroll {
+							.site-logo {
+								img {
+									filter: none;
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+				&.white-color {
+					header {
+						&.hide-on-scroll,
+						&.show-on-scroll,
+						&.responsive-on-scroll {
+							.site-logo {
+								img {
+									filter: none;
+								}
+
+							}
+
+							.hamburger-menu {
+								.hamburger-menu-icon,
+								.hamburger-menu-icon:after,
+								.hamburger-menu-icon:before {
+									background-color: $secondary;
+								}
+
+								&.expanded {
+									.hamburger-menu-icon {
+										background-color: transparent;
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		&.show-on-scroll {
+			header {
+				@include transition(all 0.8s ease);
+			}
+
+		}
+
+	}
+
+}

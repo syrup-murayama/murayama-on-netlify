@@ -1,0 +1,76 @@
+<!-- widgets-6.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+
+{% block footer_content %}
+
+    <div class="columns is-variable is-5 is-multiline">
+
+	    <div class="column is-3">
+
+			<div class="widget widget-html">
+              <div class="textwidget">
+                {{ footer_logo( data = footer.logo_left, global_data = global ) }}
+              </div><!-- .textwidget -->
+            </div>
+
+	    </div><!-- .column -->
+
+	    <div class="column is-3">
+	    	<div class="widget widget-links">
+			  <div class="widget-links links-with-icons">
+              <ul>
+                <li><a href="#">1231 Streets Melbourne</a></li>
+                <li><a href="#">St Australia</a></li>
+              </ul>
+            </div>
+			</div><!-- .widget -->
+	    </div><!-- .column -->
+
+	    <div class="column is-3">
+	    	<div class="widget widget-tags">
+              <div class="widget-links links-with-icons">
+              <ul>
+                <li><a href="tel:+66396847263">+ 0123 657 98 7865</a></li>
+                <li><a href="mailto:welcome@website.com">hello@site.com</a></li>
+              </ul>
+            </div>
+              <!-- .tagcloud -->
+            </div>
+	    </div><!-- .column -->
+
+	    <div class="column is-3">
+        <div class="widget">
+	    	<ul class="header-menu-icons social">
+          <li>
+            <a href="#" target="_blank">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <span class="icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <span class="icon">
+                <i class="fab fa-dribbble"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+	    </div><!-- .column -->
+	    
+	</div><!-- .columns -->
+
+{% endblock %}

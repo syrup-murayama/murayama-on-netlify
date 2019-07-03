@@ -1,0 +1,21 @@
+<div class="level">
+
+    {% if show_header_left %}
+    <div class="level-left">
+    	{% block header_navigation_left %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_center %}
+    <div class="level-left">
+    	{% block header_navigation_center %}{% endblock %}
+	</div><!-- .level-left -->
+	{% endif %}
+
+    {% if show_header_right %}
+	<div class="level-right">
+		{% block header_navigation_right %}{% endblock %}
+	</div><!-- .level-right -->
+	{% endif %}
+
+</div><!-- .level -->

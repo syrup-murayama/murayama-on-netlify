@@ -1,0 +1,21 @@
+{% macro widget_content(data, content) %}
+
+{% for post in content.posts %}
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image">
+        <a href="/blog/single.html"><img src="/assets/images/blog/{{post.image_src}}"></a>
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+      	<a href="/blog/single.html">{{post.title}}</a>
+        <p>{{post.desc | safe}}</p>
+      </div>
+    </div>
+  </article>
+</div>
+{% endfor %}
+
+{% endmacro %}

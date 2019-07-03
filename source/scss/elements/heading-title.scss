@@ -1,0 +1,123 @@
+/*
+ * ::::::::::: Heading Title Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/title';
+
+//:::::::::::Styles::::::::::://
+
+.heading-title {
+	text-transform: capitalize;
+	color: $secondary;
+	letter-spacing: 0;
+	@include fontsize(42);
+	text-align: center;
+	@extend .title;
+	font-weight: 600;
+	padding-bottom: 0;
+	@include relative;
+	margin-bottom: 3rem !important;
+
+	&:after {
+		@extend %display-block;
+		content: '';
+		width: 60px;
+		height: 1px;
+		border-bottom: 4px solid $primary-2;
+		background-color: $primary-2;
+		// @include center-element($left: 47.5%, $width:60px, $align:center);
+		transform: none;
+		top: 90%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	&.multiline {
+		line-height: 1.5;
+	}
+
+	&.style-2 {
+		@include fontsize(22);
+		text-align: inherit;
+		margin: 1.5rem 0 !important;
+		line-height: inherit;
+		padding-bottom: 0;
+
+		&:after {
+			display: none;
+			visibility: hidden;
+		}
+
+	}
+
+	&.style-1 {
+		@include font-roboto;
+		@extend %is-capitalized;
+		padding-bottom: 0;
+		margin-bottom: 2rem !important;
+		font-weight: 600;
+		@include fontsize(42);
+		letter-spacing: 0;
+
+		&:after {
+			display: none;
+		}
+
+	}
+
+	&.style-3 {
+		padding-bottom: 0;
+
+		&:after {
+			display: none;
+		}
+
+	}
+
+	&.style-4 {
+		margin-bottom: 2.8rem !important;
+		@include fontsize(42);
+
+		&:after {
+			// left: 0;
+		}
+
+	}
+
+	&.has-text-left {
+		&:after {
+			left: 0;
+			margin: 0;
+			margin-top: 30px;
+		}
+
+	}
+
+	&.has-text-right {
+		&:after {
+			left: inherit;
+			right: 0;
+			margin: 0;
+			margin-top: 30px;
+		}
+
+	}
+
+}
+
+.heading-title-bottom {
+	padding-bottom: 40px;
+	@include fontsize(16);
+}
+
+.heading-title-top {
+	padding-bottom: 12px;
+	@include fontsize(12);
+	@extend %is-uppercase;
+	color: $primary;
+	letter-spacing: 1.4px;
+	font-weight: 600;
+}

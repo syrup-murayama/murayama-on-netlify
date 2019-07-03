@@ -1,0 +1,13 @@
+{% macro carousel_image(style_class, carousel_class='dots', data, global_data) %}
+
+<div class="owl-carousel {{carousel_class}} carousel-image {{style_class}}">
+
+    {% for item in data.carousel_slider %}
+	<div class="carousel-item">
+		<img src="{{global_data.images_root}}{{data.slider_folder}}{{item.image_src}}">
+	</div><!-- .carousel-item -->
+	{% endfor %}
+
+</div>
+
+{% endmacro %}

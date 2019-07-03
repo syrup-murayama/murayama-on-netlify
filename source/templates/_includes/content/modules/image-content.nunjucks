@@ -1,0 +1,21 @@
+{% macro image_content(style_class, data, global_data) %}
+
+<div class="columns image-content {{style_class}}">
+	{% if data.image_src %}
+	<div class="column is-narrow">
+		<figure>
+			<img class="image" src="{{global_data.images_root}}{{data.image_src}}" alt="{{global_data.site_title}}">
+		</figure>
+	</div>
+	{% endif %}
+	<div class="column content">
+		<div class="text">
+			{% if data.subtitle %}<h4>{{data.subtitle}}</h4>{% endif %}
+			{% if data.title %}<h1>{{data.title}}</h1>{% endif %}
+			{% if data.text %}<p>{{data.text}}</p>{% endif %}
+			{% if data.more_text %}<a href="{{data.more_link}}" class="button">{{global_data.more_text.about}}</a>{% endif %}
+		</div>
+	</div>
+</div>
+
+{% endmacro %}

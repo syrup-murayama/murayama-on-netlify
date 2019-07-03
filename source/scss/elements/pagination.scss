@@ -1,0 +1,316 @@
+/*
+ * ::::::::::: Pagination Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.pagination {
+	@include font-roboto;
+	@include fontsize(16);
+	margin: $pagination-margin;
+
+	.pagination-list {
+		li {
+			&:first-child {
+				a {
+					margin-left: 0;
+				}
+
+			}
+
+			&:last-child {
+				a {
+					margin-right: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.pagination-link {
+		&.is-current {
+			cursor: default;
+		}
+
+	}
+
+	a {
+		margin: 0.35rem;
+		min-width: 2.45em;
+		height: 2.45em;
+		@include relative;
+
+		&.is-current,
+		&:hover {
+			background-color: $primary;
+		}
+
+		&.pagination-ellipsis {
+			padding-top: 0;
+			min-width: 1.35em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&.pagination-previous,
+		&.pagination-next {
+			min-width: 6.5em;
+			min-height: 3em;
+			@include fontsize(13);
+			@extend %is-uppercase;
+			letter-spacing: 1.5px;
+		}
+
+		&.pagination-next {
+			margin-right: 0;
+
+			&:after {
+				@include font-simple-line-icons;
+				@include fontsize(11);
+				content: "\e606";
+				padding-left: 6px;
+				margin-right: -6px;
+				margin-top: -1px;
+			}
+
+		}
+
+		&.pagination-previous {
+			margin-left: 0;
+
+			&:before {
+				@include font-simple-line-icons;
+				@include fontsize(11);
+				content: "\e605";
+				padding-right: 6px;
+				margin-left: -6px;
+				margin-top: -1px;
+			}
+
+		}
+
+		&.pagination-previous[disabled],
+		&.pagination-next[disabled],
+		&.pagination-link[disabled] {
+			opacity: .7;
+
+			&:hover {
+				background-color: $tertiary-5;
+			}
+
+		}
+
+	}
+
+	&.single-post {
+		margin: 3rem 0;
+		border: 1px solid $tertiary-10;
+		border-radius: 5px;
+		padding: 0 15px;
+
+		.pagination-previous,
+		.pagination-next,
+		.pagination-link,
+		.pagination-ellipsis {
+			border: 0;
+		}
+
+		a {
+			&.pagination-previous,
+			&.pagination-next {
+				@include fontsize(13.2);
+
+				&:hover {
+					background-color: transparent;
+					color: $primary;
+				}
+
+			}
+
+			&.pagination-next {
+				&:after {
+					padding-left: 10px;
+					margin-right: -6px;
+					color: $primary;
+				}
+
+			}
+
+			&.pagination-previous {
+				&:before {
+					padding-right: 10px;
+					margin-left: -6px;
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.single-work {
+		margin-top: 0;
+
+		.pagination-previous,
+		.pagination-next,
+		.pagination-link,
+		.pagination-ellipsis {
+			border: 0;
+			min-width: auto;
+			min-height: auto;
+			width: auto;
+			height: auto;
+			padding: 0;
+			margin: 0;
+			line-height: 1;
+
+			i {
+				@include fontsize(24);
+			}
+
+		}
+
+		a {
+			color: $primary;
+
+			&:hover {
+				background-color: transparent;
+				color: $secondary-5;
+			}
+
+			&.pagination-next {
+				&:after {
+					padding-left: 0;
+					@include fontsize(22);
+				}
+
+			}
+
+			&.pagination-previous {
+				&:before {
+					padding-right: 0;
+					@include fontsize(22);
+				}
+
+			}
+
+		}
+
+	}
+
+	&.is-rounded {
+		.pagination-previous,
+		.pagination-next {
+			padding-left: 1.4em;
+			padding-right: 1.4em;
+		}
+
+	}
+
+	// custom colors
+	&.is-success {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $success;
+			}
+
+		}
+
+	}
+
+	&.is-warning {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $warning;
+			}
+
+		}
+
+	}
+
+	&.is-black {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $black;
+			}
+
+		}
+
+	}
+
+	&.is-link {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $link;
+			}
+
+		}
+
+	}
+
+	&.is-info {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $info;
+			}
+
+		}
+
+	}
+
+	&.is-danger {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $danger;
+			}
+
+		}
+
+	}
+
+	&.is-primary {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $primary;
+			}
+
+		}
+
+	}
+
+	&.is-secondary {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $secondary;
+			}
+
+		}
+
+	}
+
+	&.is-tertiary {
+		a {
+			&.is-current,
+			&:hover {
+				background-color: $tertiary;
+			}
+
+		}
+
+	}
+
+}

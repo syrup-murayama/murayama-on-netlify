@@ -1,0 +1,45 @@
+<!-- index.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_layouts/default.nunjucks" %}
+
+<!-- set menu active pages -->
+{% set active_pages = ["home"] %}
+
+<!-- set sidebar options -->
+{% set sidebar = index.sidebar %}
+
+<!-- disable this layout or content sections -->
+{% block header_top %}{% endblock %}
+{% block header_bottom_class %}{% endblock %}
+{% block content_header %}{% endblock %}
+{% block content_footer %}{% endblock %}
+{% block footer_top_class %}{% endblock %}
+{% block footer_bottom %}{% endblock %}
+{% block footer_class %}footer-fullwidth{% endblock %}
+
+<!-- header bottom inner | slider -->
+{% block header_bottom_inner_content %}
+<section class="section is-clearfix">
+<div class="container">
+	<div class="intro-text has-text-centered">
+		<h1>
+			Minimal <br> best design works
+			<!-- <span id="typed-intro" class="animated-typing"></span>
+		    <div id="typed-strings-intro" style="display: none;">
+		      <span>brand</span>
+		      <span>works</span>
+		      <span>vector</span>
+		    </div> -->
+		</h1>
+	</div>
+</div>
+</section>
+{% endblock %}
+
+<!-- start adding page content -->
+{% block content_area_inner_content %}
+
+    {% include "_includes/content/modules/index-content.nunjucks" %}
+
+{% endblock %}

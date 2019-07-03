@@ -1,0 +1,131 @@
+/*
+ * ::::::::::: Portfolio Single Work Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.portfolio-single {
+	.work-images {
+		li {
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+		img {
+			display: block;
+		}
+
+	}
+
+	.widget-title {
+		@include fontsize(21);
+		margin-bottom: 1.3rem;
+	}
+
+	.widget {
+		margin-bottom: 1rem;
+
+		&:first-child {
+			.widget-title {
+				margin-top: -7px;
+			}
+
+		}
+
+		&.full-width {
+			margin-bottom: 0;
+			margin-top: 1rem;
+
+			&:first-child {
+				.widget-title {
+					margin-top: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.is-flex-reverse-column {
+		.widget {
+			&.full-width {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+		}
+
+	}
+
+	.textwidget {
+		p {
+			margin-bottom: 0;
+			@include fontsize(15);
+		}
+
+	}
+
+	.widget-social {
+		ul {
+			li {
+				padding-right: 9px;
+				padding-bottom: 9px;
+
+				.icon {
+					@include circle(31px);
+
+					i {
+						@include fontsize(16);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.widget-links {
+		ul {
+			li {
+				padding: 6px 0;
+				@include fontsize(14.5);
+				color: $secondary-5;
+
+				a {
+					color: $secondary-5;
+
+					&:hover {
+						color: $primary;
+					}
+
+				}
+
+				span {
+					@include fontsize(14);
+					color: $primary;
+				}
+
+				.icon {
+					color: $primary-2;
+					margin-right: 2.5px;
+					width: auto;
+					height: auto;
+				}
+
+			}
+
+		}
+
+	}
+
+}

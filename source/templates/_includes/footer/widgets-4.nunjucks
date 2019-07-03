@@ -1,0 +1,65 @@
+<!-- widgets-4.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+
+{% block footer_content %}
+
+    <div class="columns is-variable is-5 is-multiline">
+
+	    <div class="column is-4">
+
+			<div class="widget widget-html">
+              <div class="textwidget">
+                {{ footer_logo( data = footer.logo_left, global_data = global ) }}
+                <br>
+                <p>The main component of a healthy environment for self esteem is that it needs be nurturing. It should provide unconditional warmth.</p>
+                <div class="footer-social-links ">
+                  <ul>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-twitter"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="#" target="_blank"><span class="icon"><i class="fab fa-pinterest-p"></i></span></a></li>
+                  </ul>
+                </div>
+              </div><!-- .textwidget -->
+            </div>
+
+	    </div><!-- .column -->
+
+	    <div class="column">
+	    	<div class="widget widget-links">
+			  <h3 class="widget-title ">Projects</h3>
+        <ul>
+          <li><a href="/">Caminando design</a></li>
+          <li><a href="/">Animation Work</a></li>
+          <li><a href="/">WordPress Theme</a></li>
+          <li><a href="/">Html Template</a></li>
+        </ul>
+			</div><!-- .widget -->
+	    </div><!-- .column -->
+
+	    <div class="column">
+	    	<div class="widget widget-tags">
+              <h3 class="widget-title ">Tags Cloud</h3>
+              <div class="tagcloud">
+                <a href="#">Branding</a>
+                <a href="#">Design</a>
+                <a href="#">Coding</a>
+                <a href="#">Prototype</a>
+                <a href="#">Webdesign</a>
+              </div>
+              <!-- .tagcloud -->
+            </div>
+	    </div><!-- .column -->
+
+	    <div class="column is-3">
+	    	{% include "_includes/footer/modules/instagram.nunjucks" %}
+	    </div><!-- .column -->
+	    
+	</div><!-- .columns -->
+
+{% endblock %}

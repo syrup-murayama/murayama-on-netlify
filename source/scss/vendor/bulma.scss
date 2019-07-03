@@ -1,0 +1,41 @@
+// import bulma framework
+
+// import the initial variables
+@import 'lib/bulma/utilities/initial-variables';
+@import 'lib/bulma/utilities/functions';
+
+// import custom config from template
+@import '../_helpers/all';
+@import '../_config/all';
+
+// add new color variables to the color map
+@import 'lib/bulma/utilities/derived-variables';
+$addColors: (
+  "primary":($primary, findColorInvert($primary)),
+  "primary-2":($primary-2, findColorInvert($primary-2)),
+  "primary-3":($primary-3, findColorInvert($primary-3)),
+  "primary-4":($primary-4, findColorInvert($primary-4)),
+  "primary-5":($primary-5, findColorInvert($primary-5)),
+  "primary-6":($primary-6, findColorInvert($primary-6)),
+  "primary-7":($primary-7, findColorInvert($primary-7)),
+  "primary-light":($primary-light, findColorInvert($primary-light)),
+  "secondary":($secondary, findColorInvert($secondary)),
+  "secondary-2":($secondary-2, findColorInvert($secondary-2)),
+  "secondary-3":($secondary-3, findColorInvert($secondary-3)),
+  "secondary-4":($secondary-4, findColorInvert($secondary-4)),
+  "secondary-5":($secondary-5, findColorInvert($secondary-5)),
+  "tertiary":($tertiary, findColorInvert($tertiary)),
+  "tertiary-2":($tertiary-2, findColorInvert($tertiary-2)),
+  "tertiary-3":($tertiary-3, findColorInvert($tertiary-3)),
+  "tertiary-4":($tertiary-4, findColorInvert($tertiary-4)),
+  "tertiary-5":($tertiary-5, findColorInvert($tertiary-5)),
+  "tertiary-6":($tertiary-6, findColorInvert($tertiary-6)),
+  "tertiary-7":($tertiary-7, findColorInvert($tertiary-7)),
+  "tertiary-8":($tertiary-8, findColorInvert($tertiary-8)),
+  "tertiary-9":($tertiary-9, findColorInvert($tertiary-9))
+);
+$colors: map-merge($colors, $addColors);
+
+
+// import the rest of bulma after customization
+@import 'bulma-framework';

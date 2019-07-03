@@ -1,0 +1,7 @@
+{% macro widget_content(data, content) %}
+
+<div id="instafeed-sidebar" class="instafeed">
+	<!-- instagram feed will be loaded here -->
+</div>
+
+{% endmacro %}

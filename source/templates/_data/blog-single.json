@@ -1,0 +1,132 @@
+{
+	"blog_single": {
+
+		"page_title": {
+			"title": "Blog Single Title",
+			"description": "Break Through Self Doubt And Fear"
+		},
+		"sidebar": {
+			"show": true,
+			"position": "right",
+			"columns_gap_class": "is-5",
+			"column_class": "is-4",
+			"section_class": "content-with-sidebar"
+		},
+		"content": {
+			"images_folder": "blog/",
+			"show_image": true,
+			"show_meta": true,
+			"show_title": true,
+			"show_content": true,
+			"show_footer": true,
+			"image_src": "1.png",
+			"title": "Self Motivation How To Keep Yourself",
+			"post_meta": [
+				{
+					"icon": "icon-clock",
+					"text": [{
+						"name": "April 5, 2018",
+						"link": ""
+					}]
+				},
+				{
+					"icon": "icon-user",
+					"text": [{
+						"name": "Mohamed Ahmed",
+						"link": "#"
+					}]
+				},
+				{
+					"icon": "icon-folder",
+					"text": [
+						{
+							"name": "Branding",
+							"link": "#"
+						},
+						{
+							"name": "design",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"icon": "icon-bubbles",
+					"text": [{
+						"name": "2",
+						"link": "#"
+					}]
+				}
+			]
+		},
+		"author": {
+			"images_folder": "blog/",
+			"image_src": "author.png",
+			"name": "Olivia Allison",
+			"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+			"social_links": [
+				{ "icon": "fab fa-facebook-f", "link": "#" },
+				{ "icon": "fab fa-twitter", "link": "#" },
+				{ "icon": "fab fa-instagram", "link": "#" },
+				{ "icon": "fab fa-pinterest-p", "link": "#" }
+			]
+		},
+		"pagination": {
+			"separate_next_prev": true,
+			"hide_disabled_next_prev": true,
+			"list": [
+				{ "type": "previous", "text": "Prev Post", "link": "#", "disabled": false },
+				{ "type": "next", "text": "Next Post", "link": "#" }
+			]
+		},
+		"related_posts": {
+			"heading_title": "Related posts",
+			"link": "/blog/single.html",
+			"images_folder": "blog/",
+			"show_image": true,
+			"show_meta": true,
+			"show_title": true,
+			"show_content": false,
+			"more_text": false,
+			"post_meta": [
+				{
+					"icon": "icon-clock",
+					"text": [{
+						"name": "April 5, 2018",
+						"link": ""
+					}]
+				},
+				{
+					"icon": "icon-bubbles",
+					"text": [{
+						"name": "2",
+						"link": "#"
+					}]
+				}
+			],
+			"posts": [
+				{
+					"image_src": "1.png",
+					"title": "Self How Keep Yourself",
+					"content": "The main component of a healthy this environment for self esteem is that it needs be nurturing, the main..."
+				},
+				{
+					"image_src": "2.png",
+					"title": "Self How Keep Yourself",
+					"content": "The main component of a healthy this environment for self esteem is that it needs be nurturing, the main..."
+				},
+				{
+					"image_src": "1.png",
+					"title": "Self How Keep Yourself",
+					"content": "The main component of a healthy this environment for self esteem is that it needs be nurturing, the main..."
+				}
+			]
+		},
+		"comments": {
+			"heading_title": "comments"
+		},
+		"comment_reply": {
+			"heading_title": "Leave a Reply"
+		}
+
+	}
+}

@@ -1,0 +1,72 @@
+<!-- widgets-5.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/footer/_layout.nunjucks" %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/footer/modules/logo.nunjucks" import footer_logo %}
+
+{% block footer_content %}
+
+    <div class="columns is-variable is-5 is-multiline">
+
+	    <div class="column">
+
+			<div class="widget widget-html">
+              <div class="textwidget">
+                {{ footer_logo( data = footer.logo_left, global_data = global ) }}
+              </div><!-- .textwidget -->
+            </div>
+
+	    </div><!-- .column -->
+
+	    <div class="column is-4">
+	    	<div class="widget widget-links">
+			  <h3 class="widget-title ">Our Locations</h3>
+			  <div class="widget-links links-with-icons">
+              <ul>
+                <li>
+                  <span class="icon"><i class="icon-location-pin"></i></span>
+                  <a href="#">295 Streets Suite, Australia</a>
+                </li>
+                <li>
+                  <span class="icon"><i class="icon-location-pin"></i></span>
+                  <a href="#">376 Streets, Melbourne, Australia</a>
+                </li>
+              </ul>
+            </div>
+			</div><!-- .widget -->
+	    </div><!-- .column -->
+
+	    <div class="column">
+	    	<div class="widget widget-tags">
+              <h3 class="widget-title ">Contact Us</h3>
+              <div class="widget-links links-with-icons">
+              <ul>
+                <li>
+                  <span class="icon"><i class="icon-phone"></i></span>
+                  <a href="tel:+66396847263">+66396847263</a>
+                </li>
+                <li>
+                  <span class="icon"><i class="icon-envelope"></i></span>
+                  <a href="mailto:hello@site.com">hello@site.com</a>
+                </li>
+              </ul>
+            </div>
+              <!-- .tagcloud -->
+            </div>
+	    </div><!-- .column -->
+
+	    <div class="column is-3">
+	    	<div class="widget widget-links">
+        <h3 class="widget-title ">opening houres</h3>
+        <ul>
+          <li><a href="/">sunday - friday 9am - 6pm</a></li>
+          <li><a href="/">saturday -------- <span class="is-primary">closed</span></a></li>
+        </ul>
+      </div><!-- .widget -->
+	    </div><!-- .column -->
+	    
+	</div><!-- .columns -->
+
+{% endblock %}

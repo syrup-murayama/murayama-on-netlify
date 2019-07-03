@@ -1,0 +1,33 @@
+{% macro works_slider(style_class, carousel_class='scrollbar fullwidth', data, global_data) %}
+
+<div class="works-latest {{style_class}} owl-carousel {{carousel_class}}">
+
+    {% for work in data.works %}
+	<div class="works-latest-item">
+		{% if data.show_image %}
+		<a href="{{data.link}}">
+			<img src="{{global_data.images_root}}{{data.images_folder}}{{work.image_src}}">
+		</a>
+		{% endif %}
+		<div class="works-latest-item-icon">
+			<a href="https://www.youtube.com/watch?v=XL_3eYx3OVE" class="mfp-lightbox mfp-iframe">
+				<span class="icon"><i class="ion-ios-play"></i></span>
+			</a>
+		</div><!-- .works-latest-icon -->
+		<div class="works-latest-item-meta">
+			{% if data.show_title %}
+			<h3><a href="{{data.link}}">{{work.title}}</a></h3>
+			{% endif %}
+			{% if data.show_categories %}
+			<h5><a href="{{data.link}}">{% for category in work.categories %}{{category}} {% endfor %}</a></h5>
+			{% endif %}
+			{% if data.show_text %}
+			<p>{{work.text}}</p>
+			{% endif %}
+		</div>
+	</div><!-- .works-latest-item -->
+	{% endfor %}
+
+</div>
+
+{% endmacro %}

@@ -1,0 +1,15 @@
+{% macro footer_social_icons(style_class, data, global_data) %}
+
+    <div class="footer-social-links {{style_class}}">
+        <ul>
+            {% for social in data %}
+            <li>
+                <a href="{{social.link}}" target="_blank">
+                    <span class="icon"><i class="{{social.icon}}"></i></span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div><!-- .footer-social-links -->
+
+{% endmacro %}

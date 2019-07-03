@@ -1,0 +1,34 @@
+<!-- menu-left-with-buttons.nunjucks -->
+
+<!-- extends default layout -->
+{% extends "_includes/header/_layout.nunjucks" %}
+
+<!-- set header layout options -->
+{% set show_header_left = true %}
+{% set show_header_center = false %}
+{% set show_header_right = true %}
+
+<!-- import content layouts and modules -->
+{% from "_includes/navigation.nunjucks" import menuItem %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_start %}
+{% from "_includes/header/modules/menu.nunjucks" import menu_end %}
+{% from "_includes/header/modules/logo.nunjucks" import menu_logo %}
+
+{% block header_navigation_left %}
+    {{ menu_logo( data = header.logo_center_menu, global_data = global ) }}
+    {{ menu_start( style_class = 'left' ) }}
+        {% for item in header.navigation.menu_left %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+        {% for item in header.navigation.menu_right %}
+            {{ menuItem(item, active_pages) }}
+        {% endfor %}
+    {{ menu_end() }}
+{% endblock %}
+
+{% block header_navigation_right %}
+    <a href="#" class="button is-small is-primary is-outlined is-rounded">signup</a>
+    <a href="#" class="button is-small is-rounded">
+        <span class="icon"><i class="icon-login"></i></span><span>login</span>
+    </a>
+{% endblock %}

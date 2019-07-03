@@ -1,0 +1,9 @@
+<section class="hero carousel instagram-feed">
+	<div class="container">
+		<h1 class="heading-title">{{footer.instagram_heading_title}}</h1>
+	</div><!-- .container -->
+	<div id="instafeed" class="owl-carousel instafeed">
+		<!-- instagram feed will be loaded here -->
+	</div>
+
+</section><!-- .instagram-feed -->

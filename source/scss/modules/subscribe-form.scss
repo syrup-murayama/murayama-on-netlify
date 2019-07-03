@@ -1,0 +1,94 @@
+/*
+ * ::::::::::: Subscribe Form Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+
+//:::::::::::Styles::::::::::://
+
+.subscribe-form {
+	padding: 20px 0;
+
+	.field.is-grouped > .control:not(:last-child) {
+		margin-right: 0;
+	}
+
+	input {
+		min-width: 405px;
+		box-shadow: none;
+		border: none;
+		background-color: $white;
+		@include font-roboto;
+		font-size: 15px !important;
+		height: 3.2em;
+		padding-left: 20px;
+		padding-right: 10px;
+		color: $secondary-5;
+		border-radius: 290486px 0 0 290486px;
+	}
+
+	.button {
+		background-color: $primary;
+		color: $white;
+		padding: 0 41px;
+		height: 2.82em;
+		border-radius: 0 290486px 290486px 0 !important;
+		font-size: 17px !important;
+
+		&:hover {
+			background-color: $secondary;
+		}
+
+	}
+
+	// styles
+
+	&.style-1,
+	&.style-2 {
+		input {
+			border: 1px solid $tertiary-10;
+
+			&:focus {
+				border: 1px solid $primary;
+			}
+
+		}
+
+		.button {
+			padding: 0 34px;
+		}
+
+	}
+
+	&.style-2 {
+		input {
+			padding-right: 13%;
+			min-width: 520px;
+			border-radius: 290486px;
+		}
+
+		.button {
+			@include absolute(right 0 top 0);
+			background-color: transparent;
+			color: $primary;
+			font-size: 27px !important;
+			height: 100%;
+			width: 14%;
+			padding: 0;
+			padding-top: 3px;
+		}
+
+		.control {
+			&:hover {
+				.button {
+					color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,284 @@
+/*
+ * ::::::::::: Sidebar Widgets Styles :::::::::::
+ */
+
+//:::::::::::Imports: :::::::::://
+@import '../_config/imports';
+@import '../vendor/lib/bulma/elements/tag';
+
+//:::::::::::Styles::::::::::://
+
+/* sidebar */
+.sidebar {
+	padding-left: 20px;
+
+	&.is-left {
+		padding-left: 0;
+		padding-right: 20px;
+	}
+
+}
+
+/* widget title */
+.widget-title {
+	text-transform: capitalize;
+	color: $secondary;
+	letter-spacing: 0;
+	@include fontsize(21);
+	margin-bottom: 1.5rem;
+	@include font-playfair-display;
+	font-weight: 600;
+}
+
+/* widget section */
+.widget {
+	margin-bottom: 2.6rem;
+	@include font-roboto;
+
+	&:first-child {
+		.widget-title {
+			margin-top: -9px;
+		}
+
+	}
+
+	.box {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+}
+
+/* widget form */
+.widget-form {
+	input {
+		padding-right: 3.5em;
+		border-radius: 3px;
+	}
+
+	.button {
+		@include absolute(right 0 top 0);
+		background-color: transparent;
+		color: $tertiary-6;
+		@include fontsize(17);
+		height: 100%;
+		width: 15%;
+		padding: 0;
+	}
+
+	&:hover {
+		.button {
+			color: $primary;
+		}
+
+	}
+
+}
+
+/* widget links */
+.widget-links {
+	ul {
+		li {
+			padding: 6px 0;
+			@include fontsize(16);
+			letter-spacing: 1px;
+			@extend %is-capitalized;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			span {
+				@include fontsize(14);
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+/* widget tags */
+.widget-tags {
+	.tagcloud {
+		@extend .tags;
+
+		a {
+			@extend .tag;
+			@extend .is-medium;
+			background-color: $white !important;
+			border: 1px solid $tertiary-5;
+			color: $tertiary !important;
+			font-size: 11.5px !important;
+			@extend %is-uppercase;
+			letter-spacing: 1.5px;
+			height: 3em !important;
+			padding-left: 1em !important;
+			padding-right: 1em !important;
+			margin-right: .7rem !important;
+			margin-bottom: .7rem;
+			border-radius: 3px !important;
+
+			&:hover {
+				text-decoration: none;
+				color: $white !important;
+				background-color: $primary !important;
+				border-color: transparent;
+			}
+
+		}
+
+	}
+
+}
+
+/* social links */
+.widget-social {
+	ul {
+		li {
+			display: inline-block;
+			padding-right: 10px;
+			padding-bottom: 10px;
+
+			a {
+				display: inline-block;
+			}
+
+			.icon {
+				@include circle(36px);
+				background-color: $primary;
+				color: $white;
+				@include transition(all 0.4s ease);
+
+				i {
+					@include fontsize(16);
+				}
+
+				&:hover {
+					background-color: $secondary;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/* text and custom html */
+.textwidget {
+	p {
+		margin-bottom: 20px;
+	}
+
+}
+
+/* gallery images */
+.widget-gallery {
+	ul {
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 8px;
+
+			a,
+			img {
+				display: block;
+			}
+
+			img {
+				max-width: 100px;
+			}
+
+		}
+
+	}
+
+}
+
+/* instagram feed */
+.widget-instafeed {
+	.instafeed {
+		.instafeed-image {
+			display: inline-block;
+			margin-right: 14px;
+			margin-bottom: 8px;
+
+			img {
+				max-width: 100px;
+			}
+
+			.instafeed-overlay {
+				.instafeed-info {
+					@include center-element($left: 50%, $width:100%, $align:center);
+					@include fontsize(12);
+					text-align: center;
+
+					span {
+						padding: 0 3px;
+
+						i {
+							@include fontsize(14);
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/* posts, comments list */
+.widget-list {
+	figure {
+		img {
+			max-width: 83px;
+			@include transition(all 0.4s ease);
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+
+	}
+
+	.content {
+		a {
+			color: $secondary-5;
+			@include fontsize(15);
+			@include font-roboto;
+			letter-spacing: .5px;
+			@extend %is-capitalized;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		p {
+			color: $primary;
+			@include fontsize(13.5);
+			@extend %is-capitalized;
+			letter-spacing: 1px;
+			margin-top: 8px;
+		}
+
+	}
+
+}
